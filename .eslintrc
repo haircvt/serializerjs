@@ -1,0 +1,44 @@
+---
+extends:
+  - airbnb
+
+ecmaFeatures:
+  modules: true
+
+env:
+  browser: true
+  es6: true
+  node: true
+
+rules:
+  comma-dangle:
+    - 2
+    - always-multiline
+  func-names: 0
+  id-length: 0
+  indent:
+    - 2
+    - 4
+  max-len:
+    - 1
+    - 140
+    - 4
+  new-cap: 1
+  no-unused-vars: 0
+  object-shorthand:
+    - 2
+    - never
+  prefer-arrow-callback: 2
+  prefer-const: 2
+  quotes:
+    - 2
+    - single
+  space-before-function-paren:
+    - 2
+    - never
+  strict:
+    - 2
+    - global
+  yoda:
+    - 2
+    - always

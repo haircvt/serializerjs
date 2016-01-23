@@ -1,0 +1,516 @@
+{
+  "_type": "Program",
+  "start": 0,
+  "end": 472,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 22,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "_type": "ImportDeclaration",
+      "start": 0,
+      "end": 56,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 56
+        }
+      },
+      "specifiers": [
+        {
+          "_type": "ImportDefaultSpecifier",
+          "start": 7,
+          "end": 26,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 26
+            }
+          },
+          "local": {
+            "_type": "Identifier",
+            "start": 7,
+            "end": 26,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 26
+              }
+            },
+            "name": "SerializerInterface"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "_type": "Literal",
+        "start": 32,
+        "end": 55,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 32
+          },
+          "end": {
+            "line": 1,
+            "column": 55
+          }
+        },
+        "value": "./SerializerInterface",
+        "rawValue": "./SerializerInterface",
+        "raw": "'./SerializerInterface'"
+      },
+      "trailingComments": [
+        {
+          "_type": "Block",
+          "value": "*\n * Any serializer implementing this interface will access to a serializer at runtime.\n *\n * @interface\n ",
+          "start": 58,
+          "end": 168,
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 7,
+              "column": 3
+            }
+          },
+          "range": [
+            58,
+            168
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "ExportDefaultDeclaration",
+      "start": 169,
+      "end": 471,
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 1
+        }
+      },
+      "declaration": {
+        "_type": "ClassDeclaration",
+        "start": 184,
+        "end": 471,
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 15
+          },
+          "end": {
+            "line": 21,
+            "column": 1
+          }
+        },
+        "id": {
+          "_type": "Identifier",
+          "start": 190,
+          "end": 214,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 21
+            },
+            "end": {
+              "line": 8,
+              "column": 45
+            }
+          },
+          "name": "SerializerAwareInterface",
+          "leadingComments": null
+        },
+        "superClass": {
+          "_type": "Identifier",
+          "start": 223,
+          "end": 242,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 54
+            },
+            "end": {
+              "line": 8,
+              "column": 73
+            }
+          },
+          "name": "SerializerInterface"
+        },
+        "body": {
+          "_type": "ClassBody",
+          "start": 243,
+          "end": 471,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 74
+            },
+            "end": {
+              "line": 21,
+              "column": 1
+            }
+          },
+          "body": [
+            {
+              "_type": "Identifier",
+              "start": 316,
+              "end": 328,
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 4
+                },
+                "end": {
+                  "line": 13,
+                  "column": 16
+                }
+              },
+              "computed": false,
+              "key": {
+                "_type": "Identifier",
+                "start": 316,
+                "end": 327,
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 15
+                  }
+                },
+                "name": "_serializer",
+                "leadingComments": null
+              },
+              "static": false,
+              "value": null,
+              "leadingComments": [
+                {
+                  "_type": "Block",
+                  "value": "*\n     * @type {SerializerInterface}\n     * @private\n     ",
+                  "start": 249,
+                  "end": 311,
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 12,
+                      "column": 7
+                    }
+                  },
+                  "range": [
+                    249,
+                    311
+                  ]
+                }
+              ],
+              "trailingComments": [
+                {
+                  "_type": "Block",
+                  "value": "*\n     * @param {SerializerInterface} serializer\n     ",
+                  "start": 334,
+                  "end": 392,
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 17,
+                      "column": 7
+                    }
+                  },
+                  "range": [
+                    334,
+                    392
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "MethodDefinition",
+              "start": 397,
+              "end": 469,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 4
+                },
+                "end": {
+                  "line": 20,
+                  "column": 5
+                }
+              },
+              "computed": false,
+              "key": {
+                "_type": "Identifier",
+                "start": 397,
+                "end": 410,
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 17
+                  }
+                },
+                "name": "setSerializer",
+                "leadingComments": null
+              },
+              "static": false,
+              "kind": "method",
+              "value": {
+                "_type": "FunctionExpression",
+                "start": 410,
+                "end": 469,
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 5
+                  }
+                },
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [
+                  {
+                    "_type": "Identifier",
+                    "start": 411,
+                    "end": 421,
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 18
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 28
+                      }
+                    },
+                    "name": "serializer"
+                  }
+                ],
+                "body": {
+                  "_type": "BlockStatement",
+                  "start": 423,
+                  "end": 469,
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 30
+                    },
+                    "end": {
+                      "line": 20,
+                      "column": 5
+                    }
+                  },
+                  "body": [
+                    {
+                      "_type": "ExpressionStatement",
+                      "start": 433,
+                      "end": 463,
+                      "loc": {
+                        "start": {
+                          "line": 19,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 19,
+                          "column": 38
+                        }
+                      },
+                      "expression": {
+                        "_type": "AssignmentExpression",
+                        "start": 433,
+                        "end": 462,
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 37
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "_type": "MemberExpression",
+                          "start": 433,
+                          "end": 449,
+                          "loc": {
+                            "start": {
+                              "line": 19,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 19,
+                              "column": 24
+                            }
+                          },
+                          "object": {
+                            "_type": "ThisExpression",
+                            "start": 433,
+                            "end": 437,
+                            "loc": {
+                              "start": {
+                                "line": 19,
+                                "column": 8
+                              },
+                              "end": {
+                                "line": 19,
+                                "column": 12
+                              }
+                            }
+                          },
+                          "property": {
+                            "_type": "Identifier",
+                            "start": 438,
+                            "end": 449,
+                            "loc": {
+                              "start": {
+                                "line": 19,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 19,
+                                "column": 24
+                              }
+                            },
+                            "name": "_serializer"
+                          },
+                          "computed": false
+                        },
+                        "right": {
+                          "_type": "Identifier",
+                          "start": 452,
+                          "end": 462,
+                          "loc": {
+                            "start": {
+                              "line": 19,
+                              "column": 27
+                            },
+                            "end": {
+                              "line": 19,
+                              "column": 37
+                            }
+                          },
+                          "name": "serializer"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "leadingComments": [
+                {
+                  "_type": "Block",
+                  "value": "*\n     * @param {SerializerInterface} serializer\n     ",
+                  "start": 334,
+                  "end": 392,
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 17,
+                      "column": 7
+                    }
+                  },
+                  "range": [
+                    334,
+                    392
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "_type": "Block",
+            "value": "*\n * Any serializer implementing this interface will access to a serializer at runtime.\n *\n * @interface\n ",
+            "start": 58,
+            "end": 168,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 7,
+                "column": 3
+              }
+            },
+            "range": [
+              58,
+              168
+            ]
+          }
+        ],
+        "trailingComments": []
+      },
+      "leadingComments": [
+        {
+          "_type": "Block",
+          "value": "*\n * Any serializer implementing this interface will access to a serializer at runtime.\n *\n * @interface\n ",
+          "start": 58,
+          "end": 168,
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 7,
+              "column": 3
+            }
+          },
+          "range": [
+            58,
+            168
+          ]
+        }
+      ]
+    }
+  ]
+}

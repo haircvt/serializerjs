@@ -1,0 +1,56 @@
+{
+  "coverage": "68.75%",
+  "expectCount": 32,
+  "actualCount": 22,
+  "files": {
+    "src/Serializer/AbstractSerializer.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/Error/SerializationError.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        14,
+        18,
+        17
+      ]
+    },
+    "src/Serializer/Serializer.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "src/Serializer/SerializerAware.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        18
+      ]
+    },
+    "src/Serializer/SerializerInterface.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/Error/UnexpectedTypeError.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        14,
+        18,
+        17
+      ]
+    },
+    "src/Error/UnimplementedSerializerMethodError.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        14,
+        18,
+        17
+      ]
+    }
+  }
+}
