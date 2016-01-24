@@ -1,38 +1,31 @@
-# Framework integration
+# Installation
 
-The integration in any framework should be very straightforward. For example, to register it in Angular, you can simply
-register a `serializer` service:
-
-```js
-// app/HSerializerModule.js
-
-import SerializerFactory from 'serializerjs';
-
-import BooleanSerializer from './Serializer/BooleanSerializer';
-import StringSerializer from './Serializer/StringSerializer';
-import TypeSerializer from './Serializer/TypeSerializer';
-import UserSerializer from './Serializer/UserSerializer';
-
-const hserializerModule = angular
-    .module('haircvt.serializerModule', [])
-    .factory('serializer', () => {
-        const booleanSerializer = new BooleanSerializer();
-        const stringSerializer = new StringSerializer();
-        const typeSerializer = new TypeSerializer();
-        const userSerializer = new UserSerializer();
-
-        return SerializerFactory(new Map([
-            ['BooleanSerializer', booleanSerializer],
-            ['StringSerializer', stringSerializer],
-            ['TypeSerializer', typeSerializer],
-            ['UserSerializer', userSerializer],
-        ]));
-    })
-;
-
-export default hserializerModule;
+```
+npm install --save serializerjs
 ```
 
-[Previous: Reusable serializers: SerializerAware](https://github.com/haircvt/serializerjs/manual/usage.html#serializeraware)
+## ES6 (ES2015)
 
-[Back: Reusable serializers: SerializerAware](https://github.com/haircvt/serializerjs/manual/usage.html#serializeraware)
+```js
+import SerializerFactory from 'serializerjs';
+
+// access to the other elements of the package:
+import SerializerInterface from 'serializerjs'.SerializerInterface;
+// or
+const SerializerInterface = SerializerFactory.SerializerInterface;
+// or
+import SerializerInterface from 'serializerjs/lib/Serializer/SerializerInterface';
+```
+
+## Nodejs/ES5
+
+```js
+var SerializerFactory = require('serializerjs');
+
+// access to the other elements of the package:
+var SerializerInterface = SerializerFactory.SerializerInterface;
+// or
+var SerializerInterface = require('serializerjs/lib/Serializer/SerializerInterface');
+```
+
+[Back to Overview](http://haircvt.github.io/serializerjs/manual/overview.html)

@@ -22,12 +22,12 @@ implement any method but provide the skeleton for child classes instead.
 
 ### Table of Content
 
-1. [Installation](https://github.com/haircvt/serializerjs/manual/installation.html)
+1. [Installation](http://haircvt.github.io/serializerjs/manual/installation.html)
 1. [Usage](#usage)
 1. Advanced documentation
-    1. [Reusable serializers: SerializerAware](https://github.com/haircvt/serializerjs/manual/usage.html#serializeraware)
-    1. [Dynamic (de-serialization): formats & contexts](https://github.com/haircvt/serializerjs/manual/usage.html#serializer-contexts)
-    1. [Frameworks integration](https://github.com/haircvt/serializerjs/manual/usage.html#frameworks-integration)
+    1. [Reusable serializers: SerializerAware](http://haircvt.github.io/serializerjs/manual/usage.html#serializeraware)
+    1. [Dynamic (de-serialization): formats & contexts](http://haircvt.github.io/serializerjs/manual/usage.html#serializer-contexts)
+    1. [Frameworks integration](http://haircvt.github.io/serializerjs/manual/usage.html#frameworks-integration)
 1. [Resources](#resources)
 1. [Credits](#credits)
 1. [License](#license)
@@ -152,8 +152,8 @@ serializer.serialize(true); // => true
 ## Resources
 
 * [API documentation](http://haircvt.github.io/serializerjs/)
-* [Contribution Guide](https://github.com/haircvt/serializerjs/manual/faq.html#contributing)
-* [Changelog](https://github.com/haircvt/serializerjs/manual/changelog.html)
+* [Contribution Guide](http://haircvt.github.io/serializerjs/manual/faq.html#contributing)
+* [Changelog](http://haircvt.github.io/serializerjs/manual/changelog.html)
 
 ## Credits
 

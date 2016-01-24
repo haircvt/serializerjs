@@ -8,4 +8,4 @@
 
 * First functional version
 
-[Back (overview)](https://github.com/haircvt/serializerjs/manual/overview.html)
+[Back to Overview](http://haircvt.github.io/serializerjs/manual/overview.html)

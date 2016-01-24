@@ -83,6 +83,6 @@ serializer.supportsSerialize(true); // => true
 serializer.serialize(true); // => true
 ```
 
-[Back (overview)](https://github.com/haircvt/serializerjs/manual/overview.html)
+[Back to Overview](http://haircvt.github.io/serializerjs/manual/overview.html)
 
-[Next: Reusable serializers: SerializerAware](https://github.com/haircvt/serializerjs/manual/usage.html#serializeraware)
+[Next: Reusable serializers: SerializerAware](http://haircvt.github.io/serializerjs/manual/usage.html#serializeraware)

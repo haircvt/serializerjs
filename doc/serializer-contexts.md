@@ -5,7 +5,7 @@ is expected to be a string with the format name. For example `json`, `json-ld`, 
 give you an information of the `data` schema during the deserialization, or the schema in which the data will be serialized
 during serialization.
 
-For example with the [`BooleanSerializer`](https://github.com/haircvt/serializerjs/manual/usage.html#basic-usage), we could need to serialize booleans
+For example with the [`BooleanSerializer`](http://haircvt.github.io/serializerjs/manual/usage.html#basic-usage), we could need to serialize booleans
 again (in integer values) before sending the data back to the server. In which case, we could easily do something like
 this:
 
@@ -37,6 +37,6 @@ supportsSerialize(data, format = null) {
 Depending of the format, we could need to pass additional parameters for the serialization. That is where comes
 `context`. This property can be pretty much everything you want: object, array, scalar value etc.
 
-(https://github.com/haircvt/serializerjs/manual/overview.html#table-of-content)
+(http://haircvt.github.io/serializerjs/manual/overview.html#table-of-content)
 
 [0]: http://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html

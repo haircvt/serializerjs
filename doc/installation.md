@@ -33,4 +33,4 @@ const hserializerModule = angular
 export default hserializerModule;
 ```
 
-[Back to the Table of Content](https://github.com/haircvt/serializerjs/manual/overview.html#table-of-content)
+[Back to the Table of Content](http://haircvt.github.io/serializerjs/manual/overview.html#table-of-content)

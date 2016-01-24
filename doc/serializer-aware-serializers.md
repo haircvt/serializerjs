@@ -126,7 +126,7 @@ export default class UserSerializer extends SerializerInterface {
 ```
 
 Now there is only deserializing the gender left. We could do it easily, but why bother? We already did it in
-[`BooleanSerializer`](https://github.com/haircvt/serializerjs/manual/usage.html#basic-usage)!
+[`BooleanSerializer`](http://haircvt.github.io/serializerjs/manual/usage.html#basic-usage)!
 
 Instead of re-doing this work, we instead use existing serializers. For that, `UserSerializer` should be made
 "serializer aware", i.e. should extend [`SerializerAware`][1] instead of implementing [`SerializerInterface`][0]. By
@@ -160,11 +160,11 @@ _deserializeGender(object) {
 
 **In other words, `SerializerAware` allow you to quickly access to other serializer.**
 
-(https://github.com/haircvt/serializerjs/manual/overview.html#table-of-content)
+(http://haircvt.github.io/serializerjs/manual/overview.html#table-of-content)
 
-[Previous: Basic usage](https://github.com/haircvt/serializerjs/manual/usage.html#basicusage)
+[Previous: Basic usage](http://haircvt.github.io/serializerjs/manual/usage.html#basicusage)
 
-[Next: Serializer format & context](https://github.com/haircvt/serializerjs/manual/usage.html#serializer-format-context)
+[Next: Serializer format & context](http://haircvt.github.io/serializerjs/manual/usage.html#serializer-format-context)
 
 [0]: http://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html
 [1]: http://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html

@@ -85,7 +85,7 @@ Be sure to you have the right to do that (if you are a professional, ask your co
 
 If you include code from another project, please mention it in the Pull Request description and credit the original author.
 
-[Back (overview)](https://github.com/haircvt/serializerjs/manual/overview.html)
+[Back to Overview](http://haircvt.github.io/serializerjs/manual/overview.html)
 
 [1]: https://github.com/haircvt/serializerjs/issues
 [2]: https://mochajs.org/
