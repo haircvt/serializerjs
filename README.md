@@ -1,6 +1,6 @@
 # Serializer.js
 
-[![Build Status](https://travis-ci.org/haircvt/serializerjs.svg?branch=master)](https://travis-ci.org/haircvt/serializerjs)
+[![Build Status](https://travis-ci.org/haircvt/serializerjs.svg?branch=master)](https://travis-ci.org/haircvt/serializerjs?branch=master)
 [![bitHound Overall Score](https://www.bithound.io/github/haircvt/serializerjs/badges/score.svg)](https://www.bithound.io/github/haircvt/serializerjs)
 [![Code Climate](https://codeclimate.com/repos/56a4c8e6d5d7662fef003878/badges/57fa85ee0f756c86aba4/gpa.svg)](https://codeclimate.com/repos/56a4c8e6d5d7662fef003878/feed)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/b6a967074fee4de592727c4069b738f0)](https://www.codacy.com/app/theofidry/serializerjs)
