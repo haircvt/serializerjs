@@ -35,7 +35,8 @@ const COPYRIGHT = `
  `;
 
 gulp.task('compile', () => {
-    return gulp.src('src/**/*.js')
+    return gulp
+        .src('src/**/*.js')
         .pipe(babel())
         .pipe(gulp.dest('lib'))
     ;
@@ -54,7 +55,8 @@ gulp.task('browserify', () => {
         .bundle()
     ;
 
-    return stream.pipe(source('serializerjs.js'))
+    return stream
+        .pipe(source('serializerjs.js'))
         .pipe(derequire())
         .pipe(insert.prepend(COPYRIGHT))
         .pipe(gulp.dest('./dist'))
@@ -62,7 +64,8 @@ gulp.task('browserify', () => {
 });
 
 gulp.task('minify', () => {
-    return gulp.src('dist/serializerjs.js')
+    return gulp
+        .src('dist/serializerjs.js')
         .pipe(uglify())
         .pipe(insert.prepend(COPYRIGHT))
         .pipe(rename({ extname: '.min.js' }))
