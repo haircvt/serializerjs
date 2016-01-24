@@ -1,6 +1,6 @@
 {
   "name": "serializerjs",
-  "version": "0.0.0",
+  "version": "1.0.0-beta",
   "license": "MIT",
   "homepage": "https://github.com/haircvt/serializerjs#readme",
   "description": "JavaScript Serializer",
