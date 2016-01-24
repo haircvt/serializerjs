@@ -10,7 +10,7 @@
 import SerializerAware from './../../src/Serializer/SerializerAware';
 import { ADMIN_TYPE, ANONYMOUS_TYPE, CUSTOMER_TYPE } from './UserType';
 
-export default class TypeSerializer extends SerializerAware {
+export default class UserTypeSerializer extends SerializerAware {
     constructor() {
         super();
 

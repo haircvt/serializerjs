@@ -22,7 +22,7 @@ describe('SerializerInterface', () => {
      * @test {SerializerInterface#supportsDeserialize}
      * @test {SerializerInterface#supportsSerialize}
      */
-    it('Should not implement anything', () => {
+    it('As an interface, it should not implement anything', () => {
         const serializer = new SerializerInterface();
 
         assert.throw(serializer.deserialize, Error);

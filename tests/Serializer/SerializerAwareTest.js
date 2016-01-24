@@ -17,6 +17,13 @@ import UnimplementedSerializerMethodError from './../../src/Error/UnimplementedS
 
 /** @test {SerializerAware} */
 describe('SerializerAware', () => {
+    /** @test {SerializerAware#constructor} */
+    it('It implements the SerializerInterface interface', () => {
+        const serializerAware = new SerializerAware();
+
+        assert.isTrue(serializerAware instanceof SerializerInterface);
+    });
+
     /** @test {SerializerAware#setSerializer} */
     it('It should contain a reference to the serializer', () => {
         const serializer = new SerializerInterface();
@@ -24,14 +31,5 @@ describe('SerializerAware', () => {
         serializerAware.setSerializer(serializer);
 
         assert.strictEqual(serializerAware._serializer, serializer);
-    });
-
-    /** @test {SerializerAware#constructor} */
-    it('Is a serializer', () => {
-        const serializer = new SerializerInterface();
-        const serializerAware = new SerializerAware();
-        serializerAware.setSerializer(serializer);
-
-        assert.instanceOf(serializerAware, SerializerInterface);
     });
 });

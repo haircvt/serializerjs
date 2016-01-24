@@ -17,6 +17,15 @@ import SerializerInterface from './../../src/Serializer/SerializerInterface';
 /** @test {AbstractSerializer} */
 describe('AbstractSerializer', () => {
     /**
+     * @test {AbstractSerializer#constructor}
+     */
+    it('It implements the SerializerInterface interface', () => {
+        const abstractSerializer = new AbstractSerializer();
+
+        assert.isTrue(abstractSerializer instanceof SerializerInterface);
+    });
+
+    /**
      * @test {AbstractSerializer#supportsDeserialize}
      * @test {AbstractSerializer#supportsSerialize}
      */
@@ -31,20 +40,11 @@ describe('AbstractSerializer', () => {
      * @test {AbstractSerializer#deserialize}
      * @test {AbstractSerializer#serialize}
      */
-    it('It should return the object unchanged if (de)-serialization is called', () => {
+    it('It should return the object unchanged if (de)-serialization is called [warning: bad practice]', () => {
         const abstractSerializer = new AbstractSerializer();
         const data = {};
 
         assert.strictEqual(abstractSerializer.deserialize(data), data);
         assert.strictEqual(abstractSerializer.serialize(data), data);
-    });
-
-    /**
-     * @test {AbstractSerializer#constructor}
-     */
-    it('Is a serializer', () => {
-        const abstractSerializer = new AbstractSerializer();
-
-        assert.instanceOf(abstractSerializer, SerializerInterface);
     });
 });
