@@ -37,7 +37,7 @@ export default class User {
 ```
 
 We can see that `User#gender` is a boolean. We are receiving the following JSON from an API:
- 
+
 ```json
 {
   "FirstName": "John",
@@ -48,7 +48,7 @@ We can see that `User#gender` is a boolean. We are receiving the following JSON 
 
 As you can see, the `gender` value is not an boolean like we expected besides having the property names that do not
 match with our `User` object. As a result we could do a serializer for `User`: `UserSerializer`:
- 
+
 ```js
 // app/Serializer/UserSerializer.js
 
@@ -105,7 +105,7 @@ export default class UserSerializer extends SerializerInterface {
 
         throw new SerializationError(`Could not serialize object#${property}`);
     }
-    
+
     /**
      * @param {!Object} object
      *
@@ -126,7 +126,7 @@ export default class UserSerializer extends SerializerInterface {
 ```
 
 Now there is only deserializing the gender left. We could do it easily, but why bother? We already did it in
-[`BooleanSerializer`](http://haircvt.github.io/serializerjs/manual/usage.html#basic-usage)!
+[`BooleanSerializer`](https://haircvt.github.io/serializerjs/manual/usage.html#basic-usage)!
 
 Instead of re-doing this work, we instead use existing serializers. For that, `UserSerializer` should be made
 "serializer aware", i.e. should extend [`SerializerAware`][1] instead of implementing [`SerializerInterface`][0]. By
@@ -160,12 +160,12 @@ _deserializeGender(object) {
 
 **In other words, `SerializerAware` allow you to quickly access to other serializer.**
 
-(http://haircvt.github.io/serializerjs/manual/overview.html#table-of-content)
+(https://haircvt.github.io/serializerjs/manual/overview.html#table-of-content)
 
-[Previous: Basic usage](http://haircvt.github.io/serializerjs/manual/usage.html#basicusage)
+[Previous: Basic usage](https://haircvt.github.io/serializerjs/manual/usage.html#basicusage)
 
-[Next: Serializer format & context](http://haircvt.github.io/serializerjs/manual/usage.html#serializer-format-context)
+[Next: Serializer format & context](https://haircvt.github.io/serializerjs/manual/usage.html#serializer-format-context)
 
-[0]: http://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html
-[1]: http://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html
-[2]: http://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html#instance-member-_serializer
+[0]: https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html
+[1]: https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html
+[2]: https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html#instance-member-_serializer
