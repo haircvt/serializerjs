@@ -1,10 +1,12 @@
-# Angular integration
+# Framework integration
 
-The integration of the serializer in Angular is very straightforward. Indeed, you just have to register `serializer` as
-a regular [Angular service](https://docs.angularjs.org/guide/services):
+The integration in any framework should be very straightforward. For example, to register it in Angular, you can simply
+register a `serializer` service:
 
 ```js
-import { Serializer } from 'js-serializer';
+// app/HSerializerModule.js
+
+import SerializerFactory from 'serializerjs';
 
 import BooleanSerializer from './Serializer/BooleanSerializer';
 import StringSerializer from './Serializer/StringSerializer';
@@ -19,7 +21,7 @@ const hserializerModule = angular
         const typeSerializer = new TypeSerializer();
         const userSerializer = new UserSerializer();
 
-        return new Serializer(new Map([
+        return SerializerFactory(new Map([
             ['BooleanSerializer', booleanSerializer],
             ['StringSerializer', stringSerializer],
             ['TypeSerializer', typeSerializer],
@@ -29,4 +31,6 @@ const hserializerModule = angular
 ;
 
 export default hserializerModule;
-``
+```
+
+[Back to the Table of Content](https://github.com/haircvt/serializerjs/manual/overview.html#table-of-content)

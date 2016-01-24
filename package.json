@@ -23,7 +23,7 @@
     "lib": "src",
     "test": "tests"
   },
-  "main": "dist/serializerjs-es5.js",
+  "main": "dist/serializerjs.js",
   "files": [
     "index.js",
     "dist",
@@ -38,8 +38,8 @@
   "scripts": {
     "prepublish": "npm run build",
     "preversion": "npm test",
-    "version": "npm run build && git add -A",
-    "postversion": "git push && git push --tags",
+    "version": "git add -A",
+    "postversion": "npm publish && git push && git push --tags",
     "build": "./scripts/build-releases.sh",
     "doc": "node_modules/.bin/esdoc -c esdoc.json",
     "lint": "node_modules/.bin/eslint src tests",

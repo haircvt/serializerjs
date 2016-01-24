@@ -20,8 +20,8 @@ import UnimplementedMethodError from './../Error/UnimplementedMethodError';
  * | Client |                        | Back-End |
  * +--------+ <---- deserialize ---- +----------+
  *
- * Note that JavaScript does not support interfaces per se. But "Interface" it is meant that this class should not
- * implement any method but provide the skeleton for child classes instead.
+ * Note that JavaScript does not support interfaces per se. By "Interface" is meant that this class should not implement
+ * any method but provide the skeleton for child classes instead.
  *
  * @interface
  * @author Théo FIDRY <theo.fidry@gmail.com>
