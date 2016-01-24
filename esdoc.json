@@ -4,5 +4,17 @@
   "test": {
     "type": "mocha",
     "source": "./tests"
+  },
+  "manual": {
+    "overview": ["./README.md"],
+    "installation": ["./doc/installation.md"],
+    "usage": [
+      "./doc/basic-usage.md",
+      "./doc/serializer-aware-serializers.md",
+      "./doc/serializer-contexts.md",
+      "./doc/frameworks-integration.md"
+    ],
+    "faq": ["./CONTRIBUTING.md"],
+    "changelog": ["./CHANGELOG.md"]
   }
 }
