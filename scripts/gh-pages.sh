@@ -33,13 +33,15 @@ publishToGithubPages() {
   npm run doc
 
   log "Publishing artefacts to GitHub Pages"
+  echo "rm -r gh-pages/*"
+  rm -r gh-pages/*
   echo "mv -f dist/doc gh-pages"
   mv -f dist/doc/* gh-pages
 
   cd gh-pages
   git add --all
   git commit --quiet --message "$GITHUB_PAGES_COMMIT_MESSAGE"
-  git push --force origin gh-pages
+  git push --force --quiet origin gh-pages
   cd ..
 
   log "Done" --success
