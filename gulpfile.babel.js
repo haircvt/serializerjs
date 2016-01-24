@@ -43,7 +43,9 @@ gulp.task('compile', () => {
 
 gulp.task('browserify', () => {
     const stream = browserify({
-        builtins: {_process: true},
+        builtins: {
+            _process: true,
+        },
         entries: 'lib/serializerjs.js',
         standalone: 'serializerjs',
     })

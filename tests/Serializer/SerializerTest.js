@@ -16,7 +16,7 @@ import BooleanSerializer from './../Fixtures/BooleanSerializer';
 import Serializer from './../../src/Serializer/Serializer';
 import SerializerInterface from './../../src/Serializer/SerializerInterface';
 import StringSerializer from './../Fixtures/StringSerializer';
-import TypeSerializer from './../Fixtures/TypeSerializer';
+import UserTypeSerializer from './../Fixtures/UserTypeSerializer';
 import User from './../Fixtures/User';
 import UserSerializer from './../Fixtures/UserSerializer';
 
@@ -25,15 +25,21 @@ import serializer from './../Fixtures/app';
 /** @test {Serializer} */
 describe('Serializer', () => {
     /** @test {Serializer#constructor} */
-    it('Is a serializer', () => {
+    it('It implements the SerializerInterface interface', () => {
         assert.instanceOf(serializer, SerializerInterface);
     });
 
-    describe('It can use the StringSerializer', () => {
-        it('It should have access to the StringSerializer', () => {
-            assert.isTrue(serializer._serializers.get('StringSerializer') instanceof StringSerializer);
-        });
+    it('It should have a reference of all the registered serializers', () => {
+        assert.isTrue(serializer._serializers.get('StringSerializer') instanceof StringSerializer);
+        assert.isTrue(serializer._serializers.get('BooleanSerializer') instanceof BooleanSerializer);
+        assert.isTrue(serializer._serializers.get('UserTypeSerializer') instanceof UserTypeSerializer);
+        assert.isTrue(serializer._serializers.get('UserSerializer') instanceof UserSerializer);
 
+        assert.strictEqual(serializer._serializers.size, 4);
+    });
+
+
+    describe('It can use the StringSerializer', () => {
         it('It should be able to deserialize a string', () => {
             const str = 'Hello World!';
 
@@ -69,10 +75,6 @@ describe('Serializer', () => {
     });
 
     describe('It can use the BooleanSerializer', () => {
-        it('It should have access to the BooleanSerializer', () => {
-            assert.isTrue(serializer._serializers.get('BooleanSerializer') instanceof BooleanSerializer);
-        });
-
         it('It should be able to deserialize a boolean value', () => {
             assert.isTrue(serializer.supportsDeserialize(true, 'boolean'));
             assert.strictEqual(serializer.deserialize(true, 'boolean'), true);
@@ -106,11 +108,7 @@ describe('Serializer', () => {
         });
     });
 
-    describe('It can use the TypeSerializer', () => {
-        it('It should have access to the TypeSerializer', () => {
-            assert.isTrue(serializer._serializers.get('TypeSerializer') instanceof TypeSerializer);
-        });
-
+    describe('It can use the UserTypeSerializer', () => {
         it('It should be able to deserialize a UserType value', () => {
             assert.isTrue(serializer.supportsDeserialize(0, 'UserType'));
             assert.strictEqual(serializer.deserialize(0, 'UserType'), ADMIN_TYPE);
@@ -148,10 +146,6 @@ describe('Serializer', () => {
             type: 0,
         };
         const user = new User('John', 'Doe', ADMIN_TYPE, true);
-
-        it('It should have access to the UserSerializer', () => {
-            assert.isTrue(serializer._serializers.get('UserSerializer') instanceof UserSerializer);
-        });
 
         it('It should be able to deserialize a user object', () => {
             assert.isTrue(serializer.supportsDeserialize(rawUser, 'User'));

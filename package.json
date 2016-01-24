@@ -32,6 +32,9 @@
     "LICENSE",
     "README.md"
   ],
+  "engines": {
+    "node" : ">=0.11"
+  },
   "scripts": {
     "prepublish": "npm run build",
     "build": "./scripts/build-releases.sh",
