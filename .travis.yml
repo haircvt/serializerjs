@@ -24,10 +24,6 @@ env:
     - GITHUB_USER_NAME="TravisBot"
     - GITHUB_USER_EMAIL="travisbot@haircvt.com"
 
-before_cache:
-  # Reset log history before new build
-  - rm -f $HOME/npm-debug.log
-
 cache:
   directories:
     - $HOME/node_modules
@@ -43,6 +39,10 @@ before_install:
       echo -en "\e[34mimporting ${file}\e[0m\n";
       source "$file";
     done
+  - setupDeployment
 
 after_success:
   - publishToGithubPages
+
+notifications:
+  email: false
