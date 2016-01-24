@@ -1,6 +1,6 @@
 {
   "name": "serializerjs",
-  "version": "0.1.17",
+  "version": "0.0.0",
   "license": "MIT",
   "homepage": "https://github.com/haircvt/serializerjs#readme",
   "description": "JavaScript Serializer",
@@ -37,6 +37,9 @@
   },
   "scripts": {
     "prepublish": "npm run build",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A",
+    "postversion": "git push && git push --tags",
     "build": "./scripts/build-releases.sh",
     "doc": "node_modules/.bin/esdoc -c esdoc.json",
     "lint": "node_modules/.bin/eslint src tests",
