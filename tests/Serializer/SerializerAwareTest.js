@@ -13,15 +13,13 @@ import { assert } from 'chai';
 
 import SerializerAware from './../../src/Serializer/SerializerAware';
 import SerializerInterface from './../../src/Serializer/SerializerInterface';
-import UnimplementedSerializerMethodError from './../../src/Error/UnimplementedSerializerMethodError';
+import UnimplementedSerializerMethodError from './../../src/Error/UnimplementedMethodError';
 
 /** @test {SerializerAware} */
 describe('SerializerAware', () => {
     /** @test {SerializerAware#constructor} */
     it('It implements the SerializerInterface interface', () => {
-        const serializerAware = new SerializerAware();
-
-        assert.isTrue(serializerAware instanceof SerializerInterface);
+        assert.isTrue(SerializerAware.prototype instanceof SerializerInterface);
     });
 
     /** @test {SerializerAware#setSerializer} */

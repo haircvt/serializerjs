@@ -7,15 +7,18 @@
  * file that was distributed with this source code.
  */
 
+import SerializerError from './SerializerError';
+
 /**
  * @author Théo FIDRY <theo.fidry@gmail.com>
  */
-export default class UnexpectedTypeError extends Error {
-    constructor(message) {
+export default class InvalidArgumentError extends SerializerError {
+    /**
+     * @param {string} [message='']
+     */
+    constructor(message = '') {
         super(message);
 
-        this.name = this.constructor.name;
-        this.message = message;
-        Error.captureStackTrace(this, this.constructor.name);
+        this.name = 'InvalidArgumentError';
     }
 }

@@ -26,7 +26,7 @@ import serializer from './../Fixtures/app';
 describe('Serializer', () => {
     /** @test {Serializer#constructor} */
     it('It implements the SerializerInterface interface', () => {
-        assert.instanceOf(serializer, SerializerInterface);
+        assert.isTrue(Serializer.prototype instanceof SerializerInterface);
     });
 
     it('It should have a reference of all the registered serializers', () => {
@@ -38,6 +38,17 @@ describe('Serializer', () => {
         assert.strictEqual(serializer._serializers.size, 4);
     });
 
+    it('Only serialiers can be registered', () => {
+        // Potential refactor
+        // @see https://github.com/chaijs/chai/issues/596
+        try {
+            const invalidSerializer = new Serializer(new Map([
+                ['myKey', {}],
+            ]));
+        } catch (error) {
+            assert.strictEqual(error.name, 'InvalidArgumentError');
+        }
+    });
 
     describe('It can use the StringSerializer', () => {
         it('It should be able to deserialize a string', () => {
@@ -167,5 +178,16 @@ describe('Serializer', () => {
             assert.isTrue(serializer.supportsSerialize(user));
             assert.deepEqual(serializer.serialize(user, null, 'oldApi'), rawUserOldApi);
         });
+    });
+
+    it('If no serializer is found, should throw an error', () => {
+        assert.isFalse(serializer.supportsDeserialize({}, 'Dummy'));
+        // Potential refactor
+        // @see https://github.com/chaijs/chai/issues/596
+        try {
+            serializer.deserialize({}, 'Dummy');
+        } catch (error) {
+            assert.strictEqual(error.name, 'SerializationError');
+        }
     });
 });

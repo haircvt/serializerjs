@@ -7,20 +7,25 @@
  * file that was distributed with this source code.
  */
 
-import SerializerError from './SerializerError';
-
 /**
- * Error thrown upon (de-)serialization process.
+ * Root error for the serializer.
  *
  * @author Théo FIDRY <theo.fidry@gmail.com>
  */
-export default class SerializationError extends SerializerError {
+export default class SerializerError extends Error {
     /**
      * @param {string} [message='']
      */
     constructor(message = '') {
         super(message);
 
-        this.name = 'SerializationError';
+        this.name = 'SerializerError';
+        this.message = message;
+
+        if (Error.hasOwnProperty('captureStackTrace')) {
+            Error.captureStackTrace(this, this.constructor);
+        }
+
+        this.stack = (new Error(message)).stack;
     }
 }

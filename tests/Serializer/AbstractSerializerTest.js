@@ -20,9 +20,7 @@ describe('AbstractSerializer', () => {
      * @test {AbstractSerializer#constructor}
      */
     it('It implements the SerializerInterface interface', () => {
-        const abstractSerializer = new AbstractSerializer();
-
-        assert.isTrue(abstractSerializer instanceof SerializerInterface);
+        assert.isTrue(AbstractSerializer.prototype instanceof SerializerInterface);
     });
 
     /**
