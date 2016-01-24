@@ -34,7 +34,7 @@ publishToGithubPages() {
 
   log "Publishing artefacts to GitHub Pages"
   echo "mv -f dist/doc gh-pages"
-  mv -f dist/doc gh-pages
+  mv -f dist/doc/* gh-pages
 
   cd gh-pages
   git add --all
