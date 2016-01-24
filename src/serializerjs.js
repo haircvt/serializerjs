@@ -7,9 +7,10 @@
  * file that was distributed with this source code.
  */
 
+import InvalidArgumentError from './Error/InvalidArgumentError';
 import SerializationError from './Error/SerializationError';
-import UnexpectedTypeError from './Error/UnexpectedTypeError';
-import UnimplementedSerializerMethodError from './Error/UnimplementedSerializerMethodError';
+import SerializerError from './Error/SerializerError';
+import UnimplementedMethodError from './Error/UnimplementedMethodError';
 
 import AbstractSerializer from './Serializer/AbstractSerializer';
 import Serializer from './Serializer/Serializer';
@@ -27,12 +28,14 @@ class SerializerFactory {
     }
 }
 
+/** @type {InvalidArgumentError} */
+SerializerFactory.InvalidArgumentError = InvalidArgumentError;
 /** @type {SerializationError} */
 SerializerFactory.SerializationError = SerializationError;
-/** @type {UnexpectedTypeError} */
-SerializerFactory.UnexpectedTypeError = UnexpectedTypeError;
+/** @type {SerializerError} */
+SerializerFactory.SerializerError = SerializerError;
 /** @type {UnimplementedSerializerMethodError} */
-SerializerFactory.UnimplementedSerializerMethodError = UnimplementedSerializerMethodError;
+SerializerFactory.UnimplementedSerializerMethodError = UnimplementedMethodError;
 
 /** @type {AbstractSerializer} */
 SerializerFactory.AbstractSerializer = AbstractSerializer;

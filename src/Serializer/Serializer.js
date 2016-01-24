@@ -10,7 +10,7 @@
 import SerializerAware from './SerializerAware';
 import SerializerInterface from './SerializerInterface';
 import SerializationError from './../Error/SerializationError';
-import UnexpectedTypeError from './../Error/UnexpectedTypeError';
+import InvalidArgumentError from './../Error/InvalidArgumentError';
 
 /**
  * Default serializer.
@@ -23,13 +23,15 @@ import UnexpectedTypeError from './../Error/UnexpectedTypeError';
 export default class Serializer extends SerializerInterface {
     /**
      * @param {Map.<string,SerializerInterface>} serializers
+     *
+     * @throw InvalidArgumentError
      */
     constructor(serializers) {
         super(serializers);
 
         for (const serializer of serializers.values()) {
             if (false === serializer instanceof SerializerInterface) {
-                throw new UnexpectedTypeError(
+                throw new InvalidArgumentError(
                     `Expected serializer to implement SerializerInterface. Got ${serializer.constructor} instead`
                 );
             }

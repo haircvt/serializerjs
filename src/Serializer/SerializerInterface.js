@@ -8,7 +8,7 @@
  */
 
 import SerializationError from './../Error/SerializationError';
-import UnimplementedSerializerMethodError from './../Error/UnimplementedSerializerMethodError';
+import UnimplementedMethodError from './../Error/UnimplementedMethodError';
 
 /**
  * A serializer is responsible for transforming a data in a specific format into a data in another format.
@@ -38,7 +38,7 @@ export default class SerializerInterface {
      * @throw SerializationError
      */
     serialize(data, format, context) {
-        throw new UnimplementedSerializerMethodError('Unimplemented "serialize()" method');
+        throw new UnimplementedMethodError('Unimplemented "serialize()" method');
     }
 
     /**
@@ -50,7 +50,7 @@ export default class SerializerInterface {
      * @return {boolean}
      */
     supportsSerialize(data, format = null) {
-        throw new UnimplementedSerializerMethodError('Unimplemented "supportsSerialize()" method');
+        throw new UnimplementedMethodError('Unimplemented "supportsSerialize()" method');
     }
 
     /**
@@ -65,7 +65,7 @@ export default class SerializerInterface {
      * @throw SerializationError
      */
     deserialize(data, className, format = null, context = null) {
-        throw new UnimplementedSerializerMethodError('Unimplemented "deserialize()" method');
+        throw new UnimplementedMethodError('Unimplemented "deserialize()" method');
     }
 
     /**
@@ -78,6 +78,6 @@ export default class SerializerInterface {
      * @return {boolean}
      */
     supportsDeserialize(data, className, format = null) {
-        throw new UnimplementedSerializerMethodError('Unimplemented "supportsDeserialize()" method');
+        throw new UnimplementedMethodError('Unimplemented "supportsDeserialize()" method');
     }
 }
