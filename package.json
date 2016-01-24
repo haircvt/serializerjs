@@ -33,7 +33,7 @@
     "README.md"
   ],
   "engines": {
-    "node" : ">=0.11"
+    "node": ">=0.11"
   },
   "scripts": {
     "prepublish": "npm run build",
@@ -43,10 +43,8 @@
     "test": "node_modules/mocha/bin/_mocha --compilers js:babel-core/register --ui bdd --recursive tests"
   },
   "devDependencies": {
-    "angular": "^1.4.9",
     "babel-cli": "^6.4.5",
-    "babel-core": "^6.4.0",
-    "babel-plugin-dead-code-elimination": "^1.0.2",
+    "babel-core": "^6.4.5",
     "babel-preset-es2015": "^6.3.13",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
@@ -55,7 +53,6 @@
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^3.1.0",
     "eslint-plugin-react": "^3.15.0",
-    "expect.js": "^0.3.1",
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.1",
     "gulp-derequire": "^2.1.0",
