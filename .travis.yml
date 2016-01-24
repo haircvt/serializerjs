@@ -1,0 +1,51 @@
+sudo: false
+language: node_js
+
+node_js:
+  # - 5.5 => is in the matrix build
+  - 5.4
+  - 5.3
+  - 5.2
+  - 5.1
+  - 5.0
+  - 4.2
+  - 4.1
+  - 4.0
+  - 0.12
+  - 0.11
+  - 0.10
+  - 0.8
+  - 0.6
+  - iojs
+
+env:
+  global:
+    - GITHUB_PAGES_COMMIT_MESSAGE="Rebuild pages at $(git rev-parse --short HEAD)"
+    - if [[ -z "$GITHUB_PAGES_TOKEN" ]]; then
+        GITHUB_PAGES_REMOTE="https://user:${GITHUB_PAGES_TOKEN}@github.com/haircvt/serializerjs.git";
+      fi;
+    - GITHUB_USER_NAME="TravisBot"
+    - GITHUB_USER_EMAIL="travisbot@haircvt.com"
+
+before_cache:
+  # Reset log history before new build
+  - rm -f $HOME/npm-debug.log
+
+cache:
+  directories:
+    - $HOME/node_modules
+
+matrix:
+  include:
+    - node_js: 5.5
+      env: DEPLOY_BUILD=true
+  fast_finish: true
+
+before_install:
+  - for file in scripts/*.sh; do
+      echo -en "\e[34mimporting ${file}\e[0m\n";
+      source "$file";
+    done
+
+after_success:
+  - publishToGithubPages

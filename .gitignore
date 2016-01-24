@@ -1,3 +1,3 @@
-**/*/*-compiled.js
-**/*/*-compiled.js.map
+dist
+lib
 node_modules
