@@ -6,6 +6,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/b6a967074fee4de592727c4069b738f0)](https://www.codacy.com/app/theofidry/serializerjs)
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/haircvt/serializerjs/blob/master/LICENSE)
 
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/theofidry.svg)](https://saucelabs.com/u/theofidry)
+
 A serializer is responsible for transforming a data in a specific format into a data in another format/schema.
 
 For example, the serializer can be used to map client-side models and back-end side objects by checking all the

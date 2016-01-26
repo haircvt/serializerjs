@@ -8,3 +8,4 @@ exclude_paths:
   - dist/**/*
   - node_modules/**/*
   - tests/**/*
+  - karma.conf*
