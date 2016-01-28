@@ -7,12 +7,12 @@
   },
   "manual": {
     "overview": ["./README.md"],
-    "installation": ["./doc/installation.md"],
+    "installation": ["./doc/install.md"],
     "usage": [
       "./doc/basic-usage.md",
       "./doc/serializer-aware-serializers.md",
       "./doc/serializer-contexts.md",
-      "./doc/frameworks-integration.md"
+      "./doc/integration-in-frameworks.md"
     ],
     "faq": ["./CONTRIBUTING.md"],
     "changelog": ["./CHANGELOG.md"]
