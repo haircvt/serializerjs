@@ -4,9 +4,13 @@
 [![bitHound Overall Score](https://www.bithound.io/github/haircvt/serializerjs/badges/score.svg)](https://www.bithound.io/github/haircvt/serializerjs)
 [![Code Climate](https://codeclimate.com/repos/56a4c8e6d5d7662fef003878/badges/57fa85ee0f756c86aba4/gpa.svg)](https://codeclimate.com/repos/56a4c8e6d5d7662fef003878/feed)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/b6a967074fee4de592727c4069b738f0)](https://www.codacy.com/app/theofidry/serializerjs)
+
+[![npm version](https://img.shields.io/npm/v/serializerjs.svg)](https://www.npmjs.org/package/serializerjs)
+[![nodejs version](https://img.shields.io/node/v/serializerjs.svg)](https://www.npmjs.org/package/serializerjs)
+[![npm](https://img.shields.io/npm/dm/serializerjs.svg)](https://www.npmjs.org/package/serializerjs)
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/haircvt/serializerjs/blob/master/LICENSE)
 
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/theofidry.svg)](https://saucelabs.com/u/theofidry)
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/theofidry)](https://saucelabs.com/u/theofidry)
 
 A serializer is responsible for transforming a data in a specific format into a data in another format/schema.
 
