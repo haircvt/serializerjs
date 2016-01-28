@@ -33,8 +33,8 @@ publishToGithubPages() {
   npm run doc
 
   log "Publishing artefacts to GitHub Pages"
-  echo "rm -r gh-pages/*"
-  rm -r gh-pages/*
+  echo "rm -rf gh-pages/*"
+  rm -rf gh-pages/*
   echo "mv -f dist/doc gh-pages"
   mv -f dist/doc/* gh-pages
 
