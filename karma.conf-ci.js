@@ -33,7 +33,8 @@ module.exports = function(config) {
         {
             reporters: ['dots', 'saucelabs'],
             sauceLabs: {
-                testName: 'Unit Tests',
+                build: 'Travis #' + process.env.TRAVIS_BUILD_NUMBER + ' (' + process.env.TRAVIS_BUILD_ID + ')',
+                testName: 'Serializer.js',
                 tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
                 startConnect: false,
                 connectOptions: {
@@ -41,12 +42,11 @@ module.exports = function(config) {
                     logfile: 'sauce_connect.log',
                 },
             },
-            captureTimeout: 0,
+            captureTimeout: 2 * 60 * 1000,
             customLaunchers: customLaunchers,
             browsers: Object.keys(customLaunchers),
-            // Continuous Integration mode
-            // if true, Karma captures browsers, runs the tests and exits
-            singleRun: false,
+            singleRun: true,
+            concurrency: 2,
         }
     );
 
