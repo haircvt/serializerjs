@@ -34,12 +34,23 @@ matrix:
       env: DEPLOY_BUILD=true
   fast_finish: true
 
+addons:
+  sauce_connect: true
+
 before_install:
   - for file in scripts/*.sh; do
       echo -en "\e[34mimporting ${file}\e[0m\n";
       source "$file";
     done
   - setupDeployment
+
+script:
+  - npm run test:mocha
+  - if [[ $TRAVIS_SECURE_ENV_VARS == true ]] && [[ $DEPLOY_BUILD == true ]]; then
+        npm run test:saucelabs;
+    else
+        npm run test:karma;
+    fi;
 
 after_success:
   - publishToGithubPages

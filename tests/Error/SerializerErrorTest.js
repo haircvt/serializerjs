@@ -38,11 +38,4 @@ describe('SerializationError', () => {
 
         assert.strictEqual(error.name, 'SerializerError');
     });
-
-    it('It captures the error stack', () => {
-        const error = new SerializerError();
-
-        assert.isString(error.stack);
-        assert.isTrue(50 < error.stack.length);
-    });
 });

@@ -1,7 +1,8 @@
 {
   "ignore": [
     "dist/**",
-    "node_modules/**"
+    "node_modules/**",
+    "karma.conf*"
   ],
   "test": [
     "tests/**"

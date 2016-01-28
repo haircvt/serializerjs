@@ -25,7 +25,5 @@ export default class SerializerError extends Error {
         if (Error.hasOwnProperty('captureStackTrace')) {
             Error.captureStackTrace(this, this.constructor);
         }
-
-        this.stack = (new Error(message)).stack;
     }
 }
