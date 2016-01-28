@@ -51,11 +51,19 @@ module.exports = function(config) {
         colors: true,
         logLevel: config.LOG_INFO,
         sauceLabs: {
-            testName: 'serializerjs',
+            testName: 'Unit Tests',
+            tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
+            startConnect: false,
+            connectOptions: {
+                port: 5757,
+                logfile: 'sauce_connect.log',
+            },
         },
-        captureTimeout: 120000,
+        captureTimeout: 0,
         customLaunchers: customLaunchers,
         browsers: Object.keys(customLaunchers),
-        singleRun: true,
+        // Continuous Integration mode
+        // if true, Karma captures browsers, runs the tests and exits
+        singleRun: false,
     });
 };
