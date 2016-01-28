@@ -46,10 +46,12 @@ before_install:
 
 script:
   - npm run test:mocha
-  - if [[ $TRAVIS_SECURE_ENV_VARS == true ]] && [[ $DEPLOY_BUILD == true ]]; then
-        npm run test:saucelabs;
-    else
-        npm run test:karma;
+  - if [[ $DEPLOY_BUILD == true ]]; then
+        if [[ $TRAVIS_SECURE_ENV_VARS == true ]]; then
+            npm run test:saucelabs;
+        else
+            npm run test:karma;
+        fi;
     fi;
 
 after_success:
