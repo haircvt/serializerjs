@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Usage</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <a data-ice="repoURL" href="git+https://github.com/haircvt/serializerjs.git">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual" data-toc-name="overview">
+    <h1 class="manual-toc-title"><a href="manual/overview.html" data-ice="title">Overview</a></h1>
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/overview.html#serializer-js" data-ice="link">Serializer.js</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#table-of-content" data-ice="link">Table of Content</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#installation" data-ice="link">Installation</a></li>
+<li data-ice="manualNav" class="indent-h4"><span class="manual-dot"></span><a href="manual/overview.html#es6-es2015-" data-ice="link">ES6 (ES2015)</a></li>
+<li data-ice="manualNav" class="indent-h4"><span class="manual-dot"></span><a href="manual/overview.html#nodejs-es5" data-ice="link">Nodejs/ES5</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#usage" data-ice="link">Usage</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/overview.html#resources" data-ice="link">Resources</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/overview.html#credits" data-ice="link">Credits</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/overview.html#license" data-ice="link">License</a></li>
+</ul>
+  </div>
+<div data-ice="manual" data-toc-name="installation">
+    <h1 class="manual-toc-title"><a href="manual/installation.html" data-ice="title">Installation</a></h1>
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/installation.html#installation" data-ice="link">Installation</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/installation.html#es6-es2015-" data-ice="link">ES6 (ES2015)</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/installation.html#nodejs-es5" data-ice="link">Nodejs/ES5</a></li>
+</ul>
+  </div>
+<div data-ice="manual" data-toc-name="usage">
+    <h1 class="manual-toc-title"><a href="manual/usage.html" data-ice="title">Usage</a></h1>
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/usage.html#basic-usage" data-ice="link">Basic Usage</a></li>
+<li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/usage.html#reusable-serializers-serializeraware" data-ice="link">Reusable serializers: SerializerAware</a></li>
+<li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/usage.html#serializer-format-context" data-ice="link">Serializer format &amp; context</a></li>
+<li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/usage.html#framework-integration" data-ice="link">Framework integration</a></li>
+</ul>
+  </div>
+<div data-ice="manual" data-toc-name="reference">
+    <h1 class="manual-toc-title"><a href="identifiers.html" data-ice="title">Reference</a></h1>
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="identifiers.html#class" data-ice="link">Class</a></li>
+<li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="identifiers.html#interface" data-ice="link">Interface</a></li>
+</ul>
+  </div>
+<div data-ice="manual" data-toc-name="faq">
+    <h1 class="manual-toc-title"><a href="manual/faq.html" data-ice="title">FAQ</a></h1>
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/faq.html#contributing" data-ice="link">Contributing</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/faq.html#reporting-bugs" data-ice="link">Reporting bugs</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/faq.html#pull-requests-pr-" data-ice="link">Pull requests (PR)</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/faq.html#matching-coding-standards" data-ice="link">Matching coding standards</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/faq.html#sending-a-pull-request" data-ice="link">Sending a Pull Request</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/faq.html#squash-your-commits" data-ice="link">Squash your commits</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/faq.html#license-and-copyright-attribution" data-ice="link">License and copyright attribution</a></li>
+</ul>
+  </div>
+<div data-ice="manual" data-toc-name="changelog">
+    <h1 class="manual-toc-title"><a href="manual/changelog.html" data-ice="title">Changelog</a></h1>
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/changelog.html#changelog" data-ice="link">Changelog</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/changelog.html#1-0-0-beta-1-not-released-yet-" data-ice="link">1.0.0-beta.1 (not released yet)</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/changelog.html#1-0-0-beta" data-ice="link">1.0.0-beta</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown">
+  <div class="manual-breadcrumb-list">
+    <a href="./manual/./index.html">Manual</a>
+    <span>&#xBB;</span>
+    <span data-ice="title">Usage</span>
+  </div>
+  <div data-ice="content"><h1 id="basic-usage">Basic Usage</h1>
+<p>The two key classes of this library are <a href="https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html"><code>Serializer</code></a> and <a href="https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html"><code>SerializerInterface</code></a>. To use it, you just have to
+write your own serializers (simple class implementing <a href="https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html"><code>SerializerInterface</code></a>). Once done, create a <a href="https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html"><code>Serializer</code></a>
+instance <code>serializer</code> to aggregate all your serializers. You will then be able to use <code>serializer</code> to (de-)serialize
+any kind of data supported by the registered serializers.</p>
+<p>Example: For some reason, we are fetching data where instead of having booleans <code>true</code> and <code>false</code> in our JSON response,
+we have integers <code>0</code> or <code>1</code>. Let us write a simple <code>BooleanSerializer</code> that will be responsible for deserializing them
+into proper booleans.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/Serializer/BooleanSerializer.js
+import SerializerFactory from &apos;serializerjs&apos;;
+
+export default class BooleanSerializer extends SerializerFactory.SerializerInterface {
+    /**
+     * @inheritDoc
+     */
+    supportsSerialize(data, format = null) {
+        return false;
+    }
+
+    /**
+     * @inheritDoc
+     *
+     * @param {number|boolean|null} data
+     *
+     * @return {boolean}
+     */
+    deserialize(data, className, format = null, context = null) {
+        if (&apos;boolean&apos; === typeof data || null === data) {
+            return data;
+        }
+
+        return Boolean(data);
+    }
+
+    /**
+     * @inheritDoc
+     */
+    supportsDeserialize(data, className, format = null) {
+        if (&apos;boolean&apos; !== className) {
+            return false;
+        }
+
+        if (&apos;boolean&apos; === typeof data || null === data) {
+            return true;
+        }
+
+        if (0 === data || 1 === data) {
+            return true;
+        }
+
+        return false;
+    }
+}</code>
+</code></pre>
+<p>Then create the <code>serializer</code> service with all the serializers you which to register. In our case we only have
+<code>BooleanSerializer</code>:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/Serializer/Serializer.js
+import SerializerFactory from &apos;serializerjs&apos;;
+import BooleanSerializer from &apos;./BooleanSerializer&apos;;
+
+export default SerializerFactory(new Map([
+    [&apos;BooleanSerializer&apos;, booleanSerializer],
+]));</code>
+</code></pre>
+<p>You can then use it like so:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/index.js
+import serializer from &apos;./Serializer/Serializer&apos;;
+
+serializer.supportsDeserialize(1, &apos;boolean&apos;)); // =&gt; true
+serializer.deserialize(1, &apos;boolean&apos;); // =&gt; true
+
+serializer.supportsSerialize(true); // =&gt; true
+serializer.serialize(true); // =&gt; true</code>
+</code></pre>
+<h1 id="reusable-serializers-serializeraware">Reusable serializers: SerializerAware</h1>
+<p>Depending of the data (de-)serialized, you may need to use an existing serializer. For example, provided with have the
+following user class:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/Model/User.js
+
+export default class User {
+    /**
+     * @param {string}   firstname
+     * @param {string}   lastname
+     * @param {?boolean} gender    True for female, false for male and null for unknown
+     */
+    constructor(firstname, lastname, type, gender) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this._gender = gender;
+    }
+
+    getFullname() {
+        return `${this.firstname} ${this.lastname}`;
+    }
+
+    isMale() {
+        return false === this._gender;
+    }
+
+    isFemale() {
+        return true === this._gender;
+    }
+
+    isGenderKnown() {
+        return null === this._gender;
+    }
+}</code>
+</code></pre>
+<p>We can see that <code>User#gender</code> is a boolean. We are receiving the following JSON from an API:</p>
+<pre><code class="lang-json"><code class="source-code prettyprint">{
+  &quot;FirstName&quot;: &quot;John&quot;,
+  &quot;LastName&quot;: &quot;Doe&quot;,
+  &quot;gender&quot;: 0
+}</code>
+</code></pre>
+<p>As you can see, the <code>gender</code> value is not an boolean like we expected besides having the property names that do not
+match with our <code>User</code> object. As a result we could do a serializer for <code>User</code>: <code>UserSerializer</code>:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/Serializer/UserSerializer.js
+
+import SerializationError from &apos;serializerjs&apos;.SerializationError;
+import SerializerInterface from &apos;serializerjs&apos;.SerializerInterface;
+import User from &apos;./../Model/User&apos;;
+
+export default class UserSerializer extends SerializerInterface {
+    /**
+     * @inheritDoc
+     *
+     * @param {User} user
+     *
+     * @return {!object}
+     */
+    serialize(user, format, context) {
+        return user;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    supportsSerialize(data, format = null) {
+        return &apos;object&apos; === typeof data &amp;&amp; null !== data &amp;&amp; data instanceof User;
+    }
+
+    /**
+     * @inheritDoc
+     *
+     * @param {!object} userObject
+     *
+     * @return {User}
+     */
+    deserialize(userObject, ...args) {
+        const firstname = this._deserializeString(userObject, &apos;firstname&apos;);
+        const lastname = this._deserializeString(userObject, &apos;lastname&apos;);
+        const gender = this._deserializeGender(userObject);
+
+        return new User(firstname, lastname, gender);
+    }
+
+    /**
+     * @param {!Object} object
+     * @param {string}  property
+     *
+     * @return {string}
+     * @throw {SerializationError}
+     * @private
+     */
+    _deserializeString(object, property) {
+        if (object.hasOwnProperty(property) &amp;&amp; &apos;string&apos; === typeof object[property]) {
+            return object[property];
+        }
+
+        throw new SerializationError(`Could not serialize object#${property}`);
+    }
+
+    /**
+     * @param {!Object} object
+     *
+     * @return {boolean}
+     * @throw {SerializationError}
+     */
+    _deserializeGender(object) {
+        // TODO
+    }
+
+    /**
+     * @inheritDoc
+     */
+    supportsDeserialize(data, className, format = null) {
+        return &apos;User&apos; === className &amp;&amp; &apos;object&apos; === typeof data &amp;&amp; null !== data;
+    }
+}</code>
+</code></pre>
+<p>Now there is only deserializing the gender left. We could do it easily, but why bother? We already did it in
+<a href="https://haircvt.github.io/serializerjs/manual/usage.html#basic-usage"><code>BooleanSerializer</code></a>!</p>
+<p>Instead of re-doing this work, we instead use existing serializers. For that, <code>UserSerializer</code> should be made
+&quot;serializer aware&quot;, i.e. should extend <a href="https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html"><code>SerializerAware</code></a> instead of implementing <a href="https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html"><code>SerializerInterface</code></a>. By
+doing is so, our <code>UserSerializer</code> will inherit a [<code>_serializer</code>][3] property which will have a reference to your
+<code>Serialzier</code> at runtime. As a result, we can have the following code:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/Serializer/UserSerializer.js
+
+- import SerializerInterface from &apos;serializerjs&apos;.SerializerInterface;
++ import SerializerAware from &apos;serializerjs&apos;.SerializerAware;
+
+- export default class UserSerializer extends SerializerInterface {
++ export default class UserSerializer extends SerializerAware {
+
+/**
+ * @param {!Object} object
+ *
+ * @return {boolean}
+ * @throw {SerializationError}
+ */
+_deserializeGender(object) {
+-    // TODO
++    if (object.hasOwnProperty(&apos;gender&apos;) &amp;&amp; this._serializer.supportsDeserialize(object.gender, &apos;boolean&apos;)) {
++        return this._serializer.deserialize(object.gender, &apos;boolean&apos;);
++    }
++
++    throw new SerializationError(`Could not serialize object#gender`);
+}</code>
+</code></pre>
+<p><strong>In other words, <code>SerializerAware</code> allow you to quickly access to other serializer.</strong></p>
+<h1 id="serializer-format-context">Serializer format &amp; context</h1>
+<p>When checking the <a href="https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html"><code>SerializerInterface</code></a> interface, you well notice the <code>format</code> and <code>context</code> parameters. <code>format</code>
+is expected to be a string with the format name. For example <code>json</code>, <code>json-ld</code>, <code>website</code>, <code>legacy-api</code>, etc. It is should
+give you an information of the <code>data</code> schema during the deserialization, or the schema in which the data will be serialized
+during serialization.</p>
+<p>For example with the <a href="https://haircvt.github.io/serializerjs/manual/usage.html#basic-usage"><code>BooleanSerializer</code></a>, we could need to serialize booleans
+again (in integer values) before sending the data back to the server. In which case, we could easily do something like
+this:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/Serializer/BooleanSerializer.js
+
+supportsSerialize(data, format = null) {
+-    return false;
++    return null === format || &apos;legacy-api&apos; === format;
+}
+
++ /**
++  * @inheritDoc
++  *
++  * @param {?boolean} booleanValue
++  * @param {?string}  format Either null or &apos;legacy-api&apos;
++  *
++  * @return {boolean|number|null}
++  */
++ serialize(booleanValue, format, context) {
++     if (&apos;legacy-api&apos; === format) {
++         return Number(booleanValue);
++     }
++
++     return booleanValue;
++ }</code>
+</code></pre>
+<p>Depending of the format, we could need to pass additional parameters for the serialization. That is where comes
+<code>context</code>. This property can be pretty much everything you want: object, array, scalar value etc.</p>
+<h1 id="framework-integration">Framework integration</h1>
+<p>The integration in any framework should be very straightforward. For example, to register it in Angular, you can simply
+register a <code>serializer</code> service:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/HSerializerModule.js
+
+import SerializerFactory from &apos;serializerjs&apos;;
+
+import BooleanSerializer from &apos;./Serializer/BooleanSerializer&apos;;
+import StringSerializer from &apos;./Serializer/StringSerializer&apos;;
+import TypeSerializer from &apos;./Serializer/TypeSerializer&apos;;
+import UserSerializer from &apos;./Serializer/UserSerializer&apos;;
+
+const hserializerModule = angular
+    .module(&apos;haircvt.serializerModule&apos;, [])
+    .factory(&apos;serializer&apos;, () =&gt; {
+        const booleanSerializer = new BooleanSerializer();
+        const stringSerializer = new StringSerializer();
+        const typeSerializer = new TypeSerializer();
+        const userSerializer = new UserSerializer();
+
+        return SerializerFactory(new Map([
+            [&apos;BooleanSerializer&apos;, booleanSerializer],
+            [&apos;StringSerializer&apos;, stringSerializer],
+            [&apos;TypeSerializer&apos;, typeSerializer],
+            [&apos;UserSerializer&apos;, userSerializer],
+        ]));
+    })
+;
+
+export default hserializerModule;</code>
+</code></pre>
+<p><a href="https://haircvt.github.io/serializerjs/manual/overview.html#table-of-content">Back to the Table of Content</a></p>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.3)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

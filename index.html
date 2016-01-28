@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <a data-ice="repoURL" href="git+https://github.com/haircvt/serializerjs.git">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Error</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Error/InvalidArgumentError.js~InvalidArgumentError.html">InvalidArgumentError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Error/SerializationError.js~SerializationError.html">SerializationError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Error/SerializerError.js~SerializerError.html">SerializerError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Error/UnimplementedMethodError.js~UnimplementedSerializerMethodError.html">UnimplementedSerializerMethodError</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Serializer</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Serializer/AbstractSerializer.js~AbstractSerializer.html">AbstractSerializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Serializer/Serializer.js~Serializer.html">Serializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Serializer/SerializerAware.js~SerializerAware.html">SerializerAware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html">SerializerInterface</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="serializer-js">Serializer.js</h1>
+<p><a href="https://travis-ci.org/haircvt/serializerjs?branch=master"><img src="https://travis-ci.org/haircvt/serializerjs.svg?branch=master" alt="Build Status"></a>
+<a href="https://www.bithound.io/github/haircvt/serializerjs"><img src="https://www.bithound.io/github/haircvt/serializerjs/badges/score.svg" alt="bitHound Overall Score"></a>
+<a href="https://codeclimate.com/repos/56a4c8e6d5d7662fef003878/feed"><img src="https://codeclimate.com/repos/56a4c8e6d5d7662fef003878/badges/57fa85ee0f756c86aba4/gpa.svg" alt="Code Climate"></a>
+<a href="https://www.codacy.com/app/theofidry/serializerjs"><img src="https://api.codacy.com/project/badge/grade/b6a967074fee4de592727c4069b738f0" alt="Codacy Badge"></a></p>
+<p><a href="https://www.npmjs.org/package/serializerjs"><img src="https://img.shields.io/npm/v/serializerjs.svg" alt="npm version"></a>
+<a href="https://www.npmjs.org/package/serializerjs"><img src="https://img.shields.io/node/v/serializerjs.svg" alt="nodejs version"></a>
+<a href="https://www.npmjs.org/package/serializerjs"><img src="https://img.shields.io/npm/dm/serializerjs.svg" alt="npm"></a>
+<a href="https://github.com/haircvt/serializerjs/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-red.svg" alt="License"></a></p>
+<p><a href="https://saucelabs.com/u/theofidry"><img src="https://saucelabs.com/browser-matrix/theofidry" alt="Sauce Test Status"></a></p>
+<p>A serializer is responsible for transforming a data in a specific format into a data in another format/schema.</p>
+<p>For example, the serializer can be used to map client-side models and back-end side objects by checking all the
+properties of a model to generate an object for which the values are understandable for the back-end service.</p>
+<pre><code><code class="source-code prettyprint"> +--------+ ----- serialize -----&gt; +----------+
+ | Client |                        | Back-End |
+ +--------+ &lt;---- deserialize ---- +----------+</code>
+</code></pre><p>Note that JavaScript does not support interfaces per se. By &quot;Interface&quot; is meant that this class should not
+implement any method but provide the skeleton for child classes instead.</p>
+<h3 id="table-of-content">Table of Content</h3>
+<ol>
+<li><a href="http://haircvt.github.io/serializerjs/manual/installation.html">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li>Advanced documentation<ol>
+<li><a href="http://haircvt.github.io/serializerjs/manual/usage.html#reusable-serializers-serializeraware">Reusable serializers: SerializerAware</a></li>
+<li><a href="http://haircvt.github.io/serializerjs/manual/usage.html#serializer-contexts">Dynamic (de-serialization): formats &amp; contexts</a></li>
+<li><a href="http://haircvt.github.io/serializerjs/manual/usage.html#frameworks-integration">Frameworks integration</a></li>
+</ol>
+</li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#credits">Credits</a></li>
+<li><a href="#license">License</a></li>
+</ol>
+<h3 id="installation">Installation</h3>
+<pre><code><code class="source-code prettyprint">npm install --save serializerjs</code>
+</code></pre><h4 id="es6-es2015-">ES6 (ES2015)</h4>
+<pre><code class="lang-js"><code class="source-code prettyprint">import SerializerFactory from &apos;serializerjs&apos;;
+
+// access to the other elements of the package:
+import SerializerInterface from &apos;serializerjs&apos;.SerializerInterface;
+// or
+const SerializerInterface = SerializerFactory.SerializerInterface;
+// or
+import SerializerInterface from &apos;serializerjs/lib/Serializer/SerializerInterface&apos;;</code>
+</code></pre>
+<h4 id="nodejs-es5">Nodejs/ES5</h4>
+<pre><code class="lang-js"><code class="source-code prettyprint">var SerializerFactory = require(&apos;serializerjs&apos;);
+
+// access to the other elements of the package:
+var SerializerInterface = SerializerFactory.SerializerInterface;
+// or
+var SerializerInterface = require(&apos;serializerjs/lib/Serializer/SerializerInterface&apos;);</code>
+</code></pre>
+<h3 id="usage">Usage</h3>
+<p>The two key classes of this library are <a href="http://haircvt.github.io/serializerjs/class/src/Serializer/Serializer.js~Serializer.html"><code>Serializer</code></a> and <a href="http://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html"><code>SerializerInterface</code></a>. To use it, you just have to
+write your own serializers (simple class implementing <a href="http://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html"><code>SerializerInterface</code></a>). Once done, create a <a href="http://haircvt.github.io/serializerjs/class/src/Serializer/Serializer.js~Serializer.html"><code>Serializer</code></a>
+instance <code>serializer</code> to aggregate all your serializers. You will then be able to use <code>serializer</code> to (de-)serialize
+any kind of data supported by the registered serializers.</p>
+<p>Example: For some reason, we are fetching data where instead of having booleans <code>true</code> and <code>false</code> in our JSON response,
+we have integers <code>0</code> or <code>1</code>. Let us write a simple <code>BooleanSerializer</code> that will be responsible for deserializing them
+into proper booleans.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/Serializer/BooleanSerializer.js
+import SerializerFactory from &apos;serializerjs&apos;;
+
+export default class BooleanSerializer extends SerializerFactory.SerializerInterface {
+    /**
+     * @inheritDoc
+     */
+    supportsSerialize(data, format = null) {
+        return false;
+    }
+
+    /**
+     * @inheritDoc
+     *
+     * @param {number|boolean|null} data
+     *
+     * @return {boolean}
+     */
+    deserialize(data, className, format = null, context = null) {
+        if (&apos;boolean&apos; === typeof data || null === data) {
+            return data;
+        }
+
+        return Boolean(data);
+    }
+
+    /**
+     * @inheritDoc
+     */
+    supportsDeserialize(data, className, format = null) {
+        if (&apos;boolean&apos; !== className) {
+            return false;
+        }
+
+        if (&apos;boolean&apos; === typeof data || null === data) {
+            return true;
+        }
+
+        if (0 === data || 1 === data) {
+            return true;
+        }
+
+        return false;
+    }
+}</code>
+</code></pre>
+<p>Then create the <code>serializer</code> service with all the serializers you which to register. In our case we only have
+<code>BooleanSerializer</code>:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/Serializer/Serializer.js
+import SerializerFactory from &apos;serializerjs&apos;;
+import BooleanSerializer from &apos;./BooleanSerializer&apos;;
+
+export default SerializerFactory(new Map([
+    [&apos;BooleanSerializer&apos;, booleanSerializer],
+]));</code>
+</code></pre>
+<p>You can then use it like so:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// app/index.js
+import serializer from &apos;./Serializer/Serializer&apos;;
+
+serializer.supportsDeserialize(1, &apos;boolean&apos;)); // =&gt; true
+serializer.deserialize(1, &apos;boolean&apos;); // =&gt; true
+
+serializer.supportsSerialize(true); // =&gt; true
+serializer.serialize(true); // =&gt; true</code>
+</code></pre>
+<p><a href="http://haircvt.github.io/serializerjs/manual/overview.html#table-of-content">Back to the Table of Content</a></p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="http://haircvt.github.io/serializerjs/identifiers.html">API documentation</a></li>
+<li><a href="http://haircvt.github.io/serializerjs/manual/faq.html#contributing">Contribution Guide</a></li>
+<li><a href="http://haircvt.github.io/serializerjs/manual/changelog.html">Changelog</a></li>
+</ul>
+<h2 id="credits">Credits</h2>
+<p>Project made by <a href="https://github.com/theofidry">Th&#xE9;o FIDRY</a> and sponsored by <a href="https://haircvt.com">HAIRCVT</a>.</p>
+<h2 id="license">License</h2>
+<p>Copyright &#xA9; 2015 HAIRCVT Licensed under the <a href="https://github.com/haircvt/serializerjs/blob/master/LICENSE">MIT license</a>.</p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.3)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

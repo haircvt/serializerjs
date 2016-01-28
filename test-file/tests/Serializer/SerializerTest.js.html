@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">tests/Serializer/SerializerTest.js | API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <a data-ice="repoURL" href="git+https://github.com/haircvt/serializerjs.git">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Error</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Error/InvalidArgumentError.js~InvalidArgumentError.html">InvalidArgumentError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Error/SerializationError.js~SerializationError.html">SerializationError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Error/SerializerError.js~SerializerError.html">SerializerError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Error/UnimplementedMethodError.js~UnimplementedSerializerMethodError.html">UnimplementedSerializerMethodError</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Serializer</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Serializer/AbstractSerializer.js~AbstractSerializer.html">AbstractSerializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Serializer/Serializer.js~Serializer.html">Serializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Serializer/SerializerAware.js~SerializerAware.html">SerializerAware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html">SerializerInterface</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">tests/Serializer/SerializerTest.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * This file is part of the serializerjs package.
+ *
+ * (c) HAIRCVT &lt;tfidry@haircvt.com&gt;
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/* eslint-env mocha */
+
+import { assert } from &apos;chai&apos;;
+import { ADMIN_TYPE, ANONYMOUS_TYPE, CUSTOMER_TYPE } from &apos;./../Fixtures/UserType&apos;;
+
+import BooleanSerializer from &apos;./../Fixtures/BooleanSerializer&apos;;
+import Serializer from &apos;./../../src/Serializer/Serializer&apos;;
+import SerializerInterface from &apos;./../../src/Serializer/SerializerInterface&apos;;
+import StringSerializer from &apos;./../Fixtures/StringSerializer&apos;;
+import UserTypeSerializer from &apos;./../Fixtures/UserTypeSerializer&apos;;
+import User from &apos;./../Fixtures/User&apos;;
+import UserSerializer from &apos;./../Fixtures/UserSerializer&apos;;
+
+import serializer from &apos;./../Fixtures/app&apos;;
+
+/** @test {Serializer} */
+describe(&apos;Serializer&apos;, () =&gt; {
+    /** @test {Serializer#constructor} */
+    it(&apos;It implements the SerializerInterface interface&apos;, () =&gt; {
+        assert.isTrue(Serializer.prototype instanceof SerializerInterface);
+    });
+
+    it(&apos;It should have a reference of all the registered serializers&apos;, () =&gt; {
+        assert.isTrue(serializer._serializers.get(&apos;StringSerializer&apos;) instanceof StringSerializer);
+        assert.isTrue(serializer._serializers.get(&apos;BooleanSerializer&apos;) instanceof BooleanSerializer);
+        assert.isTrue(serializer._serializers.get(&apos;UserTypeSerializer&apos;) instanceof UserTypeSerializer);
+        assert.isTrue(serializer._serializers.get(&apos;UserSerializer&apos;) instanceof UserSerializer);
+
+        assert.strictEqual(serializer._serializers.size, 4);
+    });
+
+    it(&apos;Only serialiers can be registered&apos;, () =&gt; {
+        // Potential refactor
+        // @see https://github.com/chaijs/chai/issues/596
+        try {
+            const invalidSerializer = new Serializer(new Map([
+                [&apos;myKey&apos;, {}],
+            ]));
+        } catch (error) {
+            assert.strictEqual(error.name, &apos;InvalidArgumentError&apos;);
+        }
+    });
+
+    describe(&apos;It can use the StringSerializer&apos;, () =&gt; {
+        it(&apos;It should be able to deserialize a string&apos;, () =&gt; {
+            const str = &apos;Hello World!&apos;;
+
+            assert.isTrue(serializer.supportsDeserialize(str, &apos;string&apos;));
+            assert.strictEqual(serializer.deserialize(str, &apos;string&apos;), str);
+        });
+
+        it(&apos;It should be able to deserialize an empty string&apos;, () =&gt; {
+            const str = &apos;&apos;;
+
+            assert.isTrue(serializer.supportsDeserialize(str, &apos;string&apos;));
+            assert.strictEqual(serializer.deserialize(str, &apos;string&apos;), str);
+        });
+
+        it(&apos;It should be able to deserialize a null value&apos;, () =&gt; {
+            assert.isTrue(serializer.supportsDeserialize(null, &apos;string&apos;));
+            assert.isNull(serializer.deserialize(null, &apos;string&apos;));
+        });
+
+        it(&apos;It should be able to deserialize something else than a string or a null value&apos;, () =&gt; {
+            assert.isFalse(serializer.supportsDeserialize({}, &apos;string&apos;));
+            assert.isFalse(serializer.supportsDeserialize(() =&gt; {}, &apos;string&apos;));
+            assert.isFalse(serializer.supportsDeserialize(true, &apos;string&apos;));
+            assert.isFalse(serializer.supportsDeserialize(undefined, &apos;string&apos;));
+            assert.isFalse(serializer.supportsDeserialize(23, &apos;string&apos;));
+            assert.isFalse(serializer.supportsDeserialize(23.5, &apos;string&apos;));
+        });
+
+        it(&apos;It should not be able to serialize a string&apos;, () =&gt; {
+            assert.isFalse(serializer.supportsSerialize(&apos;Hello World&apos;));
+            assert.isFalse(serializer.supportsSerialize(&apos;&apos;));
+        });
+    });
+
+    describe(&apos;It can use the BooleanSerializer&apos;, () =&gt; {
+        it(&apos;It should be able to deserialize a boolean value&apos;, () =&gt; {
+            assert.isTrue(serializer.supportsDeserialize(true, &apos;boolean&apos;));
+            assert.strictEqual(serializer.deserialize(true, &apos;boolean&apos;), true);
+
+            assert.isTrue(serializer.supportsDeserialize(false, &apos;boolean&apos;));
+            assert.strictEqual(serializer.deserialize(false, &apos;boolean&apos;), false);
+        });
+
+        it(&apos;It should be able to deserialize a integer boolean value&apos;, () =&gt; {
+            assert.isTrue(serializer.supportsDeserialize(1, &apos;boolean&apos;));
+            assert.strictEqual(serializer.deserialize(1, &apos;boolean&apos;), true);
+
+            assert.isTrue(serializer.supportsDeserialize(0, &apos;boolean&apos;));
+            assert.strictEqual(serializer.deserialize(0, &apos;boolean&apos;), false);
+        });
+
+        it(&apos;It should be able to deserialize a null value&apos;, () =&gt; {
+            assert.isTrue(serializer.supportsDeserialize(null, &apos;boolean&apos;));
+            assert.isNull(serializer.deserialize(null, &apos;boolean&apos;));
+        });
+
+        it(&apos;It should be able to serialize a boolean value&apos;, () =&gt; {
+            assert.isTrue(serializer.supportsSerialize(true));
+            assert.strictEqual(serializer.serialize(true), true);
+            assert.isTrue(serializer.supportsSerialize(true));
+            assert.strictEqual(serializer.serialize(true, null, &apos;oldApi&apos;), 1);
+
+            assert.isTrue(serializer.supportsSerialize(false));
+            assert.strictEqual(serializer.serialize(false), false);
+            assert.strictEqual(serializer.serialize(false, null, &apos;oldApi&apos;), 0);
+        });
+    });
+
+    describe(&apos;It can use the UserTypeSerializer&apos;, () =&gt; {
+        it(&apos;It should be able to deserialize a UserType value&apos;, () =&gt; {
+            assert.isTrue(serializer.supportsDeserialize(0, &apos;UserType&apos;));
+            assert.strictEqual(serializer.deserialize(0, &apos;UserType&apos;), ADMIN_TYPE);
+
+            assert.isTrue(serializer.supportsDeserialize(1, &apos;UserType&apos;));
+            assert.strictEqual(serializer.deserialize(1, &apos;UserType&apos;), ANONYMOUS_TYPE);
+
+            assert.isTrue(serializer.supportsDeserialize(2, &apos;UserType&apos;));
+            assert.strictEqual(serializer.deserialize(2, &apos;UserType&apos;), CUSTOMER_TYPE);
+        });
+
+        it(&apos;It should be able to serialize a UserType value&apos;, () =&gt; {
+            assert.isTrue(serializer.supportsSerialize(ADMIN_TYPE));
+            assert.strictEqual(serializer.serialize(ADMIN_TYPE), 0);
+
+            assert.isTrue(serializer.supportsSerialize(ANONYMOUS_TYPE));
+            assert.strictEqual(serializer.serialize(ANONYMOUS_TYPE), 1);
+
+            assert.isTrue(serializer.supportsSerialize(CUSTOMER_TYPE));
+            assert.strictEqual(serializer.serialize(CUSTOMER_TYPE), 2);
+        });
+    });
+
+    describe(&apos;It can use the UserSerializer&apos;, () =&gt; {
+        const rawUser = {
+            firstname: &apos;John&apos;,
+            lastname: &apos;Doe&apos;,
+            gender: true,
+            type: 0,
+        };
+        const rawUserOldApi = {
+            firstname: &apos;John&apos;,
+            lastname: &apos;Doe&apos;,
+            gender: 1,
+            type: 0,
+        };
+        const user = new User(&apos;John&apos;, &apos;Doe&apos;, ADMIN_TYPE, true);
+
+        it(&apos;It should be able to deserialize a user object&apos;, () =&gt; {
+            assert.isTrue(serializer.supportsDeserialize(rawUser, &apos;User&apos;));
+            assert.deepEqual(serializer.deserialize(rawUser, &apos;User&apos;), user);
+
+            assert.isTrue(serializer.supportsDeserialize(rawUserOldApi, &apos;User&apos;));
+            assert.deepEqual(serializer.deserialize(rawUserOldApi, &apos;User&apos;), user);
+        });
+
+        it(&apos;It should not be able to deserialize a user object with another serializer&apos;, () =&gt; {
+            assert.isFalse(serializer.supportsDeserialize(&apos;Something&apos;, rawUser));
+            assert.isFalse(serializer.supportsDeserialize(&apos;Something&apos;, rawUserOldApi));
+        });
+
+        it(&apos;It should be able to serialize a User object&apos;, () =&gt; {
+            assert.isTrue(serializer.supportsSerialize(user));
+            assert.deepEqual(serializer.serialize(user), rawUser);
+
+            assert.isTrue(serializer.supportsSerialize(user));
+            assert.deepEqual(serializer.serialize(user, null, &apos;oldApi&apos;), rawUserOldApi);
+        });
+    });
+
+    it(&apos;If no serializer is found, should throw an error&apos;, () =&gt; {
+        assert.isFalse(serializer.supportsDeserialize({}, &apos;Dummy&apos;));
+        // Potential refactor
+        // @see https://github.com/chaijs/chai/issues/596
+        try {
+            serializer.deserialize({}, &apos;Dummy&apos;);
+        } catch (error) {
+            assert.strictEqual(error.name, &apos;SerializationError&apos;);
+        }
+    });
+});
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.3)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

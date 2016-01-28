@@ -1,0 +1,2965 @@
+[
+  {
+    "__docId__": 0,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/Error/InvalidArgumentError.js",
+    "memberof": null,
+    "longname": "src/Error/InvalidArgumentError.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\nimport SerializerError from './SerializerError';\n\n/**\n * @author Théo FIDRY <theo.fidry@gmail.com>\n */\nexport default class InvalidArgumentError extends SerializerError {\n    /**\n     * @param {string} [message='']\n     */\n    constructor(message = '') {\n        super(message);\n\n        this.name = 'InvalidArgumentError';\n    }\n}\n"
+  },
+  {
+    "__docId__": 1,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "InvalidArgumentError",
+    "memberof": "src/Error/InvalidArgumentError.js",
+    "longname": "src/Error/InvalidArgumentError.js~InvalidArgumentError",
+    "access": null,
+    "export": true,
+    "importPath": "serializerjs/src/Error/InvalidArgumentError.js",
+    "importStyle": "InvalidArgumentError",
+    "description": null,
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Théo FIDRY <theo.fidry@gmail.com>"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "src/Error/SerializerError~SerializerError"
+    ]
+  },
+  {
+    "__docId__": 2,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/Error/InvalidArgumentError.js~InvalidArgumentError",
+    "longname": "src/Error/InvalidArgumentError.js~InvalidArgumentError#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "''",
+        "defaultRaw": "''",
+        "name": "message",
+        "description": ""
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 3,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "name",
+    "memberof": "src/Error/InvalidArgumentError.js~InvalidArgumentError",
+    "longname": "src/Error/InvalidArgumentError.js~InvalidArgumentError#name",
+    "access": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 4,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/Error/SerializationError.js",
+    "memberof": null,
+    "longname": "src/Error/SerializationError.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\nimport SerializerError from './SerializerError';\n\n/**\n * Error thrown upon (de-)serialization process.\n *\n * @author Théo FIDRY <theo.fidry@gmail.com>\n */\nexport default class SerializationError extends SerializerError {\n    /**\n     * @param {string} [message='']\n     */\n    constructor(message = '') {\n        super(message);\n\n        this.name = 'SerializationError';\n    }\n}\n"
+  },
+  {
+    "__docId__": 5,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "SerializationError",
+    "memberof": "src/Error/SerializationError.js",
+    "longname": "src/Error/SerializationError.js~SerializationError",
+    "access": null,
+    "export": true,
+    "importPath": "serializerjs/src/Error/SerializationError.js",
+    "importStyle": "SerializationError",
+    "description": "Error thrown upon (de-)serialization process.",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Théo FIDRY <theo.fidry@gmail.com>"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "src/Error/SerializerError~SerializerError"
+    ]
+  },
+  {
+    "__docId__": 6,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/Error/SerializationError.js~SerializationError",
+    "longname": "src/Error/SerializationError.js~SerializationError#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 21,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "''",
+        "defaultRaw": "''",
+        "name": "message",
+        "description": ""
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 7,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "name",
+    "memberof": "src/Error/SerializationError.js~SerializationError",
+    "longname": "src/Error/SerializationError.js~SerializationError#name",
+    "access": null,
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 8,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/Error/SerializerError.js",
+    "memberof": null,
+    "longname": "src/Error/SerializerError.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 15,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\n/**\n * Root error for the serializer.\n *\n * @author Théo FIDRY <theo.fidry@gmail.com>\n */\nexport default class SerializerError extends Error {\n    /**\n     * @param {string} [message='']\n     */\n    constructor(message = '') {\n        super(message);\n\n        this.name = 'SerializerError';\n        this.message = message;\n\n        if (Error.hasOwnProperty('captureStackTrace')) {\n            Error.captureStackTrace(this, this.constructor);\n        }\n    }\n}\n"
+  },
+  {
+    "__docId__": 9,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "SerializerError",
+    "memberof": "src/Error/SerializerError.js",
+    "longname": "src/Error/SerializerError.js~SerializerError",
+    "access": null,
+    "export": true,
+    "importPath": "serializerjs/src/Error/SerializerError.js",
+    "importStyle": "SerializerError",
+    "description": "Root error for the serializer.",
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Théo FIDRY <theo.fidry@gmail.com>"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "Error"
+    ]
+  },
+  {
+    "__docId__": 10,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/Error/SerializerError.js~SerializerError",
+    "longname": "src/Error/SerializerError.js~SerializerError#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "''",
+        "defaultRaw": "''",
+        "name": "message",
+        "description": ""
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 11,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "name",
+    "memberof": "src/Error/SerializerError.js~SerializerError",
+    "longname": "src/Error/SerializerError.js~SerializerError#name",
+    "access": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 12,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "message",
+    "memberof": "src/Error/SerializerError.js~SerializerError",
+    "longname": "src/Error/SerializerError.js~SerializerError#message",
+    "access": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 13,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/Error/UnimplementedMethodError.js",
+    "memberof": null,
+    "longname": "src/Error/UnimplementedMethodError.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\nimport SerializerError from './SerializerError';\n\n/**\n * @author Théo FIDRY <theo.fidry@gmail.com>\n */\nexport default class UnimplementedSerializerMethodError extends SerializerError {\n    /**\n     * @param {string} [message='']\n     */\n    constructor(message = '') {\n        super(message);\n\n        this.name = 'UnimplementedMethodError';\n    }\n}\n"
+  },
+  {
+    "__docId__": 14,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "UnimplementedSerializerMethodError",
+    "memberof": "src/Error/UnimplementedMethodError.js",
+    "longname": "src/Error/UnimplementedMethodError.js~UnimplementedSerializerMethodError",
+    "access": null,
+    "export": true,
+    "importPath": "serializerjs/src/Error/UnimplementedMethodError.js",
+    "importStyle": "UnimplementedSerializerMethodError",
+    "description": null,
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Théo FIDRY <theo.fidry@gmail.com>"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "src/Error/SerializerError~SerializerError"
+    ]
+  },
+  {
+    "__docId__": 15,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/Error/UnimplementedMethodError.js~UnimplementedSerializerMethodError",
+    "longname": "src/Error/UnimplementedMethodError.js~UnimplementedSerializerMethodError#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "''",
+        "defaultRaw": "''",
+        "name": "message",
+        "description": ""
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 16,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "name",
+    "memberof": "src/Error/UnimplementedMethodError.js~UnimplementedSerializerMethodError",
+    "longname": "src/Error/UnimplementedMethodError.js~UnimplementedSerializerMethodError#name",
+    "access": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 17,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/Serializer/AbstractSerializer.js",
+    "memberof": null,
+    "longname": "src/Serializer/AbstractSerializer.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\nimport SerializerAware from './SerializerAware';\n\n/**\n * Base class that can be used for writing a custom serializer. It is especially convenient if your serializer do only\n * serialization or only deserialization. If not, it you are better off implementing SerializerAwareInterface or\n * SerializerInterface.\n *\n * @abstract\n * @author Théo FIDRY <theo.fidry@gmail.com>\n */\nexport default class AbstractSerializer extends SerializerAware {\n    /**\n     * @inheritDoc\n     */\n    serialize(data, format, context) {\n        return data;\n    }\n\n    /**\n     * @inheritDoc\n     */\n    supportsSerialize(data, format = null) {\n        return false;\n    }\n\n    /**\n     * @inheritDoc\n     */\n    deserialize(data, className, format = null, context = null) {\n        return data;\n    }\n\n    /**\n     * @inheritDoc\n     */\n    supportsDeserialize(data, className, format = null) {\n        return false;\n    }\n}\n"
+  },
+  {
+    "__docId__": 18,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "AbstractSerializer",
+    "memberof": "src/Serializer/AbstractSerializer.js",
+    "longname": "src/Serializer/AbstractSerializer.js~AbstractSerializer",
+    "access": null,
+    "export": true,
+    "importPath": "serializerjs/src/Serializer/AbstractSerializer.js",
+    "importStyle": "AbstractSerializer",
+    "description": "Base class that can be used for writing a custom serializer. It is especially convenient if your serializer do only\nserialization or only deserialization. If not, it you are better off implementing SerializerAwareInterface or\nSerializerInterface.",
+    "lineNumber": 20,
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Théo FIDRY <theo.fidry@gmail.com>"
+      }
+    ],
+    "abstract": true,
+    "interface": false,
+    "extends": [
+      "src/Serializer/SerializerAware~SerializerAware"
+    ]
+  },
+  {
+    "__docId__": 19,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "serialize",
+    "memberof": "src/Serializer/AbstractSerializer.js~AbstractSerializer",
+    "longname": "src/Serializer/AbstractSerializer.js~AbstractSerializer#serialize",
+    "access": null,
+    "description": null,
+    "lineNumber": 24,
+    "unknown": [
+      {
+        "tagName": "@inheritDoc",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "format",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "context",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 20,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "supportsSerialize",
+    "memberof": "src/Serializer/AbstractSerializer.js~AbstractSerializer",
+    "longname": "src/Serializer/AbstractSerializer.js~AbstractSerializer#supportsSerialize",
+    "access": null,
+    "description": null,
+    "lineNumber": 31,
+    "unknown": [
+      {
+        "tagName": "@inheritDoc",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "format",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": null,
+        "defaultValue": "null"
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 21,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "deserialize",
+    "memberof": "src/Serializer/AbstractSerializer.js~AbstractSerializer",
+    "longname": "src/Serializer/AbstractSerializer.js~AbstractSerializer#deserialize",
+    "access": null,
+    "description": null,
+    "lineNumber": 38,
+    "unknown": [
+      {
+        "tagName": "@inheritDoc",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "className",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "format",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": null,
+        "defaultValue": "null"
+      },
+      {
+        "name": "context",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": null,
+        "defaultValue": "null"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 22,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "supportsDeserialize",
+    "memberof": "src/Serializer/AbstractSerializer.js~AbstractSerializer",
+    "longname": "src/Serializer/AbstractSerializer.js~AbstractSerializer#supportsDeserialize",
+    "access": null,
+    "description": null,
+    "lineNumber": 45,
+    "unknown": [
+      {
+        "tagName": "@inheritDoc",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "className",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "format",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": null,
+        "defaultValue": "null"
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 23,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/Serializer/Serializer.js",
+    "memberof": null,
+    "longname": "src/Serializer/Serializer.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\nimport SerializerAware from './SerializerAware';\nimport SerializerInterface from './SerializerInterface';\nimport SerializationError from './../Error/SerializationError';\nimport InvalidArgumentError from './../Error/InvalidArgumentError';\n\n/**\n * Default serializer.\n *\n * Meant to aggregate all the application serializers and be used as the main serializer in the application. This means\n * that for serializing a new object, a custom serializer for this one should be done and registered to this serializer.\n *\n * @author Théo FIDRY <theo.fidry@gmail.com>\n */\nexport default class Serializer extends SerializerInterface {\n    /**\n     * @param {Map.<string,SerializerInterface>} serializers\n     *\n     * @throw InvalidArgumentError\n     */\n    constructor(serializers) {\n        super(serializers);\n\n        for (const serializer of serializers.values()) {\n            if (false === serializer instanceof SerializerInterface) {\n                throw new InvalidArgumentError(\n                    `Expected serializer to implement SerializerInterface. Got ${serializer.constructor} instead`\n                );\n            }\n\n            if (serializer instanceof SerializerAware) {\n                serializer.setSerializer(this);\n            }\n        }\n\n        /**\n         * @type {Map.<string, SerializerInterface>}\n         * @private\n         */\n        this._serializers = serializers;\n    }\n\n    /**\n     * @inheritDoc\n     */\n    serialize(data, format, context) {\n        const serializer = this._getSerializerForSerialization(data, format, context);\n        if (null !== serializer) {\n            return serializer.serialize(data, format, context);\n        }\n\n        throw new SerializationError(`An unexpected value could not be serialized: \"${data}\"`);\n    }\n\n    /**\n     * @inheritDoc\n     */\n    supportsSerialize(data, format = null) {\n        return null !== this._getSerializerForSerialization(data, format);\n    }\n\n    /**\n     * @inheritDoc\n     */\n    deserialize(data, className, format = null, context = null) {\n        const serializer = this._getSerializerForDeserialization(data, className, format);\n        if (null !== serializer) {\n            return serializer.deserialize(data, className, format, context);\n        }\n\n        throw new SerializationError(`An unexpected value could not be deserialized: \"${data}\"`);\n    }\n\n    /**\n     * @inheritDocz\n     */\n    supportsDeserialize(data, className, format = null) {\n        return null !== this._getSerializerForDeserialization(data, className, format);\n    }\n\n    /**\n     * @param {*}      data          Any data\n     * @param {string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {?SerializerInterface}\n     * @private\n     */\n    _getSerializerForSerialization(data, format = null) {\n        for (const serializer of this._serializers.values()) {\n            if (true === serializer.supportsSerialize(data, format)) {\n                return serializer;\n            }\n        }\n\n        return null;\n    }\n\n    /**\n     * @param {*}       data      Data to restore\n     * @param {string}  className The expected class to instantiate\n     * @param {?string} format    Format the given data was extracted from\n     *\n     * @return {?SerializerInterface}\n     * @private\n     */\n    _getSerializerForDeserialization(data, className, format) {\n        for (const serializer of this._serializers.values()) {\n            if (true === serializer.supportsDeserialize(data, className, format)) {\n                return serializer;\n            }\n        }\n\n        return null;\n    }\n}\n"
+  },
+  {
+    "__docId__": 24,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "Serializer",
+    "memberof": "src/Serializer/Serializer.js",
+    "longname": "src/Serializer/Serializer.js~Serializer",
+    "access": null,
+    "export": true,
+    "importPath": "serializerjs/src/Serializer/Serializer.js",
+    "importStyle": "Serializer",
+    "description": "Default serializer.\n\nMeant to aggregate all the application serializers and be used as the main serializer in the application. This means\nthat for serializing a new object, a custom serializer for this one should be done and registered to this serializer.",
+    "lineNumber": 23,
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Théo FIDRY <theo.fidry@gmail.com>"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "src/Serializer/SerializerInterface~SerializerInterface"
+    ]
+  },
+  {
+    "__docId__": 25,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/Serializer/Serializer.js~Serializer",
+    "longname": "src/Serializer/Serializer.js~Serializer#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 29,
+    "unknown": [
+      {
+        "tagName": "@throw",
+        "tagValue": "InvalidArgumentError"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Map.<string,SerializerInterface>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "serializers",
+        "description": ""
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 26,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_serializers",
+    "memberof": "src/Serializer/Serializer.js~Serializer",
+    "longname": "src/Serializer/Serializer.js~Serializer#_serializers",
+    "access": "private",
+    "description": null,
+    "lineNumber": 48,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Map.<string, SerializerInterface>"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 27,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "serialize",
+    "memberof": "src/Serializer/Serializer.js~Serializer",
+    "longname": "src/Serializer/Serializer.js~Serializer#serialize",
+    "access": null,
+    "description": null,
+    "lineNumber": 54,
+    "unknown": [
+      {
+        "tagName": "@inheritDoc",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "format",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "context",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 28,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "supportsSerialize",
+    "memberof": "src/Serializer/Serializer.js~Serializer",
+    "longname": "src/Serializer/Serializer.js~Serializer#supportsSerialize",
+    "access": null,
+    "description": null,
+    "lineNumber": 66,
+    "unknown": [
+      {
+        "tagName": "@inheritDoc",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "format",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": null,
+        "defaultValue": "null"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 29,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "deserialize",
+    "memberof": "src/Serializer/Serializer.js~Serializer",
+    "longname": "src/Serializer/Serializer.js~Serializer#deserialize",
+    "access": null,
+    "description": null,
+    "lineNumber": 73,
+    "unknown": [
+      {
+        "tagName": "@inheritDoc",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "className",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "format",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": null,
+        "defaultValue": "null"
+      },
+      {
+        "name": "context",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": null,
+        "defaultValue": "null"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 30,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "supportsDeserialize",
+    "memberof": "src/Serializer/Serializer.js~Serializer",
+    "longname": "src/Serializer/Serializer.js~Serializer#supportsDeserialize",
+    "access": null,
+    "description": null,
+    "lineNumber": 85,
+    "unknown": [
+      {
+        "tagName": "@inheritDocz",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "className",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "format",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": null,
+        "defaultValue": "null"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 31,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "_getSerializerForSerialization",
+    "memberof": "src/Serializer/Serializer.js~Serializer",
+    "longname": "src/Serializer/Serializer.js~Serializer#_getSerializerForSerialization",
+    "access": "private",
+    "description": null,
+    "lineNumber": 96,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Any data"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "null",
+        "defaultRaw": null,
+        "name": "format",
+        "description": "Format the normalization result will be encoded as"
+      }
+    ],
+    "return": {
+      "nullable": true,
+      "types": [
+        "SerializerInterface"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 32,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "_getSerializerForDeserialization",
+    "memberof": "src/Serializer/Serializer.js~Serializer",
+    "longname": "src/Serializer/Serializer.js~Serializer#_getSerializerForDeserialization",
+    "access": "private",
+    "description": null,
+    "lineNumber": 114,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Data to restore"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "className",
+        "description": "The expected class to instantiate"
+      },
+      {
+        "nullable": true,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "format",
+        "description": "Format the given data was extracted from"
+      }
+    ],
+    "return": {
+      "nullable": true,
+      "types": [
+        "SerializerInterface"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 33,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/Serializer/SerializerAware.js",
+    "memberof": null,
+    "longname": "src/Serializer/SerializerAware.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\nimport SerializerInterface from './SerializerInterface';\n\n/**\n * Any serializer implementing this interface will access to a serializer at runtime.\n *\n * @author Théo FIDRY <theo.fidry@gmail.com>\n */\nexport default class SerializerAware extends SerializerInterface {\n    constructor() {\n        super();\n\n        /**\n         * @type {SerializerInterface}\n         * @protected\n         */\n        this._serializer = undefined;\n    }\n    /**\n     * @param {SerializerInterface} serializer\n     */\n    setSerializer(serializer) {\n        this._serializer = serializer;\n    }\n}\n"
+  },
+  {
+    "__docId__": 34,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "SerializerAware",
+    "memberof": "src/Serializer/SerializerAware.js",
+    "longname": "src/Serializer/SerializerAware.js~SerializerAware",
+    "access": null,
+    "export": true,
+    "importPath": "serializerjs/src/Serializer/SerializerAware.js",
+    "importStyle": "SerializerAware",
+    "description": "Any serializer implementing this interface will access to a serializer at runtime.",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Théo FIDRY <theo.fidry@gmail.com>"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "src/Serializer/SerializerInterface~SerializerInterface"
+    ]
+  },
+  {
+    "__docId__": 35,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/Serializer/SerializerAware.js~SerializerAware",
+    "longname": "src/Serializer/SerializerAware.js~SerializerAware#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [],
+    "generator": false
+  },
+  {
+    "__docId__": 36,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_serializer",
+    "memberof": "src/Serializer/SerializerAware.js~SerializerAware",
+    "longname": "src/Serializer/SerializerAware.js~SerializerAware#_serializer",
+    "access": "protected",
+    "description": null,
+    "lineNumber": 25,
+    "type": {
+      "nullable": null,
+      "types": [
+        "SerializerInterface"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 37,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "setSerializer",
+    "memberof": "src/Serializer/SerializerAware.js~SerializerAware",
+    "longname": "src/Serializer/SerializerAware.js~SerializerAware#setSerializer",
+    "access": null,
+    "description": null,
+    "lineNumber": 30,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "SerializerInterface"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "serializer",
+        "description": ""
+      }
+    ],
+    "generator": false
+  },
+  {
+    "__docId__": 38,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_serializer",
+    "memberof": "src/Serializer/SerializerAware.js~SerializerAware",
+    "longname": "src/Serializer/SerializerAware.js~SerializerAware#_serializer",
+    "access": null,
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 39,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/Serializer/SerializerInterface.js",
+    "memberof": null,
+    "longname": "src/Serializer/SerializerInterface.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\nimport SerializationError from './../Error/SerializationError';\nimport UnimplementedMethodError from './../Error/UnimplementedMethodError';\n\n/**\n * A serializer is responsible for transforming a data in a specific format into a data in another format.\n *\n * For example, the serializer can be used to map client-side models and back-end side objects by checking all the\n * properties of a model to generate an object for which the values are understandable for the back-end service.\n *\n * +--------+ ----- serialize -----> +----------+\n * | Client |                        | Back-End |\n * +--------+ <---- deserialize ---- +----------+\n *\n * Note that JavaScript does not support interfaces per se. By \"Interface\" is meant that this class should not implement\n * any method but provide the skeleton for child classes instead.\n *\n * @interface\n * @author Théo FIDRY <theo.fidry@gmail.com>\n */\nexport default class SerializerInterface {\n    /**\n     * Serializes any data object into and object usable for the backend service.\n     *\n     * @param {*}      data    Any data\n     * @param {string} format  Format the normalization result will be encoded as\n     * @param {*}      context Options serializers have access to\n     *\n     * @return {*}\n     * @throw SerializationError\n     */\n    serialize(data, format, context) {\n        throw new UnimplementedMethodError('Unimplemented \"serialize()\" method');\n    }\n\n    /**\n     * Checks whether the given class is supported for serialization by this serializer.\n     *\n     * @param {*}      data          Any data\n     * @param {string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {boolean}\n     */\n    supportsSerialize(data, format = null) {\n        throw new UnimplementedMethodError('Unimplemented \"supportsSerialize()\" method');\n    }\n\n    /**\n     * Deserializes data back into an object of the given class.\n     *\n     * @param {*}       data             Data to restore\n     * @param {string}  className        The expected class to instantiate\n     * @param {?string} [format=null]    Format the given data was extracted from\n     * @param {*}       [context=null]   Options available to the deserializer\n     *\n     * @return {*}\n     * @throw SerializationError\n     */\n    deserialize(data, className, format = null, context = null) {\n        throw new UnimplementedMethodError('Unimplemented \"deserialize()\" method');\n    }\n\n    /**\n     * Checks whether the given class is supported for deserialization by this serializer.\n     *\n     * @param {*}       data          Data to restore\n     * @param {string}  className     The expected class to instantiate\n     * @param {?string} [format=null] Format the given data was extracted from\n     *\n     * @return {boolean}\n     */\n    supportsDeserialize(data, className, format = null) {\n        throw new UnimplementedMethodError('Unimplemented \"supportsDeserialize()\" method');\n    }\n}\n"
+  },
+  {
+    "__docId__": 40,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "SerializerInterface",
+    "memberof": "src/Serializer/SerializerInterface.js",
+    "longname": "src/Serializer/SerializerInterface.js~SerializerInterface",
+    "access": null,
+    "export": true,
+    "importPath": "serializerjs/src/Serializer/SerializerInterface.js",
+    "importStyle": "SerializerInterface",
+    "description": "A serializer is responsible for transforming a data in a specific format into a data in another format.\n\nFor example, the serializer can be used to map client-side models and back-end side objects by checking all the\nproperties of a model to generate an object for which the values are understandable for the back-end service.\n\n+--------+ ----- serialize -----> +----------+\n| Client |                        | Back-End |\n+--------+ <---- deserialize ---- +----------+\n\nNote that JavaScript does not support interfaces per se. By \"Interface\" is meant that this class should not implement\nany method but provide the skeleton for child classes instead.",
+    "lineNumber": 29,
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Théo FIDRY <theo.fidry@gmail.com>"
+      }
+    ],
+    "interface": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "serialize",
+    "memberof": "src/Serializer/SerializerInterface.js~SerializerInterface",
+    "longname": "src/Serializer/SerializerInterface.js~SerializerInterface#serialize",
+    "access": null,
+    "description": "Serializes any data object into and object usable for the backend service.",
+    "lineNumber": 40,
+    "unknown": [
+      {
+        "tagName": "@throw",
+        "tagValue": "SerializationError"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Any data"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "format",
+        "description": "Format the normalization result will be encoded as"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "context",
+        "description": "Options serializers have access to"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 42,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "supportsSerialize",
+    "memberof": "src/Serializer/SerializerInterface.js~SerializerInterface",
+    "longname": "src/Serializer/SerializerInterface.js~SerializerInterface#supportsSerialize",
+    "access": null,
+    "description": "Checks whether the given class is supported for serialization by this serializer.",
+    "lineNumber": 52,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Any data"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "null",
+        "defaultRaw": null,
+        "name": "format",
+        "description": "Format the normalization result will be encoded as"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 43,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "deserialize",
+    "memberof": "src/Serializer/SerializerInterface.js~SerializerInterface",
+    "longname": "src/Serializer/SerializerInterface.js~SerializerInterface#deserialize",
+    "access": null,
+    "description": "Deserializes data back into an object of the given class.",
+    "lineNumber": 67,
+    "unknown": [
+      {
+        "tagName": "@throw",
+        "tagValue": "SerializationError"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Data to restore"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "className",
+        "description": "The expected class to instantiate"
+      },
+      {
+        "nullable": true,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "null",
+        "defaultRaw": null,
+        "name": "format",
+        "description": "Format the given data was extracted from"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "null",
+        "defaultRaw": null,
+        "name": "context",
+        "description": "Options available to the deserializer"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 44,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "supportsDeserialize",
+    "memberof": "src/Serializer/SerializerInterface.js~SerializerInterface",
+    "longname": "src/Serializer/SerializerInterface.js~SerializerInterface#supportsDeserialize",
+    "access": null,
+    "description": "Checks whether the given class is supported for deserialization by this serializer.",
+    "lineNumber": 80,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Data to restore"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "className",
+        "description": "The expected class to instantiate"
+      },
+      {
+        "nullable": true,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "null",
+        "defaultRaw": null,
+        "name": "format",
+        "description": "Format the given data was extracted from"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 45,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/serializerjs.js",
+    "memberof": null,
+    "longname": "src/serializerjs.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\nimport InvalidArgumentError from './Error/InvalidArgumentError';\nimport SerializationError from './Error/SerializationError';\nimport SerializerError from './Error/SerializerError';\nimport UnimplementedMethodError from './Error/UnimplementedMethodError';\n\nimport AbstractSerializer from './Serializer/AbstractSerializer';\nimport Serializer from './Serializer/Serializer';\nimport SerializerAware from './Serializer/SerializerAware';\nimport SerializerInterface from './Serializer/SerializerInterface';\n\nclass SerializerFactory {\n    /**\n     * @param {Map.<string,SerializerInterface>} serializers\n     *\n     * @returns {Serializer}\n     */\n    constructor(serializers) {\n        return new Serializer(serializers);\n    }\n}\n\n/** @type {InvalidArgumentError} */\nSerializerFactory.InvalidArgumentError = InvalidArgumentError;\n/** @type {SerializationError} */\nSerializerFactory.SerializationError = SerializationError;\n/** @type {SerializerError} */\nSerializerFactory.SerializerError = SerializerError;\n/** @type {UnimplementedSerializerMethodError} */\nSerializerFactory.UnimplementedSerializerMethodError = UnimplementedMethodError;\n\n/** @type {AbstractSerializer} */\nSerializerFactory.AbstractSerializer = AbstractSerializer;\n/** @type {SerializerAware} */\nSerializerFactory.SerializerAware = SerializerAware;\n/** @type {SerializerInterface} */\nSerializerFactory.SerializerInterface = SerializerInterface;\n\nmodule.exports = SerializerFactory;\n"
+  },
+  {
+    "__docId__": 46,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "SerializerFactory",
+    "memberof": "src/serializerjs.js",
+    "longname": "src/serializerjs.js~SerializerFactory",
+    "access": null,
+    "export": false,
+    "importPath": "serializerjs/src/serializerjs.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 47,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/serializerjs.js~SerializerFactory",
+    "longname": "src/serializerjs.js~SerializerFactory#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 26,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Serializer}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Map.<string,SerializerInterface>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "serializers",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Serializer"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 49,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Infinity",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~NaN",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~undefined",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~null",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Object",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~object",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Function",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~function",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Boolean",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~boolean",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Symbol",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Error",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~EvalError",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~InternalError",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~RangeError",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~ReferenceError",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~SyntaxError",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~TypeError",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~URIError",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Number",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~number",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Date",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~String",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~string",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~RegExp",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Array",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int8Array",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8Array",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8ClampedArray",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int16Array",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint16Array",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int32Array",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint32Array",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Float32Array",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Float64Array",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Map",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Set",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakMap",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakSet",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~ArrayBuffer",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~DataView",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~JSON",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Promise",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Generator",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~GeneratorFunction",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Reflect",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Proxy",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "CanvasRenderingContext2D",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~CanvasRenderingContext2D",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 98,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "DocumentFragment",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~DocumentFragment",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Element",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Element",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Element",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 100,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Event",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Event",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Event",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Node",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Node",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Node",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "NodeList",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~NodeList",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "XMLHttpRequest",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 104,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "AudioContext",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/AudioContext",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~AudioContext",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "tests/Error/InvalidArgumentErrorErrorTest.js",
+    "memberof": null,
+    "longname": "tests/Error/InvalidArgumentErrorErrorTest.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\n/* eslint-env mocha */\n\nimport { assert } from 'chai';\n\nimport SerializerError from './../../src/Error/SerializerError';\nimport InvalidArgumentError from './../../src/Error/InvalidArgumentError';\n\n/** @test {InvalidArgumentError} */\ndescribe('SerializationError', () => {\n    it('It is a SerializerError', () => {\n        assert.isTrue(InvalidArgumentError.prototype instanceof SerializerError);\n    });\n\n    it('Its name is an InvalidArgumentError error', () => {\n        const error = new InvalidArgumentError();\n        assert.strictEqual(error.name, 'InvalidArgumentError');\n    });\n});\n"
+  },
+  {
+    "__docId__": 106,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe0",
+    "testId": 0,
+    "memberof": "tests/Error/InvalidArgumentErrorErrorTest.js",
+    "testDepth": 0,
+    "longname": "tests/Error/InvalidArgumentErrorErrorTest.js~describe0",
+    "access": null,
+    "description": "SerializationError",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{InvalidArgumentError}"
+      }
+    ],
+    "testTargets": [
+      "InvalidArgumentError"
+    ]
+  },
+  {
+    "__docId__": 107,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it1",
+    "testId": 1,
+    "memberof": "tests/Error/InvalidArgumentErrorErrorTest.js~describe0",
+    "testDepth": 1,
+    "longname": "tests/Error/InvalidArgumentErrorErrorTest.js~describe0.it1",
+    "access": null,
+    "description": "It is a SerializerError",
+    "lineNumber": 19
+  },
+  {
+    "__docId__": 108,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it2",
+    "testId": 2,
+    "memberof": "tests/Error/InvalidArgumentErrorErrorTest.js~describe0",
+    "testDepth": 1,
+    "longname": "tests/Error/InvalidArgumentErrorErrorTest.js~describe0.it2",
+    "access": null,
+    "description": "Its name is an InvalidArgumentError error",
+    "lineNumber": 23
+  },
+  {
+    "__docId__": 109,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "tests/Error/SerializationErrorTest.js",
+    "memberof": null,
+    "longname": "tests/Error/SerializationErrorTest.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "content": "/*\n * This file is part of the JsSerializer package.\n *\n * (c) HAIRCVT <hello@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\n/* eslint-env mocha */\n\nimport { assert } from 'chai';\n\nimport SerializationError from './../../src/Error/SerializationError';\nimport SerializerError from './../../src/Error/SerializerError';\n\n/** @test {SerializationError} */\ndescribe('SerializationError', () => {\n    it('It is a SerializerError', () => {\n        assert.isTrue(SerializationError.prototype instanceof SerializerError);\n    });\n\n    it('Its name is an SerializationError error', () => {\n        const error = new SerializationError();\n        assert.strictEqual(error.name, 'SerializationError');\n    });\n});\n"
+  },
+  {
+    "__docId__": 110,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe3",
+    "testId": 3,
+    "memberof": "tests/Error/SerializationErrorTest.js",
+    "testDepth": 0,
+    "longname": "tests/Error/SerializationErrorTest.js~describe3",
+    "access": null,
+    "description": "SerializationError",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializationError}"
+      }
+    ],
+    "testTargets": [
+      "SerializationError"
+    ]
+  },
+  {
+    "__docId__": 111,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it4",
+    "testId": 4,
+    "memberof": "tests/Error/SerializationErrorTest.js~describe3",
+    "testDepth": 1,
+    "longname": "tests/Error/SerializationErrorTest.js~describe3.it4",
+    "access": null,
+    "description": "It is a SerializerError",
+    "lineNumber": 19
+  },
+  {
+    "__docId__": 112,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it5",
+    "testId": 5,
+    "memberof": "tests/Error/SerializationErrorTest.js~describe3",
+    "testDepth": 1,
+    "longname": "tests/Error/SerializationErrorTest.js~describe3.it5",
+    "access": null,
+    "description": "Its name is an SerializationError error",
+    "lineNumber": 23
+  },
+  {
+    "__docId__": 113,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "tests/Error/SerializerErrorTest.js",
+    "memberof": null,
+    "longname": "tests/Error/SerializerErrorTest.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\n/* eslint-env mocha */\n\nimport { assert } from 'chai';\n\nimport SerializerError from './../../src/Error/SerializerError';\n\n/** @test {SerializationError} */\ndescribe('SerializationError', () => {\n    it('It is an Error', () => {\n        const error = new SerializerError();\n        assert.isTrue(error instanceof Error);\n    });\n\n    it('It captures the error message', () => {\n        const message = 'My message';\n        const error = new SerializerError(message);\n\n        assert.strictEqual(error.message, message);\n    });\n\n    it('An error without any message has an empty message', () => {\n        const error = new SerializerError();\n\n        assert.strictEqual(error.message, '');\n    });\n\n    it('It captures the error name', () => {\n        const error = new SerializerError();\n\n        assert.strictEqual(error.name, 'SerializerError');\n    });\n});\n"
+  },
+  {
+    "__docId__": 114,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe6",
+    "testId": 6,
+    "memberof": "tests/Error/SerializerErrorTest.js",
+    "testDepth": 0,
+    "longname": "tests/Error/SerializerErrorTest.js~describe6",
+    "access": null,
+    "description": "SerializationError",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializationError}"
+      }
+    ],
+    "testTargets": [
+      "SerializationError"
+    ]
+  },
+  {
+    "__docId__": 115,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it7",
+    "testId": 7,
+    "memberof": "tests/Error/SerializerErrorTest.js~describe6",
+    "testDepth": 1,
+    "longname": "tests/Error/SerializerErrorTest.js~describe6.it7",
+    "access": null,
+    "description": "It is an Error",
+    "lineNumber": 18
+  },
+  {
+    "__docId__": 116,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it8",
+    "testId": 8,
+    "memberof": "tests/Error/SerializerErrorTest.js~describe6",
+    "testDepth": 1,
+    "longname": "tests/Error/SerializerErrorTest.js~describe6.it8",
+    "access": null,
+    "description": "It captures the error message",
+    "lineNumber": 23
+  },
+  {
+    "__docId__": 117,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it9",
+    "testId": 9,
+    "memberof": "tests/Error/SerializerErrorTest.js~describe6",
+    "testDepth": 1,
+    "longname": "tests/Error/SerializerErrorTest.js~describe6.it9",
+    "access": null,
+    "description": "An error without any message has an empty message",
+    "lineNumber": 30
+  },
+  {
+    "__docId__": 118,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it10",
+    "testId": 10,
+    "memberof": "tests/Error/SerializerErrorTest.js~describe6",
+    "testDepth": 1,
+    "longname": "tests/Error/SerializerErrorTest.js~describe6.it10",
+    "access": null,
+    "description": "It captures the error name",
+    "lineNumber": 36
+  },
+  {
+    "__docId__": 119,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "tests/Serializer/AbstractSerializerTest.js",
+    "memberof": null,
+    "longname": "tests/Serializer/AbstractSerializerTest.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\n/* eslint-env mocha */\n\nimport { assert } from 'chai';\n\nimport AbstractSerializer from './../../src/Serializer/AbstractSerializer';\nimport SerializerInterface from './../../src/Serializer/SerializerInterface';\n\n/** @test {AbstractSerializer} */\ndescribe('AbstractSerializer', () => {\n    /**\n     * @test {AbstractSerializer#constructor}\n     */\n    it('It implements the SerializerInterface interface', () => {\n        assert.isTrue(AbstractSerializer.prototype instanceof SerializerInterface);\n    });\n\n    /**\n     * @test {AbstractSerializer#supportsDeserialize}\n     * @test {AbstractSerializer#supportsSerialize}\n     */\n    it('It should not supports any (de)-serialization', () => {\n        const abstractSerializer = new AbstractSerializer();\n\n        assert.isFalse(abstractSerializer.supportsDeserialize());\n        assert.isFalse(abstractSerializer.supportsSerialize());\n    });\n\n    /**\n     * @test {AbstractSerializer#deserialize}\n     * @test {AbstractSerializer#serialize}\n     */\n    it('It should return the object unchanged if (de)-serialization is called [warning: bad practice]', () => {\n        const abstractSerializer = new AbstractSerializer();\n        const data = {};\n\n        assert.strictEqual(abstractSerializer.deserialize(data), data);\n        assert.strictEqual(abstractSerializer.serialize(data), data);\n    });\n});\n"
+  },
+  {
+    "__docId__": 120,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe11",
+    "testId": 11,
+    "memberof": "tests/Serializer/AbstractSerializerTest.js",
+    "testDepth": 0,
+    "longname": "tests/Serializer/AbstractSerializerTest.js~describe11",
+    "access": null,
+    "description": "AbstractSerializer",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{AbstractSerializer}"
+      }
+    ],
+    "testTargets": [
+      "AbstractSerializer"
+    ]
+  },
+  {
+    "__docId__": 121,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it12",
+    "testId": 12,
+    "memberof": "tests/Serializer/AbstractSerializerTest.js~describe11",
+    "testDepth": 1,
+    "longname": "tests/Serializer/AbstractSerializerTest.js~describe11.it12",
+    "access": null,
+    "description": "It implements the SerializerInterface interface",
+    "lineNumber": 22,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{AbstractSerializer#constructor}"
+      }
+    ],
+    "testTargets": [
+      "AbstractSerializer#constructor"
+    ]
+  },
+  {
+    "__docId__": 122,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it13",
+    "testId": 13,
+    "memberof": "tests/Serializer/AbstractSerializerTest.js~describe11",
+    "testDepth": 1,
+    "longname": "tests/Serializer/AbstractSerializerTest.js~describe11.it13",
+    "access": null,
+    "description": "It should not supports any (de)-serialization",
+    "lineNumber": 30,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{AbstractSerializer#supportsDeserialize}"
+      },
+      {
+        "tagName": "@test",
+        "tagValue": "{AbstractSerializer#supportsSerialize}"
+      }
+    ],
+    "testTargets": [
+      "AbstractSerializer#supportsDeserialize",
+      "AbstractSerializer#supportsSerialize"
+    ]
+  },
+  {
+    "__docId__": 123,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it14",
+    "testId": 14,
+    "memberof": "tests/Serializer/AbstractSerializerTest.js~describe11",
+    "testDepth": 1,
+    "longname": "tests/Serializer/AbstractSerializerTest.js~describe11.it14",
+    "access": null,
+    "description": "It should return the object unchanged if (de)-serialization is called [warning: bad practice]",
+    "lineNumber": 41,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{AbstractSerializer#deserialize}"
+      },
+      {
+        "tagName": "@test",
+        "tagValue": "{AbstractSerializer#serialize}"
+      }
+    ],
+    "testTargets": [
+      "AbstractSerializer#deserialize",
+      "AbstractSerializer#serialize"
+    ]
+  },
+  {
+    "__docId__": 124,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "tests/Serializer/SerializerAwareTest.js",
+    "memberof": null,
+    "longname": "tests/Serializer/SerializerAwareTest.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\n/* eslint-env mocha */\n\nimport { assert } from 'chai';\n\nimport SerializerAware from './../../src/Serializer/SerializerAware';\nimport SerializerInterface from './../../src/Serializer/SerializerInterface';\nimport UnimplementedSerializerMethodError from './../../src/Error/UnimplementedMethodError';\n\n/** @test {SerializerAware} */\ndescribe('SerializerAware', () => {\n    /** @test {SerializerAware#constructor} */\n    it('It implements the SerializerInterface interface', () => {\n        assert.isTrue(SerializerAware.prototype instanceof SerializerInterface);\n    });\n\n    /** @test {SerializerAware#setSerializer} */\n    it('It should contain a reference to the serializer', () => {\n        const serializer = new SerializerInterface();\n        const serializerAware = new SerializerAware();\n        serializerAware.setSerializer(serializer);\n\n        assert.strictEqual(serializerAware._serializer, serializer);\n    });\n});\n"
+  },
+  {
+    "__docId__": 125,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe15",
+    "testId": 15,
+    "memberof": "tests/Serializer/SerializerAwareTest.js",
+    "testDepth": 0,
+    "longname": "tests/Serializer/SerializerAwareTest.js~describe15",
+    "access": null,
+    "description": "SerializerAware",
+    "lineNumber": 19,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializerAware}"
+      }
+    ],
+    "testTargets": [
+      "SerializerAware"
+    ]
+  },
+  {
+    "__docId__": 126,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it16",
+    "testId": 16,
+    "memberof": "tests/Serializer/SerializerAwareTest.js~describe15",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerAwareTest.js~describe15.it16",
+    "access": null,
+    "description": "It implements the SerializerInterface interface",
+    "lineNumber": 21,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializerAware#constructor}"
+      }
+    ],
+    "testTargets": [
+      "SerializerAware#constructor"
+    ]
+  },
+  {
+    "__docId__": 127,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it17",
+    "testId": 17,
+    "memberof": "tests/Serializer/SerializerAwareTest.js~describe15",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerAwareTest.js~describe15.it17",
+    "access": null,
+    "description": "It should contain a reference to the serializer",
+    "lineNumber": 26,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializerAware#setSerializer}"
+      }
+    ],
+    "testTargets": [
+      "SerializerAware#setSerializer"
+    ]
+  },
+  {
+    "__docId__": 128,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "tests/Serializer/SerializerInterfaceTest.js",
+    "memberof": null,
+    "longname": "tests/Serializer/SerializerInterfaceTest.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\n/* eslint-env mocha */\n\nimport { assert } from 'chai';\n\nimport SerializerInterface from './../../src/Serializer/SerializerInterface';\nimport UnimplementedMethodError from './../../src/Error/UnimplementedMethodError';\n\n/** @test {SerializerInterface} */\ndescribe('SerializerInterface', () => {\n    /**\n     * @test {SerializerInterface#deserialize}\n     * @test {SerializerInterface#serialize}\n     * @test {SerializerInterface#supportsDeserialize}\n     * @test {SerializerInterface#supportsSerialize}\n     */\n    it('As an interface, it should not implement anything', () => {\n        const serializer = new SerializerInterface();\n\n        // Potential refactor\n        // @see https://github.com/chaijs/chai/issues/596\n        assert.throw(serializer.deserialize, Error);\n        assert.throw(serializer.serialize, Error);\n        assert.throw(serializer.supportsDeserialize, Error);\n        assert.throw(serializer.supportsSerialize, Error);\n\n        try {\n            serializer.deserialize();\n        } catch (error) {\n            assert.strictEqual(error.name, 'UnimplementedMethodError');\n        }\n        try {\n            serializer.serialize();\n        } catch (error) {\n            assert.strictEqual(error.name, 'UnimplementedMethodError');\n        }\n        try {\n            serializer.supportsDeserialize();\n        } catch (error) {\n            assert.strictEqual(error.name, 'UnimplementedMethodError');\n        }\n        try {\n            serializer.supportsSerialize();\n        } catch (error) {\n            assert.strictEqual(error.name, 'UnimplementedMethodError');\n        }\n    });\n});\n"
+  },
+  {
+    "__docId__": 129,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe18",
+    "testId": 18,
+    "memberof": "tests/Serializer/SerializerInterfaceTest.js",
+    "testDepth": 0,
+    "longname": "tests/Serializer/SerializerInterfaceTest.js~describe18",
+    "access": null,
+    "description": "SerializerInterface",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializerInterface}"
+      }
+    ],
+    "testTargets": [
+      "SerializerInterface"
+    ]
+  },
+  {
+    "__docId__": 130,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it19",
+    "testId": 19,
+    "memberof": "tests/Serializer/SerializerInterfaceTest.js~describe18",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerInterfaceTest.js~describe18.it19",
+    "access": null,
+    "description": "As an interface, it should not implement anything",
+    "lineNumber": 25,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializerInterface#deserialize}"
+      },
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializerInterface#serialize}"
+      },
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializerInterface#supportsDeserialize}"
+      },
+      {
+        "tagName": "@test",
+        "tagValue": "{SerializerInterface#supportsSerialize}"
+      }
+    ],
+    "testTargets": [
+      "SerializerInterface#deserialize",
+      "SerializerInterface#serialize",
+      "SerializerInterface#supportsDeserialize",
+      "SerializerInterface#supportsSerialize"
+    ]
+  },
+  {
+    "__docId__": 131,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "tests/Serializer/SerializerTest.js",
+    "memberof": null,
+    "longname": "tests/Serializer/SerializerTest.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "content": "/*\n * This file is part of the serializerjs package.\n *\n * (c) HAIRCVT <tfidry@haircvt.com>\n *\n * For the full copyright and license information, please view the LICENSE\n * file that was distributed with this source code.\n */\n\n/* eslint-env mocha */\n\nimport { assert } from 'chai';\nimport { ADMIN_TYPE, ANONYMOUS_TYPE, CUSTOMER_TYPE } from './../Fixtures/UserType';\n\nimport BooleanSerializer from './../Fixtures/BooleanSerializer';\nimport Serializer from './../../src/Serializer/Serializer';\nimport SerializerInterface from './../../src/Serializer/SerializerInterface';\nimport StringSerializer from './../Fixtures/StringSerializer';\nimport UserTypeSerializer from './../Fixtures/UserTypeSerializer';\nimport User from './../Fixtures/User';\nimport UserSerializer from './../Fixtures/UserSerializer';\n\nimport serializer from './../Fixtures/app';\n\n/** @test {Serializer} */\ndescribe('Serializer', () => {\n    /** @test {Serializer#constructor} */\n    it('It implements the SerializerInterface interface', () => {\n        assert.isTrue(Serializer.prototype instanceof SerializerInterface);\n    });\n\n    it('It should have a reference of all the registered serializers', () => {\n        assert.isTrue(serializer._serializers.get('StringSerializer') instanceof StringSerializer);\n        assert.isTrue(serializer._serializers.get('BooleanSerializer') instanceof BooleanSerializer);\n        assert.isTrue(serializer._serializers.get('UserTypeSerializer') instanceof UserTypeSerializer);\n        assert.isTrue(serializer._serializers.get('UserSerializer') instanceof UserSerializer);\n\n        assert.strictEqual(serializer._serializers.size, 4);\n    });\n\n    it('Only serialiers can be registered', () => {\n        // Potential refactor\n        // @see https://github.com/chaijs/chai/issues/596\n        try {\n            const invalidSerializer = new Serializer(new Map([\n                ['myKey', {}],\n            ]));\n        } catch (error) {\n            assert.strictEqual(error.name, 'InvalidArgumentError');\n        }\n    });\n\n    describe('It can use the StringSerializer', () => {\n        it('It should be able to deserialize a string', () => {\n            const str = 'Hello World!';\n\n            assert.isTrue(serializer.supportsDeserialize(str, 'string'));\n            assert.strictEqual(serializer.deserialize(str, 'string'), str);\n        });\n\n        it('It should be able to deserialize an empty string', () => {\n            const str = '';\n\n            assert.isTrue(serializer.supportsDeserialize(str, 'string'));\n            assert.strictEqual(serializer.deserialize(str, 'string'), str);\n        });\n\n        it('It should be able to deserialize a null value', () => {\n            assert.isTrue(serializer.supportsDeserialize(null, 'string'));\n            assert.isNull(serializer.deserialize(null, 'string'));\n        });\n\n        it('It should be able to deserialize something else than a string or a null value', () => {\n            assert.isFalse(serializer.supportsDeserialize({}, 'string'));\n            assert.isFalse(serializer.supportsDeserialize(() => {}, 'string'));\n            assert.isFalse(serializer.supportsDeserialize(true, 'string'));\n            assert.isFalse(serializer.supportsDeserialize(undefined, 'string'));\n            assert.isFalse(serializer.supportsDeserialize(23, 'string'));\n            assert.isFalse(serializer.supportsDeserialize(23.5, 'string'));\n        });\n\n        it('It should not be able to serialize a string', () => {\n            assert.isFalse(serializer.supportsSerialize('Hello World'));\n            assert.isFalse(serializer.supportsSerialize(''));\n        });\n    });\n\n    describe('It can use the BooleanSerializer', () => {\n        it('It should be able to deserialize a boolean value', () => {\n            assert.isTrue(serializer.supportsDeserialize(true, 'boolean'));\n            assert.strictEqual(serializer.deserialize(true, 'boolean'), true);\n\n            assert.isTrue(serializer.supportsDeserialize(false, 'boolean'));\n            assert.strictEqual(serializer.deserialize(false, 'boolean'), false);\n        });\n\n        it('It should be able to deserialize a integer boolean value', () => {\n            assert.isTrue(serializer.supportsDeserialize(1, 'boolean'));\n            assert.strictEqual(serializer.deserialize(1, 'boolean'), true);\n\n            assert.isTrue(serializer.supportsDeserialize(0, 'boolean'));\n            assert.strictEqual(serializer.deserialize(0, 'boolean'), false);\n        });\n\n        it('It should be able to deserialize a null value', () => {\n            assert.isTrue(serializer.supportsDeserialize(null, 'boolean'));\n            assert.isNull(serializer.deserialize(null, 'boolean'));\n        });\n\n        it('It should be able to serialize a boolean value', () => {\n            assert.isTrue(serializer.supportsSerialize(true));\n            assert.strictEqual(serializer.serialize(true), true);\n            assert.isTrue(serializer.supportsSerialize(true));\n            assert.strictEqual(serializer.serialize(true, null, 'oldApi'), 1);\n\n            assert.isTrue(serializer.supportsSerialize(false));\n            assert.strictEqual(serializer.serialize(false), false);\n            assert.strictEqual(serializer.serialize(false, null, 'oldApi'), 0);\n        });\n    });\n\n    describe('It can use the UserTypeSerializer', () => {\n        it('It should be able to deserialize a UserType value', () => {\n            assert.isTrue(serializer.supportsDeserialize(0, 'UserType'));\n            assert.strictEqual(serializer.deserialize(0, 'UserType'), ADMIN_TYPE);\n\n            assert.isTrue(serializer.supportsDeserialize(1, 'UserType'));\n            assert.strictEqual(serializer.deserialize(1, 'UserType'), ANONYMOUS_TYPE);\n\n            assert.isTrue(serializer.supportsDeserialize(2, 'UserType'));\n            assert.strictEqual(serializer.deserialize(2, 'UserType'), CUSTOMER_TYPE);\n        });\n\n        it('It should be able to serialize a UserType value', () => {\n            assert.isTrue(serializer.supportsSerialize(ADMIN_TYPE));\n            assert.strictEqual(serializer.serialize(ADMIN_TYPE), 0);\n\n            assert.isTrue(serializer.supportsSerialize(ANONYMOUS_TYPE));\n            assert.strictEqual(serializer.serialize(ANONYMOUS_TYPE), 1);\n\n            assert.isTrue(serializer.supportsSerialize(CUSTOMER_TYPE));\n            assert.strictEqual(serializer.serialize(CUSTOMER_TYPE), 2);\n        });\n    });\n\n    describe('It can use the UserSerializer', () => {\n        const rawUser = {\n            firstname: 'John',\n            lastname: 'Doe',\n            gender: true,\n            type: 0,\n        };\n        const rawUserOldApi = {\n            firstname: 'John',\n            lastname: 'Doe',\n            gender: 1,\n            type: 0,\n        };\n        const user = new User('John', 'Doe', ADMIN_TYPE, true);\n\n        it('It should be able to deserialize a user object', () => {\n            assert.isTrue(serializer.supportsDeserialize(rawUser, 'User'));\n            assert.deepEqual(serializer.deserialize(rawUser, 'User'), user);\n\n            assert.isTrue(serializer.supportsDeserialize(rawUserOldApi, 'User'));\n            assert.deepEqual(serializer.deserialize(rawUserOldApi, 'User'), user);\n        });\n\n        it('It should not be able to deserialize a user object with another serializer', () => {\n            assert.isFalse(serializer.supportsDeserialize('Something', rawUser));\n            assert.isFalse(serializer.supportsDeserialize('Something', rawUserOldApi));\n        });\n\n        it('It should be able to serialize a User object', () => {\n            assert.isTrue(serializer.supportsSerialize(user));\n            assert.deepEqual(serializer.serialize(user), rawUser);\n\n            assert.isTrue(serializer.supportsSerialize(user));\n            assert.deepEqual(serializer.serialize(user, null, 'oldApi'), rawUserOldApi);\n        });\n    });\n\n    it('If no serializer is found, should throw an error', () => {\n        assert.isFalse(serializer.supportsDeserialize({}, 'Dummy'));\n        // Potential refactor\n        // @see https://github.com/chaijs/chai/issues/596\n        try {\n            serializer.deserialize({}, 'Dummy');\n        } catch (error) {\n            assert.strictEqual(error.name, 'SerializationError');\n        }\n    });\n});\n"
+  },
+  {
+    "__docId__": 132,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe20",
+    "testId": 20,
+    "memberof": "tests/Serializer/SerializerTest.js",
+    "testDepth": 0,
+    "longname": "tests/Serializer/SerializerTest.js~describe20",
+    "access": null,
+    "description": "Serializer",
+    "lineNumber": 26,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{Serializer}"
+      }
+    ],
+    "testTargets": [
+      "Serializer"
+    ]
+  },
+  {
+    "__docId__": 133,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it21",
+    "testId": 21,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.it21",
+    "access": null,
+    "description": "It implements the SerializerInterface interface",
+    "lineNumber": 28,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{Serializer#constructor}"
+      }
+    ],
+    "testTargets": [
+      "Serializer#constructor"
+    ]
+  },
+  {
+    "__docId__": 134,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it22",
+    "testId": 22,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.it22",
+    "access": null,
+    "description": "It should have a reference of all the registered serializers",
+    "lineNumber": 32
+  },
+  {
+    "__docId__": 135,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it23",
+    "testId": 23,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.it23",
+    "access": null,
+    "description": "Only serialiers can be registered",
+    "lineNumber": 41
+  },
+  {
+    "__docId__": 136,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe24",
+    "testId": 24,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe24",
+    "access": null,
+    "description": "It can use the StringSerializer",
+    "lineNumber": 53
+  },
+  {
+    "__docId__": 137,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it25",
+    "testId": 25,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe24",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe24.it25",
+    "access": null,
+    "description": "It should be able to deserialize a string",
+    "lineNumber": 54
+  },
+  {
+    "__docId__": 138,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it26",
+    "testId": 26,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe24",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe24.it26",
+    "access": null,
+    "description": "It should be able to deserialize an empty string",
+    "lineNumber": 61
+  },
+  {
+    "__docId__": 139,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it27",
+    "testId": 27,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe24",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe24.it27",
+    "access": null,
+    "description": "It should be able to deserialize a null value",
+    "lineNumber": 68
+  },
+  {
+    "__docId__": 140,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it28",
+    "testId": 28,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe24",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe24.it28",
+    "access": null,
+    "description": "It should be able to deserialize something else than a string or a null value",
+    "lineNumber": 73
+  },
+  {
+    "__docId__": 141,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it29",
+    "testId": 29,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe24",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe24.it29",
+    "access": null,
+    "description": "It should not be able to serialize a string",
+    "lineNumber": 82
+  },
+  {
+    "__docId__": 142,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe30",
+    "testId": 30,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe30",
+    "access": null,
+    "description": "It can use the BooleanSerializer",
+    "lineNumber": 88
+  },
+  {
+    "__docId__": 143,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it31",
+    "testId": 31,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe30",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe30.it31",
+    "access": null,
+    "description": "It should be able to deserialize a boolean value",
+    "lineNumber": 89
+  },
+  {
+    "__docId__": 144,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it32",
+    "testId": 32,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe30",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe30.it32",
+    "access": null,
+    "description": "It should be able to deserialize a integer boolean value",
+    "lineNumber": 97
+  },
+  {
+    "__docId__": 145,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it33",
+    "testId": 33,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe30",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe30.it33",
+    "access": null,
+    "description": "It should be able to deserialize a null value",
+    "lineNumber": 105
+  },
+  {
+    "__docId__": 146,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it34",
+    "testId": 34,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe30",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe30.it34",
+    "access": null,
+    "description": "It should be able to serialize a boolean value",
+    "lineNumber": 110
+  },
+  {
+    "__docId__": 147,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe35",
+    "testId": 35,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe35",
+    "access": null,
+    "description": "It can use the UserTypeSerializer",
+    "lineNumber": 122
+  },
+  {
+    "__docId__": 148,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it36",
+    "testId": 36,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe35",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe35.it36",
+    "access": null,
+    "description": "It should be able to deserialize a UserType value",
+    "lineNumber": 123
+  },
+  {
+    "__docId__": 149,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it37",
+    "testId": 37,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe35",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe35.it37",
+    "access": null,
+    "description": "It should be able to serialize a UserType value",
+    "lineNumber": 134
+  },
+  {
+    "__docId__": 150,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe38",
+    "testId": 38,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe38",
+    "access": null,
+    "description": "It can use the UserSerializer",
+    "lineNumber": 146
+  },
+  {
+    "__docId__": 151,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it39",
+    "testId": 39,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe38",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe38.it39",
+    "access": null,
+    "description": "It should be able to deserialize a user object",
+    "lineNumber": 161
+  },
+  {
+    "__docId__": 152,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it40",
+    "testId": 40,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe38",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe38.it40",
+    "access": null,
+    "description": "It should not be able to deserialize a user object with another serializer",
+    "lineNumber": 169
+  },
+  {
+    "__docId__": 153,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it41",
+    "testId": 41,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20.describe38",
+    "testDepth": 2,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.describe38.it41",
+    "access": null,
+    "description": "It should be able to serialize a User object",
+    "lineNumber": 174
+  },
+  {
+    "__docId__": 154,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it42",
+    "testId": 42,
+    "memberof": "tests/Serializer/SerializerTest.js~describe20",
+    "testDepth": 1,
+    "longname": "tests/Serializer/SerializerTest.js~describe20.it42",
+    "access": null,
+    "description": "If no serializer is found, should throw an error",
+    "lineNumber": 183
+  }
+]

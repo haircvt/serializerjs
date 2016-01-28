@@ -1,0 +1,58 @@
+{
+  "coverage": "81.81%",
+  "expectCount": 33,
+  "actualCount": 27,
+  "files": {
+    "src/Serializer/AbstractSerializer.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/Error/InvalidArgumentError.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        22
+      ]
+    },
+    "src/Error/SerializationError.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        24
+      ]
+    },
+    "src/Serializer/Serializer.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "src/Serializer/SerializerAware.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        18
+      ]
+    },
+    "src/Error/SerializerError.js": {
+      "expectCount": 4,
+      "actualCount": 2,
+      "undocumentLines": [
+        23,
+        22
+      ]
+    },
+    "src/Serializer/SerializerInterface.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/Error/UnimplementedMethodError.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        22
+      ]
+    }
+  }
+}
