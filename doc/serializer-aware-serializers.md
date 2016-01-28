@@ -160,12 +160,6 @@ _deserializeGender(object) {
 
 **In other words, `SerializerAware` allow you to quickly access to other serializer.**
 
-(https://haircvt.github.io/serializerjs/manual/overview.html#table-of-content)
-
-[Previous: Basic usage](https://haircvt.github.io/serializerjs/manual/usage.html#basicusage)
-
-[Next: Serializer format & context](https://haircvt.github.io/serializerjs/manual/usage.html#serializer-format-context)
-
 [0]: https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html
 [1]: https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html
 [2]: https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerAware.js~SerializerAware.html#instance-member-_serializer

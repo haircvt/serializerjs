@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-var baseConf = require('./karma.conf');
+var baseConfig = require('./karma.conf.dist');
 var fs = require('fs');
 
 module.exports = function(config) {
@@ -29,7 +29,7 @@ module.exports = function(config) {
     };
 
     var sauceConfig = Object.assign(
-        baseConf,
+        baseConfig,
         {
             reporters: ['dots', 'saucelabs'],
             sauceLabs: {
@@ -49,6 +49,9 @@ module.exports = function(config) {
             concurrency: 2,
         }
     );
+
+    console.log(sauceConfig);
+    //console.log(sauceConfig.frameworks);
 
     config.set(sauceConfig);
 };

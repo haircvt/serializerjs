@@ -37,6 +37,4 @@ supportsSerialize(data, format = null) {
 Depending of the format, we could need to pass additional parameters for the serialization. That is where comes
 `context`. This property can be pretty much everything you want: object, array, scalar value etc.
 
-(https://haircvt.github.io/serializerjs/manual/overview.html#table-of-content)
-
 [0]: https://haircvt.github.io/serializerjs/class/src/Serializer/SerializerInterface.js~SerializerInterface.html
