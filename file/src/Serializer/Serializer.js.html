@@ -99,7 +99,7 @@ export default class Serializer extends SerializerInterface {
      * @inheritDoc
      */
     serialize(data, format, context) {
-        const serializer = this._getSerializerForSerialization(data, format, context);
+        const serializer = this._getSerializerForSerialization(data, format);
         if (null !== serializer) {
             return serializer.serialize(data, format, context);
         }
@@ -134,8 +134,8 @@ export default class Serializer extends SerializerInterface {
     }
 
     /**
-     * @param {*}      data          Any data
-     * @param {string} [format=null] Format the normalization result will be encoded as
+     * @param {*}       data          Any data
+     * @param {?string} [format=null] Format the normalization result will be encoded as
      *
      * @return {?SerializerInterface}
      * @private
@@ -151,14 +151,14 @@ export default class Serializer extends SerializerInterface {
     }
 
     /**
-     * @param {*}       data      Data to restore
-     * @param {string}  className The expected class to instantiate
-     * @param {?string} format    Format the given data was extracted from
+     * @param {*}       data          Data to restore
+     * @param {string}  className     The expected class to instantiate
+     * @param {?string} [format=null] Format the given data was extracted from
      *
      * @return {?SerializerInterface}
      * @private
      */
-    _getSerializerForDeserialization(data, className, format) {
+    _getSerializerForDeserialization(data, className, format = null) {
         for (const serializer of this._serializers.values()) {
             if (true === serializer.supportsDeserialize(data, className, format)) {
                 return serializer;

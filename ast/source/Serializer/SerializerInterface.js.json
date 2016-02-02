@@ -219,8 +219,8 @@
                 "type": "Identifier",
                 "name": "serialize",
                 "range": [
-                  1518,
-                  1527
+                  1539,
+                  1548
                 ],
                 "loc": {
                   "start": {
@@ -241,8 +241,8 @@
                     "type": "Identifier",
                     "name": "data",
                     "range": [
-                      1528,
-                      1532
+                      1549,
+                      1553
                     ],
                     "loc": {
                       "start": {
@@ -259,8 +259,8 @@
                     "type": "Identifier",
                     "name": "format",
                     "range": [
-                      1534,
-                      1540
+                      1555,
+                      1561
                     ],
                     "loc": {
                       "start": {
@@ -274,11 +274,47 @@
                     }
                   },
                   {
-                    "type": "Identifier",
-                    "name": "context",
+                    "type": "AssignmentPattern",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "context",
+                      "range": [
+                        1563,
+                        1570
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 40,
+                          "column": 28
+                        },
+                        "end": {
+                          "line": 40,
+                          "column": 35
+                        }
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": null,
+                      "raw": "null",
+                      "range": [
+                        1573,
+                        1577
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 40,
+                          "column": 38
+                        },
+                        "end": {
+                          "line": 40,
+                          "column": 42
+                        }
+                      }
+                    },
                     "range": [
-                      1542,
-                      1549
+                      1563,
+                      1577
                     ],
                     "loc": {
                       "start": {
@@ -287,7 +323,7 @@
                       },
                       "end": {
                         "line": 40,
-                        "column": 35
+                        "column": 42
                       }
                     }
                   }
@@ -303,8 +339,8 @@
                           "type": "Identifier",
                           "name": "UnimplementedMethodError",
                           "range": [
-                            1571,
-                            1595
+                            1599,
+                            1623
                           ],
                           "loc": {
                             "start": {
@@ -323,8 +359,8 @@
                             "value": "Unimplemented \"serialize()\" method",
                             "raw": "'Unimplemented \"serialize()\" method'",
                             "range": [
-                              1596,
-                              1632
+                              1624,
+                              1660
                             ],
                             "loc": {
                               "start": {
@@ -339,8 +375,8 @@
                           }
                         ],
                         "range": [
-                          1567,
-                          1633
+                          1595,
+                          1661
                         ],
                         "loc": {
                           "start": {
@@ -354,8 +390,8 @@
                         }
                       },
                       "range": [
-                        1561,
-                        1634
+                        1589,
+                        1662
                       ],
                       "loc": {
                         "start": {
@@ -370,13 +406,13 @@
                     }
                   ],
                   "range": [
-                    1551,
-                    1640
+                    1579,
+                    1668
                   ],
                   "loc": {
                     "start": {
                       "line": 40,
-                      "column": 37
+                      "column": 44
                     },
                     "end": {
                       "line": 42,
@@ -387,8 +423,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  1527,
-                  1640
+                  1548,
+                  1668
                 ],
                 "loc": {
                   "start": {
@@ -404,8 +440,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                1518,
-                1640
+                1539,
+                1668
               ],
               "loc": {
                 "start": {
@@ -420,10 +456,10 @@
               "leadingComments": [
                 {
                   "type": "Block",
-                  "value": "*\n     * Serializes any data object into and object usable for the backend service.\n     *\n     * @param {*}      data    Any data\n     * @param {string} format  Format the normalization result will be encoded as\n     * @param {*}      context Options serializers have access to\n     *\n     * @return {*}\n     * @throw SerializationError\n     ",
+                  "value": "*\n     * Serializes any data object into and object usable for the backend service.\n     *\n     * @param {*}      data           Any data\n     * @param {string} format         Format the normalization result will be encoded as\n     * @param {*}      [context=null] Options serializers have access to\n     *\n     * @return {*}\n     * @throw SerializationError\n     ",
                   "range": [
                     1166,
-                    1513
+                    1534
                   ],
                   "loc": {
                     "start": {
@@ -442,8 +478,8 @@
                   "type": "Block",
                   "value": "*\n     * Checks whether the given class is supported for serialization by this serializer.\n     *\n     * @param {*}      data          Any data\n     * @param {string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {boolean}\n     ",
                   "range": [
-                    1646,
-                    1919
+                    1674,
+                    1947
                   ],
                   "loc": {
                     "start": {
@@ -465,8 +501,8 @@
                 "type": "Identifier",
                 "name": "supportsSerialize",
                 "range": [
-                  1924,
-                  1941
+                  1952,
+                  1969
                 ],
                 "loc": {
                   "start": {
@@ -487,8 +523,8 @@
                     "type": "Identifier",
                     "name": "data",
                     "range": [
-                      1942,
-                      1946
+                      1970,
+                      1974
                     ],
                     "loc": {
                       "start": {
@@ -507,8 +543,8 @@
                       "type": "Identifier",
                       "name": "format",
                       "range": [
-                        1948,
-                        1954
+                        1976,
+                        1982
                       ],
                       "loc": {
                         "start": {
@@ -526,8 +562,8 @@
                       "value": null,
                       "raw": "null",
                       "range": [
-                        1957,
-                        1961
+                        1985,
+                        1989
                       ],
                       "loc": {
                         "start": {
@@ -541,8 +577,8 @@
                       }
                     },
                     "range": [
-                      1948,
-                      1961
+                      1976,
+                      1989
                     ],
                     "loc": {
                       "start": {
@@ -567,8 +603,8 @@
                           "type": "Identifier",
                           "name": "UnimplementedMethodError",
                           "range": [
-                            1983,
-                            2007
+                            2011,
+                            2035
                           ],
                           "loc": {
                             "start": {
@@ -587,8 +623,8 @@
                             "value": "Unimplemented \"supportsSerialize()\" method",
                             "raw": "'Unimplemented \"supportsSerialize()\" method'",
                             "range": [
-                              2008,
-                              2052
+                              2036,
+                              2080
                             ],
                             "loc": {
                               "start": {
@@ -603,8 +639,8 @@
                           }
                         ],
                         "range": [
-                          1979,
-                          2053
+                          2007,
+                          2081
                         ],
                         "loc": {
                           "start": {
@@ -618,8 +654,8 @@
                         }
                       },
                       "range": [
-                        1973,
-                        2054
+                        2001,
+                        2082
                       ],
                       "loc": {
                         "start": {
@@ -634,8 +670,8 @@
                     }
                   ],
                   "range": [
-                    1963,
-                    2060
+                    1991,
+                    2088
                   ],
                   "loc": {
                     "start": {
@@ -651,8 +687,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  1941,
-                  2060
+                  1969,
+                  2088
                 ],
                 "loc": {
                   "start": {
@@ -668,8 +704,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                1924,
-                2060
+                1952,
+                2088
               ],
               "loc": {
                 "start": {
@@ -686,8 +722,8 @@
                   "type": "Block",
                   "value": "*\n     * Checks whether the given class is supported for serialization by this serializer.\n     *\n     * @param {*}      data          Any data\n     * @param {string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {boolean}\n     ",
                   "range": [
-                    1646,
-                    1919
+                    1674,
+                    1947
                   ],
                   "loc": {
                     "start": {
@@ -706,8 +742,8 @@
                   "type": "Block",
                   "value": "*\n     * Deserializes data back into an object of the given class.\n     *\n     * @param {*}       data             Data to restore\n     * @param {string}  className        The expected class to instantiate\n     * @param {?string} [format=null]    Format the given data was extracted from\n     * @param {*}       [context=null]   Options available to the deserializer\n     *\n     * @return {*}\n     * @throw SerializationError\n     ",
                   "range": [
-                    2066,
-                    2501
+                    2094,
+                    2529
                   ],
                   "loc": {
                     "start": {
@@ -729,8 +765,8 @@
                 "type": "Identifier",
                 "name": "deserialize",
                 "range": [
-                  2506,
-                  2517
+                  2534,
+                  2545
                 ],
                 "loc": {
                   "start": {
@@ -751,8 +787,8 @@
                     "type": "Identifier",
                     "name": "data",
                     "range": [
-                      2518,
-                      2522
+                      2546,
+                      2550
                     ],
                     "loc": {
                       "start": {
@@ -769,8 +805,8 @@
                     "type": "Identifier",
                     "name": "className",
                     "range": [
-                      2524,
-                      2533
+                      2552,
+                      2561
                     ],
                     "loc": {
                       "start": {
@@ -789,8 +825,8 @@
                       "type": "Identifier",
                       "name": "format",
                       "range": [
-                        2535,
-                        2541
+                        2563,
+                        2569
                       ],
                       "loc": {
                         "start": {
@@ -808,8 +844,8 @@
                       "value": null,
                       "raw": "null",
                       "range": [
-                        2544,
-                        2548
+                        2572,
+                        2576
                       ],
                       "loc": {
                         "start": {
@@ -823,8 +859,8 @@
                       }
                     },
                     "range": [
-                      2535,
-                      2548
+                      2563,
+                      2576
                     ],
                     "loc": {
                       "start": {
@@ -843,8 +879,8 @@
                       "type": "Identifier",
                       "name": "context",
                       "range": [
-                        2550,
-                        2557
+                        2578,
+                        2585
                       ],
                       "loc": {
                         "start": {
@@ -862,8 +898,8 @@
                       "value": null,
                       "raw": "null",
                       "range": [
-                        2560,
-                        2564
+                        2588,
+                        2592
                       ],
                       "loc": {
                         "start": {
@@ -877,8 +913,8 @@
                       }
                     },
                     "range": [
-                      2550,
-                      2564
+                      2578,
+                      2592
                     ],
                     "loc": {
                       "start": {
@@ -903,8 +939,8 @@
                           "type": "Identifier",
                           "name": "UnimplementedMethodError",
                           "range": [
-                            2586,
-                            2610
+                            2614,
+                            2638
                           ],
                           "loc": {
                             "start": {
@@ -923,8 +959,8 @@
                             "value": "Unimplemented \"deserialize()\" method",
                             "raw": "'Unimplemented \"deserialize()\" method'",
                             "range": [
-                              2611,
-                              2649
+                              2639,
+                              2677
                             ],
                             "loc": {
                               "start": {
@@ -939,8 +975,8 @@
                           }
                         ],
                         "range": [
-                          2582,
-                          2650
+                          2610,
+                          2678
                         ],
                         "loc": {
                           "start": {
@@ -954,8 +990,8 @@
                         }
                       },
                       "range": [
-                        2576,
-                        2651
+                        2604,
+                        2679
                       ],
                       "loc": {
                         "start": {
@@ -970,8 +1006,8 @@
                     }
                   ],
                   "range": [
-                    2566,
-                    2657
+                    2594,
+                    2685
                   ],
                   "loc": {
                     "start": {
@@ -987,8 +1023,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  2517,
-                  2657
+                  2545,
+                  2685
                 ],
                 "loc": {
                   "start": {
@@ -1004,8 +1040,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                2506,
-                2657
+                2534,
+                2685
               ],
               "loc": {
                 "start": {
@@ -1022,8 +1058,8 @@
                   "type": "Block",
                   "value": "*\n     * Deserializes data back into an object of the given class.\n     *\n     * @param {*}       data             Data to restore\n     * @param {string}  className        The expected class to instantiate\n     * @param {?string} [format=null]    Format the given data was extracted from\n     * @param {*}       [context=null]   Options available to the deserializer\n     *\n     * @return {*}\n     * @throw SerializationError\n     ",
                   "range": [
-                    2066,
-                    2501
+                    2094,
+                    2529
                   ],
                   "loc": {
                     "start": {
@@ -1042,8 +1078,8 @@
                   "type": "Block",
                   "value": "*\n     * Checks whether the given class is supported for deserialization by this serializer.\n     *\n     * @param {*}       data          Data to restore\n     * @param {string}  className     The expected class to instantiate\n     * @param {?string} [format=null] Format the given data was extracted from\n     *\n     * @return {boolean}\n     ",
                   "range": [
-                    2663,
-                    3009
+                    2691,
+                    3037
                   ],
                   "loc": {
                     "start": {
@@ -1065,8 +1101,8 @@
                 "type": "Identifier",
                 "name": "supportsDeserialize",
                 "range": [
-                  3014,
-                  3033
+                  3042,
+                  3061
                 ],
                 "loc": {
                   "start": {
@@ -1087,8 +1123,8 @@
                     "type": "Identifier",
                     "name": "data",
                     "range": [
-                      3034,
-                      3038
+                      3062,
+                      3066
                     ],
                     "loc": {
                       "start": {
@@ -1105,8 +1141,8 @@
                     "type": "Identifier",
                     "name": "className",
                     "range": [
-                      3040,
-                      3049
+                      3068,
+                      3077
                     ],
                     "loc": {
                       "start": {
@@ -1125,8 +1161,8 @@
                       "type": "Identifier",
                       "name": "format",
                       "range": [
-                        3051,
-                        3057
+                        3079,
+                        3085
                       ],
                       "loc": {
                         "start": {
@@ -1144,8 +1180,8 @@
                       "value": null,
                       "raw": "null",
                       "range": [
-                        3060,
-                        3064
+                        3088,
+                        3092
                       ],
                       "loc": {
                         "start": {
@@ -1159,8 +1195,8 @@
                       }
                     },
                     "range": [
-                      3051,
-                      3064
+                      3079,
+                      3092
                     ],
                     "loc": {
                       "start": {
@@ -1185,8 +1221,8 @@
                           "type": "Identifier",
                           "name": "UnimplementedMethodError",
                           "range": [
-                            3086,
-                            3110
+                            3114,
+                            3138
                           ],
                           "loc": {
                             "start": {
@@ -1205,8 +1241,8 @@
                             "value": "Unimplemented \"supportsDeserialize()\" method",
                             "raw": "'Unimplemented \"supportsDeserialize()\" method'",
                             "range": [
-                              3111,
-                              3157
+                              3139,
+                              3185
                             ],
                             "loc": {
                               "start": {
@@ -1221,8 +1257,8 @@
                           }
                         ],
                         "range": [
-                          3082,
-                          3158
+                          3110,
+                          3186
                         ],
                         "loc": {
                           "start": {
@@ -1236,8 +1272,8 @@
                         }
                       },
                       "range": [
-                        3076,
-                        3159
+                        3104,
+                        3187
                       ],
                       "loc": {
                         "start": {
@@ -1252,8 +1288,8 @@
                     }
                   ],
                   "range": [
-                    3066,
-                    3165
+                    3094,
+                    3193
                   ],
                   "loc": {
                     "start": {
@@ -1269,8 +1305,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  3033,
-                  3165
+                  3061,
+                  3193
                 ],
                 "loc": {
                   "start": {
@@ -1286,8 +1322,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                3014,
-                3165
+                3042,
+                3193
               ],
               "loc": {
                 "start": {
@@ -1304,8 +1340,8 @@
                   "type": "Block",
                   "value": "*\n     * Checks whether the given class is supported for deserialization by this serializer.\n     *\n     * @param {*}       data          Data to restore\n     * @param {string}  className     The expected class to instantiate\n     * @param {?string} [format=null] Format the given data was extracted from\n     *\n     * @return {boolean}\n     ",
                   "range": [
-                    2663,
-                    3009
+                    2691,
+                    3037
                   ],
                   "loc": {
                     "start": {
@@ -1324,7 +1360,7 @@
           ],
           "range": [
             1160,
-            3167
+            3195
           ],
           "loc": {
             "start": {
@@ -1339,7 +1375,7 @@
         },
         "range": [
           1134,
-          3167
+          3195
         ],
         "loc": {
           "start": {
@@ -1375,7 +1411,7 @@
       },
       "range": [
         1119,
-        3167
+        3195
       ],
       "loc": {
         "start": {
@@ -1412,7 +1448,7 @@
   "sourceType": "module",
   "range": [
     227,
-    3167
+    3195
   ],
   "loc": {
     "start": {
@@ -1463,10 +1499,10 @@
     },
     {
       "type": "Block",
-      "value": "*\n     * Serializes any data object into and object usable for the backend service.\n     *\n     * @param {*}      data    Any data\n     * @param {string} format  Format the normalization result will be encoded as\n     * @param {*}      context Options serializers have access to\n     *\n     * @return {*}\n     * @throw SerializationError\n     ",
+      "value": "*\n     * Serializes any data object into and object usable for the backend service.\n     *\n     * @param {*}      data           Any data\n     * @param {string} format         Format the normalization result will be encoded as\n     * @param {*}      [context=null] Options serializers have access to\n     *\n     * @return {*}\n     * @throw SerializationError\n     ",
       "range": [
         1166,
-        1513
+        1534
       ],
       "loc": {
         "start": {
@@ -1483,8 +1519,8 @@
       "type": "Block",
       "value": "*\n     * Checks whether the given class is supported for serialization by this serializer.\n     *\n     * @param {*}      data          Any data\n     * @param {string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {boolean}\n     ",
       "range": [
-        1646,
-        1919
+        1674,
+        1947
       ],
       "loc": {
         "start": {
@@ -1501,8 +1537,8 @@
       "type": "Block",
       "value": "*\n     * Deserializes data back into an object of the given class.\n     *\n     * @param {*}       data             Data to restore\n     * @param {string}  className        The expected class to instantiate\n     * @param {?string} [format=null]    Format the given data was extracted from\n     * @param {*}       [context=null]   Options available to the deserializer\n     *\n     * @return {*}\n     * @throw SerializationError\n     ",
       "range": [
-        2066,
-        2501
+        2094,
+        2529
       ],
       "loc": {
         "start": {
@@ -1519,8 +1555,8 @@
       "type": "Block",
       "value": "*\n     * Checks whether the given class is supported for deserialization by this serializer.\n     *\n     * @param {*}       data          Data to restore\n     * @param {string}  className     The expected class to instantiate\n     * @param {?string} [format=null] Format the given data was extracted from\n     *\n     * @return {boolean}\n     ",
       "range": [
-        2663,
-        3009
+        2691,
+        3037
       ],
       "loc": {
         "start": {

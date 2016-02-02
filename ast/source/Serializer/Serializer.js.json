@@ -1589,29 +1589,11 @@
                                     "column": 75
                                   }
                                 }
-                              },
-                              {
-                                "type": "Identifier",
-                                "name": "context",
-                                "range": [
-                                  1780,
-                                  1787
-                                ],
-                                "loc": {
-                                  "start": {
-                                    "line": 55,
-                                    "column": 77
-                                  },
-                                  "end": {
-                                    "line": 55,
-                                    "column": 84
-                                  }
-                                }
                               }
                             ],
                             "range": [
                               1730,
-                              1788
+                              1779
                             ],
                             "loc": {
                               "start": {
@@ -1620,13 +1602,13 @@
                               },
                               "end": {
                                 "line": 55,
-                                "column": 85
+                                "column": 76
                               }
                             }
                           },
                           "range": [
                             1717,
-                            1788
+                            1779
                           ],
                           "loc": {
                             "start": {
@@ -1635,7 +1617,7 @@
                             },
                             "end": {
                               "line": 55,
-                              "column": 85
+                              "column": 76
                             }
                           }
                         }
@@ -1643,7 +1625,7 @@
                       "kind": "const",
                       "range": [
                         1711,
-                        1789
+                        1780
                       ],
                       "loc": {
                         "start": {
@@ -1652,7 +1634,7 @@
                         },
                         "end": {
                           "line": 55,
-                          "column": 86
+                          "column": 77
                         }
                       }
                     },
@@ -1666,8 +1648,8 @@
                           "value": null,
                           "raw": "null",
                           "range": [
-                            1802,
-                            1806
+                            1793,
+                            1797
                           ],
                           "loc": {
                             "start": {
@@ -1684,8 +1666,8 @@
                           "type": "Identifier",
                           "name": "serializer",
                           "range": [
-                            1811,
-                            1821
+                            1802,
+                            1812
                           ],
                           "loc": {
                             "start": {
@@ -1699,8 +1681,8 @@
                           }
                         },
                         "range": [
-                          1802,
-                          1821
+                          1793,
+                          1812
                         ],
                         "loc": {
                           "start": {
@@ -1727,8 +1709,8 @@
                                   "type": "Identifier",
                                   "name": "serializer",
                                   "range": [
-                                    1844,
-                                    1854
+                                    1835,
+                                    1845
                                   ],
                                   "loc": {
                                     "start": {
@@ -1745,8 +1727,8 @@
                                   "type": "Identifier",
                                   "name": "serialize",
                                   "range": [
-                                    1855,
-                                    1864
+                                    1846,
+                                    1855
                                   ],
                                   "loc": {
                                     "start": {
@@ -1760,8 +1742,8 @@
                                   }
                                 },
                                 "range": [
-                                  1844,
-                                  1864
+                                  1835,
+                                  1855
                                 ],
                                 "loc": {
                                   "start": {
@@ -1779,8 +1761,8 @@
                                   "type": "Identifier",
                                   "name": "data",
                                   "range": [
-                                    1865,
-                                    1869
+                                    1856,
+                                    1860
                                   ],
                                   "loc": {
                                     "start": {
@@ -1797,8 +1779,8 @@
                                   "type": "Identifier",
                                   "name": "format",
                                   "range": [
-                                    1871,
-                                    1877
+                                    1862,
+                                    1868
                                   ],
                                   "loc": {
                                     "start": {
@@ -1815,8 +1797,8 @@
                                   "type": "Identifier",
                                   "name": "context",
                                   "range": [
-                                    1879,
-                                    1886
+                                    1870,
+                                    1877
                                   ],
                                   "loc": {
                                     "start": {
@@ -1831,8 +1813,8 @@
                                 }
                               ],
                               "range": [
-                                1844,
-                                1887
+                                1835,
+                                1878
                               ],
                               "loc": {
                                 "start": {
@@ -1846,8 +1828,8 @@
                               }
                             },
                             "range": [
-                              1837,
-                              1888
+                              1828,
+                              1879
                             ],
                             "loc": {
                               "start": {
@@ -1862,8 +1844,8 @@
                           }
                         ],
                         "range": [
-                          1823,
-                          1898
+                          1814,
+                          1889
                         ],
                         "loc": {
                           "start": {
@@ -1878,8 +1860,8 @@
                       },
                       "alternate": null,
                       "range": [
-                        1798,
-                        1898
+                        1789,
+                        1889
                       ],
                       "loc": {
                         "start": {
@@ -1900,8 +1882,8 @@
                           "type": "Identifier",
                           "name": "SerializationError",
                           "range": [
-                            1918,
-                            1936
+                            1909,
+                            1927
                           ],
                           "loc": {
                             "start": {
@@ -1926,8 +1908,8 @@
                                 },
                                 "tail": false,
                                 "range": [
-                                  1937,
-                                  1986
+                                  1928,
+                                  1977
                                 ],
                                 "loc": {
                                   "start": {
@@ -1948,8 +1930,8 @@
                                 },
                                 "tail": true,
                                 "range": [
-                                  1990,
-                                  1993
+                                  1981,
+                                  1984
                                 ],
                                 "loc": {
                                   "start": {
@@ -1968,8 +1950,8 @@
                                 "type": "Identifier",
                                 "name": "data",
                                 "range": [
-                                  1986,
-                                  1990
+                                  1977,
+                                  1981
                                 ],
                                 "loc": {
                                   "start": {
@@ -1984,8 +1966,8 @@
                               }
                             ],
                             "range": [
-                              1937,
-                              1993
+                              1928,
+                              1984
                             ],
                             "loc": {
                               "start": {
@@ -2000,8 +1982,8 @@
                           }
                         ],
                         "range": [
-                          1914,
-                          1994
+                          1905,
+                          1985
                         ],
                         "loc": {
                           "start": {
@@ -2015,8 +1997,8 @@
                         }
                       },
                       "range": [
-                        1908,
-                        1995
+                        1899,
+                        1986
                       ],
                       "loc": {
                         "start": {
@@ -2032,7 +2014,7 @@
                   ],
                   "range": [
                     1701,
-                    2001
+                    1992
                   ],
                   "loc": {
                     "start": {
@@ -2049,7 +2031,7 @@
                 "expression": false,
                 "range": [
                   1677,
-                  2001
+                  1992
                 ],
                 "loc": {
                   "start": {
@@ -2066,7 +2048,7 @@
               "computed": false,
               "range": [
                 1668,
-                2001
+                1992
               ],
               "loc": {
                 "start": {
@@ -2103,8 +2085,8 @@
                   "type": "Block",
                   "value": "*\n     * @inheritDoc\n     ",
                   "range": [
-                    2007,
-                    2037
+                    1998,
+                    2028
                   ],
                   "loc": {
                     "start": {
@@ -2126,8 +2108,8 @@
                 "type": "Identifier",
                 "name": "supportsSerialize",
                 "range": [
-                  2042,
-                  2059
+                  2033,
+                  2050
                 ],
                 "loc": {
                   "start": {
@@ -2148,8 +2130,8 @@
                     "type": "Identifier",
                     "name": "data",
                     "range": [
-                      2060,
-                      2064
+                      2051,
+                      2055
                     ],
                     "loc": {
                       "start": {
@@ -2168,8 +2150,8 @@
                       "type": "Identifier",
                       "name": "format",
                       "range": [
-                        2066,
-                        2072
+                        2057,
+                        2063
                       ],
                       "loc": {
                         "start": {
@@ -2187,8 +2169,8 @@
                       "value": null,
                       "raw": "null",
                       "range": [
-                        2075,
-                        2079
+                        2066,
+                        2070
                       ],
                       "loc": {
                         "start": {
@@ -2202,8 +2184,8 @@
                       }
                     },
                     "range": [
-                      2066,
-                      2079
+                      2057,
+                      2070
                     ],
                     "loc": {
                       "start": {
@@ -2230,8 +2212,8 @@
                           "value": null,
                           "raw": "null",
                           "range": [
-                            2098,
-                            2102
+                            2089,
+                            2093
                           ],
                           "loc": {
                             "start": {
@@ -2252,8 +2234,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                2107,
-                                2111
+                                2098,
+                                2102
                               ],
                               "loc": {
                                 "start": {
@@ -2270,8 +2252,8 @@
                               "type": "Identifier",
                               "name": "_getSerializerForSerialization",
                               "range": [
-                                2112,
-                                2142
+                                2103,
+                                2133
                               ],
                               "loc": {
                                 "start": {
@@ -2285,8 +2267,8 @@
                               }
                             },
                             "range": [
-                              2107,
-                              2142
+                              2098,
+                              2133
                             ],
                             "loc": {
                               "start": {
@@ -2304,8 +2286,8 @@
                               "type": "Identifier",
                               "name": "data",
                               "range": [
-                                2143,
-                                2147
+                                2134,
+                                2138
                               ],
                               "loc": {
                                 "start": {
@@ -2322,8 +2304,8 @@
                               "type": "Identifier",
                               "name": "format",
                               "range": [
-                                2149,
-                                2155
+                                2140,
+                                2146
                               ],
                               "loc": {
                                 "start": {
@@ -2338,8 +2320,8 @@
                             }
                           ],
                           "range": [
-                            2107,
-                            2156
+                            2098,
+                            2147
                           ],
                           "loc": {
                             "start": {
@@ -2353,8 +2335,8 @@
                           }
                         },
                         "range": [
-                          2098,
-                          2156
+                          2089,
+                          2147
                         ],
                         "loc": {
                           "start": {
@@ -2368,8 +2350,8 @@
                         }
                       },
                       "range": [
-                        2091,
-                        2157
+                        2082,
+                        2148
                       ],
                       "loc": {
                         "start": {
@@ -2384,8 +2366,8 @@
                     }
                   ],
                   "range": [
-                    2081,
-                    2163
+                    2072,
+                    2154
                   ],
                   "loc": {
                     "start": {
@@ -2401,8 +2383,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  2059,
-                  2163
+                  2050,
+                  2154
                 ],
                 "loc": {
                   "start": {
@@ -2418,8 +2400,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                2042,
-                2163
+                2033,
+                2154
               ],
               "loc": {
                 "start": {
@@ -2436,8 +2418,8 @@
                   "type": "Block",
                   "value": "*\n     * @inheritDoc\n     ",
                   "range": [
-                    2007,
-                    2037
+                    1998,
+                    2028
                   ],
                   "loc": {
                     "start": {
@@ -2456,8 +2438,8 @@
                   "type": "Block",
                   "value": "*\n     * @inheritDoc\n     ",
                   "range": [
-                    2169,
-                    2199
+                    2160,
+                    2190
                   ],
                   "loc": {
                     "start": {
@@ -2479,8 +2461,8 @@
                 "type": "Identifier",
                 "name": "deserialize",
                 "range": [
-                  2204,
-                  2215
+                  2195,
+                  2206
                 ],
                 "loc": {
                   "start": {
@@ -2501,8 +2483,8 @@
                     "type": "Identifier",
                     "name": "data",
                     "range": [
-                      2216,
-                      2220
+                      2207,
+                      2211
                     ],
                     "loc": {
                       "start": {
@@ -2519,8 +2501,8 @@
                     "type": "Identifier",
                     "name": "className",
                     "range": [
-                      2222,
-                      2231
+                      2213,
+                      2222
                     ],
                     "loc": {
                       "start": {
@@ -2539,8 +2521,8 @@
                       "type": "Identifier",
                       "name": "format",
                       "range": [
-                        2233,
-                        2239
+                        2224,
+                        2230
                       ],
                       "loc": {
                         "start": {
@@ -2558,8 +2540,8 @@
                       "value": null,
                       "raw": "null",
                       "range": [
-                        2242,
-                        2246
+                        2233,
+                        2237
                       ],
                       "loc": {
                         "start": {
@@ -2573,8 +2555,8 @@
                       }
                     },
                     "range": [
-                      2233,
-                      2246
+                      2224,
+                      2237
                     ],
                     "loc": {
                       "start": {
@@ -2593,8 +2575,8 @@
                       "type": "Identifier",
                       "name": "context",
                       "range": [
-                        2248,
-                        2255
+                        2239,
+                        2246
                       ],
                       "loc": {
                         "start": {
@@ -2612,8 +2594,8 @@
                       "value": null,
                       "raw": "null",
                       "range": [
-                        2258,
-                        2262
+                        2249,
+                        2253
                       ],
                       "loc": {
                         "start": {
@@ -2627,8 +2609,8 @@
                       }
                     },
                     "range": [
-                      2248,
-                      2262
+                      2239,
+                      2253
                     ],
                     "loc": {
                       "start": {
@@ -2654,8 +2636,8 @@
                             "type": "Identifier",
                             "name": "serializer",
                             "range": [
-                              2280,
-                              2290
+                              2271,
+                              2281
                             ],
                             "loc": {
                               "start": {
@@ -2676,8 +2658,8 @@
                               "object": {
                                 "type": "ThisExpression",
                                 "range": [
-                                  2293,
-                                  2297
+                                  2284,
+                                  2288
                                 ],
                                 "loc": {
                                   "start": {
@@ -2694,8 +2676,8 @@
                                 "type": "Identifier",
                                 "name": "_getSerializerForDeserialization",
                                 "range": [
-                                  2298,
-                                  2330
+                                  2289,
+                                  2321
                                 ],
                                 "loc": {
                                   "start": {
@@ -2709,8 +2691,8 @@
                                 }
                               },
                               "range": [
-                                2293,
-                                2330
+                                2284,
+                                2321
                               ],
                               "loc": {
                                 "start": {
@@ -2728,8 +2710,8 @@
                                 "type": "Identifier",
                                 "name": "data",
                                 "range": [
-                                  2331,
-                                  2335
+                                  2322,
+                                  2326
                                 ],
                                 "loc": {
                                   "start": {
@@ -2746,8 +2728,8 @@
                                 "type": "Identifier",
                                 "name": "className",
                                 "range": [
-                                  2337,
-                                  2346
+                                  2328,
+                                  2337
                                 ],
                                 "loc": {
                                   "start": {
@@ -2764,8 +2746,8 @@
                                 "type": "Identifier",
                                 "name": "format",
                                 "range": [
-                                  2348,
-                                  2354
+                                  2339,
+                                  2345
                                 ],
                                 "loc": {
                                   "start": {
@@ -2780,8 +2762,8 @@
                               }
                             ],
                             "range": [
-                              2293,
-                              2355
+                              2284,
+                              2346
                             ],
                             "loc": {
                               "start": {
@@ -2795,8 +2777,8 @@
                             }
                           },
                           "range": [
-                            2280,
-                            2355
+                            2271,
+                            2346
                           ],
                           "loc": {
                             "start": {
@@ -2812,8 +2794,8 @@
                       ],
                       "kind": "const",
                       "range": [
-                        2274,
-                        2356
+                        2265,
+                        2347
                       ],
                       "loc": {
                         "start": {
@@ -2836,8 +2818,8 @@
                           "value": null,
                           "raw": "null",
                           "range": [
-                            2369,
-                            2373
+                            2360,
+                            2364
                           ],
                           "loc": {
                             "start": {
@@ -2854,8 +2836,8 @@
                           "type": "Identifier",
                           "name": "serializer",
                           "range": [
-                            2378,
-                            2388
+                            2369,
+                            2379
                           ],
                           "loc": {
                             "start": {
@@ -2869,8 +2851,8 @@
                           }
                         },
                         "range": [
-                          2369,
-                          2388
+                          2360,
+                          2379
                         ],
                         "loc": {
                           "start": {
@@ -2897,8 +2879,8 @@
                                   "type": "Identifier",
                                   "name": "serializer",
                                   "range": [
-                                    2411,
-                                    2421
+                                    2402,
+                                    2412
                                   ],
                                   "loc": {
                                     "start": {
@@ -2915,8 +2897,8 @@
                                   "type": "Identifier",
                                   "name": "deserialize",
                                   "range": [
-                                    2422,
-                                    2433
+                                    2413,
+                                    2424
                                   ],
                                   "loc": {
                                     "start": {
@@ -2930,8 +2912,8 @@
                                   }
                                 },
                                 "range": [
-                                  2411,
-                                  2433
+                                  2402,
+                                  2424
                                 ],
                                 "loc": {
                                   "start": {
@@ -2949,8 +2931,8 @@
                                   "type": "Identifier",
                                   "name": "data",
                                   "range": [
-                                    2434,
-                                    2438
+                                    2425,
+                                    2429
                                   ],
                                   "loc": {
                                     "start": {
@@ -2967,8 +2949,8 @@
                                   "type": "Identifier",
                                   "name": "className",
                                   "range": [
-                                    2440,
-                                    2449
+                                    2431,
+                                    2440
                                   ],
                                   "loc": {
                                     "start": {
@@ -2985,8 +2967,8 @@
                                   "type": "Identifier",
                                   "name": "format",
                                   "range": [
-                                    2451,
-                                    2457
+                                    2442,
+                                    2448
                                   ],
                                   "loc": {
                                     "start": {
@@ -3003,8 +2985,8 @@
                                   "type": "Identifier",
                                   "name": "context",
                                   "range": [
-                                    2459,
-                                    2466
+                                    2450,
+                                    2457
                                   ],
                                   "loc": {
                                     "start": {
@@ -3019,8 +3001,8 @@
                                 }
                               ],
                               "range": [
-                                2411,
-                                2467
+                                2402,
+                                2458
                               ],
                               "loc": {
                                 "start": {
@@ -3034,8 +3016,8 @@
                               }
                             },
                             "range": [
-                              2404,
-                              2468
+                              2395,
+                              2459
                             ],
                             "loc": {
                               "start": {
@@ -3050,8 +3032,8 @@
                           }
                         ],
                         "range": [
-                          2390,
-                          2478
+                          2381,
+                          2469
                         ],
                         "loc": {
                           "start": {
@@ -3066,8 +3048,8 @@
                       },
                       "alternate": null,
                       "range": [
-                        2365,
-                        2478
+                        2356,
+                        2469
                       ],
                       "loc": {
                         "start": {
@@ -3088,8 +3070,8 @@
                           "type": "Identifier",
                           "name": "SerializationError",
                           "range": [
-                            2498,
-                            2516
+                            2489,
+                            2507
                           ],
                           "loc": {
                             "start": {
@@ -3114,8 +3096,8 @@
                                 },
                                 "tail": false,
                                 "range": [
-                                  2517,
-                                  2568
+                                  2508,
+                                  2559
                                 ],
                                 "loc": {
                                   "start": {
@@ -3136,8 +3118,8 @@
                                 },
                                 "tail": true,
                                 "range": [
-                                  2572,
-                                  2575
+                                  2563,
+                                  2566
                                 ],
                                 "loc": {
                                   "start": {
@@ -3156,8 +3138,8 @@
                                 "type": "Identifier",
                                 "name": "data",
                                 "range": [
-                                  2568,
-                                  2572
+                                  2559,
+                                  2563
                                 ],
                                 "loc": {
                                   "start": {
@@ -3172,8 +3154,8 @@
                               }
                             ],
                             "range": [
-                              2517,
-                              2575
+                              2508,
+                              2566
                             ],
                             "loc": {
                               "start": {
@@ -3188,8 +3170,8 @@
                           }
                         ],
                         "range": [
-                          2494,
-                          2576
+                          2485,
+                          2567
                         ],
                         "loc": {
                           "start": {
@@ -3203,8 +3185,8 @@
                         }
                       },
                       "range": [
-                        2488,
-                        2577
+                        2479,
+                        2568
                       ],
                       "loc": {
                         "start": {
@@ -3219,8 +3201,8 @@
                     }
                   ],
                   "range": [
-                    2264,
-                    2583
+                    2255,
+                    2574
                   ],
                   "loc": {
                     "start": {
@@ -3236,8 +3218,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  2215,
-                  2583
+                  2206,
+                  2574
                 ],
                 "loc": {
                   "start": {
@@ -3253,8 +3235,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                2204,
-                2583
+                2195,
+                2574
               ],
               "loc": {
                 "start": {
@@ -3271,8 +3253,8 @@
                   "type": "Block",
                   "value": "*\n     * @inheritDoc\n     ",
                   "range": [
-                    2169,
-                    2199
+                    2160,
+                    2190
                   ],
                   "loc": {
                     "start": {
@@ -3291,8 +3273,8 @@
                   "type": "Block",
                   "value": "*\n     * @inheritDocz\n     ",
                   "range": [
-                    2589,
-                    2620
+                    2580,
+                    2611
                   ],
                   "loc": {
                     "start": {
@@ -3314,8 +3296,8 @@
                 "type": "Identifier",
                 "name": "supportsDeserialize",
                 "range": [
-                  2625,
-                  2644
+                  2616,
+                  2635
                 ],
                 "loc": {
                   "start": {
@@ -3336,8 +3318,8 @@
                     "type": "Identifier",
                     "name": "data",
                     "range": [
-                      2645,
-                      2649
+                      2636,
+                      2640
                     ],
                     "loc": {
                       "start": {
@@ -3354,8 +3336,8 @@
                     "type": "Identifier",
                     "name": "className",
                     "range": [
-                      2651,
-                      2660
+                      2642,
+                      2651
                     ],
                     "loc": {
                       "start": {
@@ -3374,8 +3356,8 @@
                       "type": "Identifier",
                       "name": "format",
                       "range": [
-                        2662,
-                        2668
+                        2653,
+                        2659
                       ],
                       "loc": {
                         "start": {
@@ -3393,8 +3375,8 @@
                       "value": null,
                       "raw": "null",
                       "range": [
-                        2671,
-                        2675
+                        2662,
+                        2666
                       ],
                       "loc": {
                         "start": {
@@ -3408,8 +3390,8 @@
                       }
                     },
                     "range": [
-                      2662,
-                      2675
+                      2653,
+                      2666
                     ],
                     "loc": {
                       "start": {
@@ -3436,8 +3418,8 @@
                           "value": null,
                           "raw": "null",
                           "range": [
-                            2694,
-                            2698
+                            2685,
+                            2689
                           ],
                           "loc": {
                             "start": {
@@ -3458,8 +3440,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                2703,
-                                2707
+                                2694,
+                                2698
                               ],
                               "loc": {
                                 "start": {
@@ -3476,8 +3458,8 @@
                               "type": "Identifier",
                               "name": "_getSerializerForDeserialization",
                               "range": [
-                                2708,
-                                2740
+                                2699,
+                                2731
                               ],
                               "loc": {
                                 "start": {
@@ -3491,8 +3473,8 @@
                               }
                             },
                             "range": [
-                              2703,
-                              2740
+                              2694,
+                              2731
                             ],
                             "loc": {
                               "start": {
@@ -3510,8 +3492,8 @@
                               "type": "Identifier",
                               "name": "data",
                               "range": [
-                                2741,
-                                2745
+                                2732,
+                                2736
                               ],
                               "loc": {
                                 "start": {
@@ -3528,8 +3510,8 @@
                               "type": "Identifier",
                               "name": "className",
                               "range": [
-                                2747,
-                                2756
+                                2738,
+                                2747
                               ],
                               "loc": {
                                 "start": {
@@ -3546,8 +3528,8 @@
                               "type": "Identifier",
                               "name": "format",
                               "range": [
-                                2758,
-                                2764
+                                2749,
+                                2755
                               ],
                               "loc": {
                                 "start": {
@@ -3562,8 +3544,8 @@
                             }
                           ],
                           "range": [
-                            2703,
-                            2765
+                            2694,
+                            2756
                           ],
                           "loc": {
                             "start": {
@@ -3577,8 +3559,8 @@
                           }
                         },
                         "range": [
-                          2694,
-                          2765
+                          2685,
+                          2756
                         ],
                         "loc": {
                           "start": {
@@ -3592,8 +3574,8 @@
                         }
                       },
                       "range": [
-                        2687,
-                        2766
+                        2678,
+                        2757
                       ],
                       "loc": {
                         "start": {
@@ -3608,8 +3590,8 @@
                     }
                   ],
                   "range": [
-                    2677,
-                    2772
+                    2668,
+                    2763
                   ],
                   "loc": {
                     "start": {
@@ -3625,8 +3607,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  2644,
-                  2772
+                  2635,
+                  2763
                 ],
                 "loc": {
                   "start": {
@@ -3642,8 +3624,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                2625,
-                2772
+                2616,
+                2763
               ],
               "loc": {
                 "start": {
@@ -3660,8 +3642,8 @@
                   "type": "Block",
                   "value": "*\n     * @inheritDocz\n     ",
                   "range": [
-                    2589,
-                    2620
+                    2580,
+                    2611
                   ],
                   "loc": {
                     "start": {
@@ -3678,10 +3660,10 @@
               "trailingComments": [
                 {
                   "type": "Block",
-                  "value": "*\n     * @param {*}      data          Any data\n     * @param {string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
+                  "value": "*\n     * @param {*}       data          Any data\n     * @param {?string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
                   "range": [
-                    2778,
-                    2984
+                    2769,
+                    2977
                   ],
                   "loc": {
                     "start": {
@@ -3703,8 +3685,8 @@
                 "type": "Identifier",
                 "name": "_getSerializerForSerialization",
                 "range": [
-                  2989,
-                  3019
+                  2982,
+                  3012
                 ],
                 "loc": {
                   "start": {
@@ -3725,8 +3707,8 @@
                     "type": "Identifier",
                     "name": "data",
                     "range": [
-                      3020,
-                      3024
+                      3013,
+                      3017
                     ],
                     "loc": {
                       "start": {
@@ -3745,8 +3727,8 @@
                       "type": "Identifier",
                       "name": "format",
                       "range": [
-                        3026,
-                        3032
+                        3019,
+                        3025
                       ],
                       "loc": {
                         "start": {
@@ -3764,8 +3746,8 @@
                       "value": null,
                       "raw": "null",
                       "range": [
-                        3035,
-                        3039
+                        3028,
+                        3032
                       ],
                       "loc": {
                         "start": {
@@ -3779,8 +3761,8 @@
                       }
                     },
                     "range": [
-                      3026,
-                      3039
+                      3019,
+                      3032
                     ],
                     "loc": {
                       "start": {
@@ -3808,8 +3790,8 @@
                               "type": "Identifier",
                               "name": "serializer",
                               "range": [
-                                3062,
-                                3072
+                                3055,
+                                3065
                               ],
                               "loc": {
                                 "start": {
@@ -3824,8 +3806,8 @@
                             },
                             "init": null,
                             "range": [
-                              3062,
-                              3072
+                              3055,
+                              3065
                             ],
                             "loc": {
                               "start": {
@@ -3841,8 +3823,8 @@
                         ],
                         "kind": "const",
                         "range": [
-                          3056,
-                          3072
+                          3049,
+                          3065
                         ],
                         "loc": {
                           "start": {
@@ -3866,8 +3848,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                3076,
-                                3080
+                                3069,
+                                3073
                               ],
                               "loc": {
                                 "start": {
@@ -3884,8 +3866,8 @@
                               "type": "Identifier",
                               "name": "_serializers",
                               "range": [
-                                3081,
-                                3093
+                                3074,
+                                3086
                               ],
                               "loc": {
                                 "start": {
@@ -3899,8 +3881,8 @@
                               }
                             },
                             "range": [
-                              3076,
-                              3093
+                              3069,
+                              3086
                             ],
                             "loc": {
                               "start": {
@@ -3917,8 +3899,8 @@
                             "type": "Identifier",
                             "name": "values",
                             "range": [
-                              3094,
-                              3100
+                              3087,
+                              3093
                             ],
                             "loc": {
                               "start": {
@@ -3932,8 +3914,8 @@
                             }
                           },
                           "range": [
-                            3076,
-                            3100
+                            3069,
+                            3093
                           ],
                           "loc": {
                             "start": {
@@ -3948,8 +3930,8 @@
                         },
                         "arguments": [],
                         "range": [
-                          3076,
-                          3102
+                          3069,
+                          3095
                         ],
                         "loc": {
                           "start": {
@@ -3975,8 +3957,8 @@
                                 "value": true,
                                 "raw": "true",
                                 "range": [
-                                  3122,
-                                  3126
+                                  3115,
+                                  3119
                                 ],
                                 "loc": {
                                   "start": {
@@ -3998,8 +3980,8 @@
                                     "type": "Identifier",
                                     "name": "serializer",
                                     "range": [
-                                      3131,
-                                      3141
+                                      3124,
+                                      3134
                                     ],
                                     "loc": {
                                       "start": {
@@ -4016,8 +3998,8 @@
                                     "type": "Identifier",
                                     "name": "supportsSerialize",
                                     "range": [
-                                      3142,
-                                      3159
+                                      3135,
+                                      3152
                                     ],
                                     "loc": {
                                       "start": {
@@ -4031,8 +4013,8 @@
                                     }
                                   },
                                   "range": [
-                                    3131,
-                                    3159
+                                    3124,
+                                    3152
                                   ],
                                   "loc": {
                                     "start": {
@@ -4050,8 +4032,8 @@
                                     "type": "Identifier",
                                     "name": "data",
                                     "range": [
-                                      3160,
-                                      3164
+                                      3153,
+                                      3157
                                     ],
                                     "loc": {
                                       "start": {
@@ -4068,8 +4050,8 @@
                                     "type": "Identifier",
                                     "name": "format",
                                     "range": [
-                                      3166,
-                                      3172
+                                      3159,
+                                      3165
                                     ],
                                     "loc": {
                                       "start": {
@@ -4084,8 +4066,8 @@
                                   }
                                 ],
                                 "range": [
-                                  3131,
-                                  3173
+                                  3124,
+                                  3166
                                 ],
                                 "loc": {
                                   "start": {
@@ -4099,8 +4081,8 @@
                                 }
                               },
                               "range": [
-                                3122,
-                                3173
+                                3115,
+                                3166
                               ],
                               "loc": {
                                 "start": {
@@ -4122,8 +4104,8 @@
                                     "type": "Identifier",
                                     "name": "serializer",
                                     "range": [
-                                      3200,
-                                      3210
+                                      3193,
+                                      3203
                                     ],
                                     "loc": {
                                       "start": {
@@ -4137,8 +4119,8 @@
                                     }
                                   },
                                   "range": [
-                                    3193,
-                                    3211
+                                    3186,
+                                    3204
                                   ],
                                   "loc": {
                                     "start": {
@@ -4153,8 +4135,8 @@
                                 }
                               ],
                               "range": [
-                                3175,
-                                3225
+                                3168,
+                                3218
                               ],
                               "loc": {
                                 "start": {
@@ -4169,8 +4151,8 @@
                             },
                             "alternate": null,
                             "range": [
-                              3118,
-                              3225
+                              3111,
+                              3218
                             ],
                             "loc": {
                               "start": {
@@ -4185,8 +4167,8 @@
                           }
                         ],
                         "range": [
-                          3104,
-                          3235
+                          3097,
+                          3228
                         ],
                         "loc": {
                           "start": {
@@ -4200,8 +4182,8 @@
                         }
                       },
                       "range": [
-                        3051,
-                        3235
+                        3044,
+                        3228
                       ],
                       "loc": {
                         "start": {
@@ -4221,8 +4203,8 @@
                         "value": null,
                         "raw": "null",
                         "range": [
-                          3252,
-                          3256
+                          3245,
+                          3249
                         ],
                         "loc": {
                           "start": {
@@ -4236,8 +4218,8 @@
                         }
                       },
                       "range": [
-                        3245,
-                        3257
+                        3238,
+                        3250
                       ],
                       "loc": {
                         "start": {
@@ -4252,8 +4234,8 @@
                     }
                   ],
                   "range": [
-                    3041,
-                    3263
+                    3034,
+                    3256
                   ],
                   "loc": {
                     "start": {
@@ -4269,8 +4251,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  3019,
-                  3263
+                  3012,
+                  3256
                 ],
                 "loc": {
                   "start": {
@@ -4286,8 +4268,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                2989,
-                3263
+                2982,
+                3256
               ],
               "loc": {
                 "start": {
@@ -4302,10 +4284,10 @@
               "leadingComments": [
                 {
                   "type": "Block",
-                  "value": "*\n     * @param {*}      data          Any data\n     * @param {string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
+                  "value": "*\n     * @param {*}       data          Any data\n     * @param {?string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
                   "range": [
-                    2778,
-                    2984
+                    2769,
+                    2977
                   ],
                   "loc": {
                     "start": {
@@ -4322,10 +4304,10 @@
               "trailingComments": [
                 {
                   "type": "Block",
-                  "value": "*\n     * @param {*}       data      Data to restore\n     * @param {string}  className The expected class to instantiate\n     * @param {?string} format    Format the given data was extracted from\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
+                  "value": "*\n     * @param {*}       data          Data to restore\n     * @param {string}  className     The expected class to instantiate\n     * @param {?string} [format=null] Format the given data was extracted from\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
                   "range": [
-                    3269,
-                    3534
+                    3262,
+                    3539
                   ],
                   "loc": {
                     "start": {
@@ -4347,8 +4329,8 @@
                 "type": "Identifier",
                 "name": "_getSerializerForDeserialization",
                 "range": [
-                  3539,
-                  3571
+                  3544,
+                  3576
                 ],
                 "loc": {
                   "start": {
@@ -4369,8 +4351,8 @@
                     "type": "Identifier",
                     "name": "data",
                     "range": [
-                      3572,
-                      3576
+                      3577,
+                      3581
                     ],
                     "loc": {
                       "start": {
@@ -4387,8 +4369,8 @@
                     "type": "Identifier",
                     "name": "className",
                     "range": [
-                      3578,
-                      3587
+                      3583,
+                      3592
                     ],
                     "loc": {
                       "start": {
@@ -4402,11 +4384,47 @@
                     }
                   },
                   {
-                    "type": "Identifier",
-                    "name": "format",
+                    "type": "AssignmentPattern",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "format",
+                      "range": [
+                        3594,
+                        3600
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 114,
+                          "column": 54
+                        },
+                        "end": {
+                          "line": 114,
+                          "column": 60
+                        }
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": null,
+                      "raw": "null",
+                      "range": [
+                        3603,
+                        3607
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 114,
+                          "column": 63
+                        },
+                        "end": {
+                          "line": 114,
+                          "column": 67
+                        }
+                      }
+                    },
                     "range": [
-                      3589,
-                      3595
+                      3594,
+                      3607
                     ],
                     "loc": {
                       "start": {
@@ -4415,7 +4433,7 @@
                       },
                       "end": {
                         "line": 114,
-                        "column": 60
+                        "column": 67
                       }
                     }
                   }
@@ -4434,8 +4452,8 @@
                               "type": "Identifier",
                               "name": "serializer",
                               "range": [
-                                3618,
-                                3628
+                                3630,
+                                3640
                               ],
                               "loc": {
                                 "start": {
@@ -4450,8 +4468,8 @@
                             },
                             "init": null,
                             "range": [
-                              3618,
-                              3628
+                              3630,
+                              3640
                             ],
                             "loc": {
                               "start": {
@@ -4467,8 +4485,8 @@
                         ],
                         "kind": "const",
                         "range": [
-                          3612,
-                          3628
+                          3624,
+                          3640
                         ],
                         "loc": {
                           "start": {
@@ -4492,8 +4510,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                3632,
-                                3636
+                                3644,
+                                3648
                               ],
                               "loc": {
                                 "start": {
@@ -4510,8 +4528,8 @@
                               "type": "Identifier",
                               "name": "_serializers",
                               "range": [
-                                3637,
-                                3649
+                                3649,
+                                3661
                               ],
                               "loc": {
                                 "start": {
@@ -4525,8 +4543,8 @@
                               }
                             },
                             "range": [
-                              3632,
-                              3649
+                              3644,
+                              3661
                             ],
                             "loc": {
                               "start": {
@@ -4543,8 +4561,8 @@
                             "type": "Identifier",
                             "name": "values",
                             "range": [
-                              3650,
-                              3656
+                              3662,
+                              3668
                             ],
                             "loc": {
                               "start": {
@@ -4558,8 +4576,8 @@
                             }
                           },
                           "range": [
-                            3632,
-                            3656
+                            3644,
+                            3668
                           ],
                           "loc": {
                             "start": {
@@ -4574,8 +4592,8 @@
                         },
                         "arguments": [],
                         "range": [
-                          3632,
-                          3658
+                          3644,
+                          3670
                         ],
                         "loc": {
                           "start": {
@@ -4601,8 +4619,8 @@
                                 "value": true,
                                 "raw": "true",
                                 "range": [
-                                  3678,
-                                  3682
+                                  3690,
+                                  3694
                                 ],
                                 "loc": {
                                   "start": {
@@ -4624,8 +4642,8 @@
                                     "type": "Identifier",
                                     "name": "serializer",
                                     "range": [
-                                      3687,
-                                      3697
+                                      3699,
+                                      3709
                                     ],
                                     "loc": {
                                       "start": {
@@ -4642,8 +4660,8 @@
                                     "type": "Identifier",
                                     "name": "supportsDeserialize",
                                     "range": [
-                                      3698,
-                                      3717
+                                      3710,
+                                      3729
                                     ],
                                     "loc": {
                                       "start": {
@@ -4657,8 +4675,8 @@
                                     }
                                   },
                                   "range": [
-                                    3687,
-                                    3717
+                                    3699,
+                                    3729
                                   ],
                                   "loc": {
                                     "start": {
@@ -4676,8 +4694,8 @@
                                     "type": "Identifier",
                                     "name": "data",
                                     "range": [
-                                      3718,
-                                      3722
+                                      3730,
+                                      3734
                                     ],
                                     "loc": {
                                       "start": {
@@ -4694,8 +4712,8 @@
                                     "type": "Identifier",
                                     "name": "className",
                                     "range": [
-                                      3724,
-                                      3733
+                                      3736,
+                                      3745
                                     ],
                                     "loc": {
                                       "start": {
@@ -4712,8 +4730,8 @@
                                     "type": "Identifier",
                                     "name": "format",
                                     "range": [
-                                      3735,
-                                      3741
+                                      3747,
+                                      3753
                                     ],
                                     "loc": {
                                       "start": {
@@ -4728,8 +4746,8 @@
                                   }
                                 ],
                                 "range": [
-                                  3687,
-                                  3742
+                                  3699,
+                                  3754
                                 ],
                                 "loc": {
                                   "start": {
@@ -4743,8 +4761,8 @@
                                 }
                               },
                               "range": [
-                                3678,
-                                3742
+                                3690,
+                                3754
                               ],
                               "loc": {
                                 "start": {
@@ -4766,8 +4784,8 @@
                                     "type": "Identifier",
                                     "name": "serializer",
                                     "range": [
-                                      3769,
-                                      3779
+                                      3781,
+                                      3791
                                     ],
                                     "loc": {
                                       "start": {
@@ -4781,8 +4799,8 @@
                                     }
                                   },
                                   "range": [
-                                    3762,
-                                    3780
+                                    3774,
+                                    3792
                                   ],
                                   "loc": {
                                     "start": {
@@ -4797,8 +4815,8 @@
                                 }
                               ],
                               "range": [
-                                3744,
-                                3794
+                                3756,
+                                3806
                               ],
                               "loc": {
                                 "start": {
@@ -4813,8 +4831,8 @@
                             },
                             "alternate": null,
                             "range": [
-                              3674,
-                              3794
+                              3686,
+                              3806
                             ],
                             "loc": {
                               "start": {
@@ -4829,8 +4847,8 @@
                           }
                         ],
                         "range": [
-                          3660,
-                          3804
+                          3672,
+                          3816
                         ],
                         "loc": {
                           "start": {
@@ -4844,8 +4862,8 @@
                         }
                       },
                       "range": [
-                        3607,
-                        3804
+                        3619,
+                        3816
                       ],
                       "loc": {
                         "start": {
@@ -4865,8 +4883,8 @@
                         "value": null,
                         "raw": "null",
                         "range": [
-                          3821,
-                          3825
+                          3833,
+                          3837
                         ],
                         "loc": {
                           "start": {
@@ -4880,8 +4898,8 @@
                         }
                       },
                       "range": [
-                        3814,
-                        3826
+                        3826,
+                        3838
                       ],
                       "loc": {
                         "start": {
@@ -4896,13 +4914,13 @@
                     }
                   ],
                   "range": [
-                    3597,
-                    3832
+                    3609,
+                    3844
                   ],
                   "loc": {
                     "start": {
                       "line": 114,
-                      "column": 62
+                      "column": 69
                     },
                     "end": {
                       "line": 122,
@@ -4913,8 +4931,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  3571,
-                  3832
+                  3576,
+                  3844
                 ],
                 "loc": {
                   "start": {
@@ -4930,8 +4948,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                3539,
-                3832
+                3544,
+                3844
               ],
               "loc": {
                 "start": {
@@ -4946,10 +4964,10 @@
               "leadingComments": [
                 {
                   "type": "Block",
-                  "value": "*\n     * @param {*}       data      Data to restore\n     * @param {string}  className The expected class to instantiate\n     * @param {?string} format    Format the given data was extracted from\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
+                  "value": "*\n     * @param {*}       data          Data to restore\n     * @param {string}  className     The expected class to instantiate\n     * @param {?string} [format=null] Format the given data was extracted from\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
                   "range": [
-                    3269,
-                    3534
+                    3262,
+                    3539
                   ],
                   "loc": {
                     "start": {
@@ -4968,7 +4986,7 @@
           ],
           "range": [
             849,
-            3834
+            3846
           ],
           "loc": {
             "start": {
@@ -4983,7 +5001,7 @@
         },
         "range": [
           804,
-          3834
+          3846
         ],
         "loc": {
           "start": {
@@ -5019,7 +5037,7 @@
       },
       "range": [
         789,
-        3834
+        3846
       ],
       "loc": {
         "start": {
@@ -5056,7 +5074,7 @@
   "sourceType": "module",
   "range": [
     227,
-    3834
+    3846
   ],
   "loc": {
     "start": {
@@ -5163,8 +5181,8 @@
       "type": "Block",
       "value": "*\n     * @inheritDoc\n     ",
       "range": [
-        2007,
-        2037
+        1998,
+        2028
       ],
       "loc": {
         "start": {
@@ -5181,8 +5199,8 @@
       "type": "Block",
       "value": "*\n     * @inheritDoc\n     ",
       "range": [
-        2169,
-        2199
+        2160,
+        2190
       ],
       "loc": {
         "start": {
@@ -5199,8 +5217,8 @@
       "type": "Block",
       "value": "*\n     * @inheritDocz\n     ",
       "range": [
-        2589,
-        2620
+        2580,
+        2611
       ],
       "loc": {
         "start": {
@@ -5215,10 +5233,10 @@
     },
     {
       "type": "Block",
-      "value": "*\n     * @param {*}      data          Any data\n     * @param {string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
+      "value": "*\n     * @param {*}       data          Any data\n     * @param {?string} [format=null] Format the normalization result will be encoded as\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
       "range": [
-        2778,
-        2984
+        2769,
+        2977
       ],
       "loc": {
         "start": {
@@ -5233,10 +5251,10 @@
     },
     {
       "type": "Block",
-      "value": "*\n     * @param {*}       data      Data to restore\n     * @param {string}  className The expected class to instantiate\n     * @param {?string} format    Format the given data was extracted from\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
+      "value": "*\n     * @param {*}       data          Data to restore\n     * @param {string}  className     The expected class to instantiate\n     * @param {?string} [format=null] Format the given data was extracted from\n     *\n     * @return {?SerializerInterface}\n     * @private\n     ",
       "range": [
-        3269,
-        3534
+        3262,
+        3539
       ],
       "loc": {
         "start": {

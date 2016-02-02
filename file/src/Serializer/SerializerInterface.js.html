@@ -77,14 +77,14 @@ export default class SerializerInterface {
     /**
      * Serializes any data object into and object usable for the backend service.
      *
-     * @param {*}      data    Any data
-     * @param {string} format  Format the normalization result will be encoded as
-     * @param {*}      context Options serializers have access to
+     * @param {*}      data           Any data
+     * @param {string} format         Format the normalization result will be encoded as
+     * @param {*}      [context=null] Options serializers have access to
      *
      * @return {*}
      * @throw SerializationError
      */
-    serialize(data, format, context) {
+    serialize(data, format, context = null) {
         throw new UnimplementedMethodError(&apos;Unimplemented &quot;serialize()&quot; method&apos;);
     }
 
