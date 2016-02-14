@@ -61,7 +61,7 @@
 
   
   
-  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span>src/Serializer/SerializerInterface~SerializerInterface</span> &#x2192; Serializer</div></div>
+  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html">SerializerInterface</a></span> &#x2192; Serializer</div></div>
   
   
   
@@ -234,7 +234,117 @@ that for serializing a new object, a custom serializer for this one should be do
 </table>
 </div>
 
-
+<div class="inherited-summary" data-ice="inheritedSummary"><h2>Inherited Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3"><span class="toggle closed"></span> From class <span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html">SerializerInterface</a></span></td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html#instance-method-deserialize">deserialize</a></span></span><span data-ice="signature">(data: <span>*</span>, className: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, format: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, context: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Deserializes data back into an object of the given class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html#instance-method-serialize">serialize</a></span></span><span data-ice="signature">(data: <span>*</span>, format: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, context: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Serializes any data object into and object usable for the backend service.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html#instance-method-supportsDeserialize">supportsDeserialize</a></span></span><span data-ice="signature">(data: <span>*</span>, className: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, format: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Checks whether the given class is supported for deserialization by this serializer.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html#instance-method-supportsSerialize">supportsSerialize</a></span></span><span data-ice="signature">(data: <span>*</span>, format: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Checks whether the given class is supported for serialization by this serializer.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
 
 
 
@@ -326,7 +436,7 @@ that for serializing a new object, a custom serializer for this one should be do
   
   
 
-  
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html#instance-method-deserialize">SerializerInterface#deserialize</a></span></div>
 
   <div data-ice="properties"><div data-ice="properties">
   <h4 data-ice="title">Params:</h4>
@@ -412,7 +522,7 @@ that for serializing a new object, a custom serializer for this one should be do
   
   
 
-  
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html#instance-method-serialize">SerializerInterface#serialize</a></span></div>
 
   <div data-ice="properties"><div data-ice="properties">
   <h4 data-ice="title">Params:</h4>
@@ -490,7 +600,7 @@ that for serializing a new object, a custom serializer for this one should be do
   
   
 
-  
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html#instance-method-supportsDeserialize">SerializerInterface#supportsDeserialize</a></span></div>
 
   <div data-ice="properties"><div data-ice="properties">
   <h4 data-ice="title">Params:</h4>
@@ -569,7 +679,7 @@ that for serializing a new object, a custom serializer for this one should be do
   
   
 
-  
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Serializer/SerializerInterface.js~SerializerInterface.html#instance-method-supportsSerialize">SerializerInterface#supportsSerialize</a></span></div>
 
   <div data-ice="properties"><div data-ice="properties">
   <h4 data-ice="title">Params:</h4>
@@ -626,7 +736,7 @@ that for serializing a new object, a custom serializer for this one should be do
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.3)</span></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.5)</span></a>
 </footer>
 
 <script src="script/search_index.js"></script>

@@ -24,7 +24,7 @@
     "export": true,
     "importPath": "serializerjs/src/Error/InvalidArgumentError.js",
     "importStyle": "InvalidArgumentError",
-    "description": null,
+    "description": "",
     "lineNumber": 15,
     "unknown": [
       {
@@ -34,7 +34,7 @@
     ],
     "interface": false,
     "extends": [
-      "src/Error/SerializerError~SerializerError"
+      "src/Error/SerializerError.js~SerializerError"
     ]
   },
   {
@@ -46,7 +46,7 @@
     "memberof": "src/Error/InvalidArgumentError.js~InvalidArgumentError",
     "longname": "src/Error/InvalidArgumentError.js~InvalidArgumentError#constructor",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 19,
     "params": [
       {
@@ -117,7 +117,7 @@
     ],
     "interface": false,
     "extends": [
-      "src/Error/SerializerError~SerializerError"
+      "src/Error/SerializerError.js~SerializerError"
     ]
   },
   {
@@ -129,7 +129,7 @@
     "memberof": "src/Error/SerializationError.js~SerializationError",
     "longname": "src/Error/SerializationError.js~SerializationError#constructor",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 21,
     "params": [
       {
@@ -212,7 +212,7 @@
     "memberof": "src/Error/SerializerError.js~SerializerError",
     "longname": "src/Error/SerializerError.js~SerializerError#constructor",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 19,
     "params": [
       {
@@ -291,7 +291,7 @@
     "export": true,
     "importPath": "serializerjs/src/Error/UnimplementedMethodError.js",
     "importStyle": "UnimplementedSerializerMethodError",
-    "description": null,
+    "description": "",
     "lineNumber": 15,
     "unknown": [
       {
@@ -301,7 +301,7 @@
     ],
     "interface": false,
     "extends": [
-      "src/Error/SerializerError~SerializerError"
+      "src/Error/SerializerError.js~SerializerError"
     ]
   },
   {
@@ -313,7 +313,7 @@
     "memberof": "src/Error/UnimplementedMethodError.js~UnimplementedSerializerMethodError",
     "longname": "src/Error/UnimplementedMethodError.js~UnimplementedSerializerMethodError#constructor",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 19,
     "params": [
       {
@@ -385,7 +385,7 @@
     "abstract": true,
     "interface": false,
     "extends": [
-      "src/Serializer/SerializerAware~SerializerAware"
+      "src/Serializer/SerializerAware.js~SerializerAware"
     ]
   },
   {
@@ -397,7 +397,7 @@
     "memberof": "src/Serializer/AbstractSerializer.js~AbstractSerializer",
     "longname": "src/Serializer/AbstractSerializer.js~AbstractSerializer#serialize",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 24,
     "unknown": [
       {
@@ -441,7 +441,7 @@
     "memberof": "src/Serializer/AbstractSerializer.js~AbstractSerializer",
     "longname": "src/Serializer/AbstractSerializer.js~AbstractSerializer#supportsSerialize",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 31,
     "unknown": [
       {
@@ -482,7 +482,7 @@
     "memberof": "src/Serializer/AbstractSerializer.js~AbstractSerializer",
     "longname": "src/Serializer/AbstractSerializer.js~AbstractSerializer#deserialize",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 38,
     "unknown": [
       {
@@ -538,7 +538,7 @@
     "memberof": "src/Serializer/AbstractSerializer.js~AbstractSerializer",
     "longname": "src/Serializer/AbstractSerializer.js~AbstractSerializer#supportsDeserialize",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 45,
     "unknown": [
       {
@@ -611,7 +611,7 @@
     ],
     "interface": false,
     "extends": [
-      "src/Serializer/SerializerInterface~SerializerInterface"
+      "src/Serializer/SerializerInterface.js~SerializerInterface"
     ]
   },
   {
@@ -623,7 +623,7 @@
     "memberof": "src/Serializer/Serializer.js~Serializer",
     "longname": "src/Serializer/Serializer.js~Serializer#constructor",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 29,
     "unknown": [
       {
@@ -654,7 +654,7 @@
     "memberof": "src/Serializer/Serializer.js~Serializer",
     "longname": "src/Serializer/Serializer.js~Serializer#_serializers",
     "access": "private",
-    "description": null,
+    "description": "",
     "lineNumber": 48,
     "type": {
       "nullable": null,
@@ -674,7 +674,7 @@
     "memberof": "src/Serializer/Serializer.js~Serializer",
     "longname": "src/Serializer/Serializer.js~Serializer#serialize",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 54,
     "unknown": [
       {
@@ -718,7 +718,7 @@
     "memberof": "src/Serializer/Serializer.js~Serializer",
     "longname": "src/Serializer/Serializer.js~Serializer#supportsSerialize",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 66,
     "unknown": [
       {
@@ -759,7 +759,7 @@
     "memberof": "src/Serializer/Serializer.js~Serializer",
     "longname": "src/Serializer/Serializer.js~Serializer#deserialize",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 73,
     "unknown": [
       {
@@ -815,7 +815,7 @@
     "memberof": "src/Serializer/Serializer.js~Serializer",
     "longname": "src/Serializer/Serializer.js~Serializer#supportsDeserialize",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 85,
     "unknown": [
       {
@@ -862,7 +862,7 @@
     "memberof": "src/Serializer/Serializer.js~Serializer",
     "longname": "src/Serializer/Serializer.js~Serializer#_getSerializerForSerialization",
     "access": "private",
-    "description": null,
+    "description": "",
     "lineNumber": 96,
     "params": [
       {
@@ -907,7 +907,7 @@
     "memberof": "src/Serializer/Serializer.js~Serializer",
     "longname": "src/Serializer/Serializer.js~Serializer#_getSerializerForDeserialization",
     "access": "private",
-    "description": null,
+    "description": "",
     "lineNumber": 114,
     "params": [
       {
@@ -988,7 +988,7 @@
     ],
     "interface": false,
     "extends": [
-      "src/Serializer/SerializerInterface~SerializerInterface"
+      "src/Serializer/SerializerInterface.js~SerializerInterface"
     ]
   },
   {
@@ -1015,7 +1015,7 @@
     "memberof": "src/Serializer/SerializerAware.js~SerializerAware",
     "longname": "src/Serializer/SerializerAware.js~SerializerAware#_serializer",
     "access": "protected",
-    "description": null,
+    "description": "",
     "lineNumber": 25,
     "type": {
       "nullable": null,
@@ -1035,7 +1035,7 @@
     "memberof": "src/Serializer/SerializerAware.js~SerializerAware",
     "longname": "src/Serializer/SerializerAware.js~SerializerAware#setSerializer",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 30,
     "params": [
       {
@@ -1377,7 +1377,7 @@
     "memberof": "src/serializerjs.js~SerializerFactory",
     "longname": "src/serializerjs.js~SerializerFactory#constructor",
     "access": null,
-    "description": null,
+    "description": "",
     "lineNumber": 26,
     "unknown": [
       {
@@ -1417,7 +1417,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Infinity",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1430,7 +1430,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~NaN",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1443,7 +1443,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~undefined",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1456,7 +1456,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~null",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1469,7 +1469,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Object",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1482,7 +1482,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~object",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1495,7 +1495,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Function",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1508,7 +1508,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~function",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1521,7 +1521,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Boolean",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1534,7 +1534,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~boolean",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1547,7 +1547,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Symbol",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1560,7 +1560,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Error",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1573,7 +1573,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~EvalError",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1586,7 +1586,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~InternalError",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1599,7 +1599,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~RangeError",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1612,7 +1612,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~ReferenceError",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1625,7 +1625,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~SyntaxError",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1638,7 +1638,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~TypeError",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1651,7 +1651,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~URIError",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1664,7 +1664,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Number",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1677,7 +1677,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~number",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1690,7 +1690,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Date",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1703,7 +1703,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~String",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1716,7 +1716,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~string",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1729,7 +1729,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~RegExp",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1742,7 +1742,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Array",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1755,7 +1755,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Int8Array",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1768,7 +1768,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8Array",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1781,7 +1781,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8ClampedArray",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1794,7 +1794,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Int16Array",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1807,7 +1807,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint16Array",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1820,7 +1820,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Int32Array",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1833,7 +1833,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint32Array",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1846,7 +1846,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Float32Array",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1859,7 +1859,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Float64Array",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1872,7 +1872,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Map",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1885,7 +1885,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Set",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1898,7 +1898,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakMap",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1911,7 +1911,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakSet",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1924,7 +1924,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~ArrayBuffer",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1937,7 +1937,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~DataView",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1950,7 +1950,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~JSON",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1963,7 +1963,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Promise",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1976,7 +1976,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Generator",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -1989,7 +1989,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~GeneratorFunction",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2002,7 +2002,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Reflect",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2015,7 +2015,7 @@
     "memberof": "BuiltinExternal/ECMAScriptExternal.js",
     "longname": "BuiltinExternal/ECMAScriptExternal.js~Proxy",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2028,7 +2028,7 @@
     "memberof": "BuiltinExternal/WebAPIExternal.js",
     "longname": "BuiltinExternal/WebAPIExternal.js~CanvasRenderingContext2D",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2041,7 +2041,7 @@
     "memberof": "BuiltinExternal/WebAPIExternal.js",
     "longname": "BuiltinExternal/WebAPIExternal.js~DocumentFragment",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2054,7 +2054,7 @@
     "memberof": "BuiltinExternal/WebAPIExternal.js",
     "longname": "BuiltinExternal/WebAPIExternal.js~Element",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2067,7 +2067,7 @@
     "memberof": "BuiltinExternal/WebAPIExternal.js",
     "longname": "BuiltinExternal/WebAPIExternal.js~Event",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2080,7 +2080,7 @@
     "memberof": "BuiltinExternal/WebAPIExternal.js",
     "longname": "BuiltinExternal/WebAPIExternal.js~Node",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2093,7 +2093,7 @@
     "memberof": "BuiltinExternal/WebAPIExternal.js",
     "longname": "BuiltinExternal/WebAPIExternal.js~NodeList",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2106,7 +2106,7 @@
     "memberof": "BuiltinExternal/WebAPIExternal.js",
     "longname": "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {
@@ -2119,7 +2119,7 @@
     "memberof": "BuiltinExternal/WebAPIExternal.js",
     "longname": "BuiltinExternal/WebAPIExternal.js~AudioContext",
     "access": null,
-    "description": null,
+    "description": "",
     "builtinExternal": true
   },
   {

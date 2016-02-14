@@ -54,7 +54,7 @@ window.esdocSearchIndex = [
     "test"
   ],
   [
-    "abstractserializer#constructor abstractserializer#constructor,abstractserializer#constructor",
+    "abstractserializer#constructor src/serializer/serializeraware.js~serializeraware#constructor,abstractserializer#constructor",
     "test-file/tests/Serializer/AbstractSerializerTest.js.html#lineNumber22",
     "AbstractSerializer It implements the SerializerInterface interface",
     "test"
