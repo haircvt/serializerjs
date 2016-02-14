@@ -10,7 +10,7 @@
 [![npm](https://img.shields.io/npm/dm/serializerjs.svg)](https://www.npmjs.org/package/serializerjs)
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/haircvt/serializerjs/blob/master/LICENSE)
 
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/theofidry)](https://saucelabs.com/u/theofidry)
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/theofidry.svg)](https://saucelabs.com/u/theofidry)
 
 A serializer is responsible for transforming a data in a specific format into a data in another format/schema.
 
